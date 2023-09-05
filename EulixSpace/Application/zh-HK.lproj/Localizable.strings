@@ -1,0 +1,2145 @@
+/*
+  Localizable.strings
+  EulixSpace
+
+  Created by Ye Tao on 2021/7/12.
+  Copyright © 2021 eulix.xyz. All rights reserved.
+*/
+
+//Common
+"back" ="返回";
+"cancel" ="取消";
+"select_all" ="全选";
+"unselect_all" ="全不选";
+"delete" ="删除";
+"ok" ="确定";
+"confirm_the_deletion" ="确认删除";
+"join" ="加入";
+"next" ="下一步";
+"got_it" ="我知道了";
+"turn_on_now" ="立即开启";
+"view_now" ="立即查看";
+"coming_soon" ="敬请期待";
+"wait" ="请等待…";
+"unkown_error" ="未知错误";
+"retry_later" ="请稍后重试";
+"done" ="完成";
+"Done" ="完成";
+//Box
+"box_bind" = "绑定设备";
+"box_list" = "设备列表";
+"box_in_use" = "使用中";
+"box_login_more" = "登录更多空间";
+"box_online" = "在线";
+"box_offline" = "离线";
+"box_offline_prompt" = "设备离线，请将设备连接网线后重试";
+"box_auth" = "授权使用设备";
+"box_click_to_use" = "点击使用";
+"box_click_to_login" = "点击登录";
+"box_login_ongoing" = "登录中";
+"box_empty_list" = "没有绑定的设备\n点击下方“绑定设备”或“登录更多空间”\n来开启傲空间的使用吧";
+"box_empty_list_hint" = "如您没有傲空间设备，可先免费在线试用，\n点击上方“免费试用”进行申请吧~";
+
+///连接盒子
+"box_scan_qrcode" ="扫描设备二维码";
+"box_scan_prompt_power_on" ="请确保设备已接通电源";
+"box_scan_prompt_bluetooth_on" ="请开启手机蓝牙设置";
+"box_scan_prompt_scan_qrcode" ="点击下方的“扫描二维码“";
+"box_scan_prompt_bind_confirm" ="发现设备后点击“下一步“";
+"box_scan_prompt_scaning" ="努力搜索中…";
+"box_bluetooth_name_format" ="eulixspace-%@";
+"box_mdns_name_format" ="btidhash=%@";
+
+"box_scan_no_box" ="未识别出有效二维码";
+"box_scan_no_box_prompt" ="没有发现想要的设备，请确保已连接电源和网线，\n确认无误后，点击“重新扫描”";
+"box_scan_member_exist_prompt" ="您已是该设备上的成员\n请勿重复绑定";
+"box_scan_again" ="重新扫描";
+"box_bind_confirm" ="确认绑定";
+"box_bind_ongoing" ="正在绑定";
+"box_bind_success" ="设备绑定成功";
+"box_bind_setup_space_info" ="设置空间信息";
+"box_bind_fail" ="设备绑定失败";
+"box_bind_fail_prompt" ="该设备已被管理员绑定，请勿重复操作";
+"box_bind_register_device" ="注册设备";
+"box_already_binded_prompt" ="* 设备已绑定其他手机，若要绑定当前手机，则原手机将自动解绑，解绑后原手机无法再访问空间。";
+
+"box_bind_ble_failed" ="蓝牙连接失败";
+"box_bind_ble_failed_prompt" ="蓝牙连接失败，您可以重试蓝牙连接，或改为使用有线连接绑定。";
+"box_bind_retry_ble" ="蓝牙重试";
+"box_bind_try_wired_connection" ="使用有线绑定";
+"box_bind_wired_connection_prompt" ="请确保设备已接通电源，并用网线连接到路由";
+"box_bind_not_found" ="未发现设备";
+
+"box_unbind" ="解绑设备";
+"box_unbind_success" ="解绑成功";
+"box_unbind_fail" ="解绑失败";
+"box_unbind_fail_prompt" ="解绑失败，请稍后重试";
+"box_unbind_password_error_prompt" ="密码错误，还剩%@次机会";
+
+//设置网络
+"box_network_prompt_connecting" ="努力连接中…";
+"box_network_input_wifi_password_placeholder" ="请输入密码";
+"box_network_input_wifi_password" ="输入“%@”的密码";
+"box_network_wrong_wifi_password" ="密码错误，连接失败";
+"box_network_correct_wifi_password" ="已连接";
+"box_network_available_wifi" ="可用WLAN列表";
+"box_network_no_network" ="设备未联网";
+"box_network_local_network" ="本地连接";
+"box_network_prompt_no_network" ="设备未联网，请选择设备要连接的网络";
+"box_network_setup" ="网络设置";
+"box_network_connected" ="已连接网络";
+"box_network_connecting" ="设备正在连接“%@”，请稍后…";
+"box_network_ip_address" ="IP地址";
+"box_network_no_wifi" ="无可用WLAN连接";
+"box_network_no_wifi_prompt" ="若要更换无线网络，您需要先手动 重启傲空间设备，是否确定重启？";
+
+"box_bind_result" ="绑定结果";
+"box_bind_start_to_use" ="开始使用";
+"box_bind_unbind" ="解绑设备";
+
+//蓝牙
+
+"bluetooth_get_permission" ="蓝牙权限获取";
+"bluetooth_get_permission_prompt" ="设备绑定功能需开启蓝牙权限，\n是否立即开启？";
+
+
+//安全密码
+"security_password_setup" ="设置安全密码";
+"security_password" ="安全密码";
+"security_password_confirm" ="密码确认";
+"security_password_placeholder" ="请输入安全密码";
+"security_password_confirm_placeholder" ="请再次输入安全密码";
+"security_password_prompt" ="温馨提示：安全密码为6位数字，只能由管理员设置和修改，请慎重保管此密码。";
+"security_password_not_match" ="两次输入内容不一致";
+"security_password_error_and_retry_later_prompt" ="安全密码错误，请1分钟后重试";
+
+"security_password_input" ="请输入设备的安全密码";
+"security_password_input_prompt" ="6位数字安全密码";
+"security_password_prompt_title" ="设备安全密码";
+"security_password_prompt_detail" ="\n1.安全密码为6位数字，只能由管理员设置和修改，请慎重保管此密码。\n\n2.应用场景：\n（1）解绑设备，管理员需要正确输入安全密码，才能完成解绑操作。\n（2）需要输入安全密码验证管理员身份的其他情形。";
+"security_lock" ="应用锁";
+//Space
+"space_loading" ="努力加载中…";
+"space_initialization" ="空间初始化";
+"space_initialization_ongoing" ="正在空间初始化…";
+"space_initialization_prompt" ="正在初始化空间，请稍候…";
+"space_specific_identifier" ="空间专属标识";
+"space_country" ="所属国家";
+"space_return_box_list" ="返回设备列表";
+"space_language" ="选择语言";
+"space_enter" ="进入空间";
+
+//Main主页
+"main_intoPhotoBtn" ="相册";
+"main_intoVideoBtn" ="视频";
+"main_intoMusicBtn" ="音频";
+"main_intofileBtn" ="文档";
+"main_other" ="其他";
+"main_intelligenceViewTitle" ="最近";
+"main_synchronizationAlbumBtn" ="相册同步";
+"main_synchronizationAddressBookBtn" ="通讯录同步";
+"main_meShareBtn" ="我的分享";
+"main_recycleBinBtn" ="回收站";
+"main_no_operation_record" ="暂无操作记录";
+"main_Help" ="帮助中心";
+"main_trial_feedback" ="试用反馈";
+"main_feedback" ="意见反馈";
+
+"main_faq" ="快速解答常见问题";
+"main_feedback" ="意见反馈";
+"main_feedback_user_experience" ="反馈产品使用体验";
+
+/// 文件首页
+"file_bottom_down" ="保存本地";
+"file_bottom_share" ="分享";
+"file_bottom_details" ="详情";
+"file_bottom_delect" ="删除";
+"file_bottom_more" ="更多";
+
+
+///文件预览
+"file_origin_image" ="查看原图%@";
+"file_origin_image_downloading" ="已完成%@%%";
+"file_preview_unsupport_file" ="暂不支持预览该文件";
+
+///相册上传
+"album_upload_no_count" ="上传";
+"album_upload_with_count" ="上传(%@)";
+"album_image_select_count" ="已选择%@张图片";
+"album_video_select_count" ="已选择%@张视频";
+
+
+//传输列表
+"phone_storage_info_title" ="手机存储容量";
+"phone_storage_info" ="%@ / %@";
+"box_storage_info_title" ="空间存储容量";
+"box_storage_info" ="%@ / %@";
+
+
+"transfer_list" ="传输列表";
+"added_to_transfer_list" ="已添加到传输列表";
+"transfer_no_task" ="当前没有传输任务";
+
+"transfer_download_list" ="下载列表";
+"transfer_download_ongoing" ="正在下载（%@）";
+"transfer_download_complete" ="下载完成（%@）";
+"transfer_download_pause" ="下载暂停";
+"transfer_download_failed" ="下载失败";
+"transfer_download_via_wwan_title" ="使用流量下载？";
+"transfer_download_via_wwan_message" ="当前非Wi-Fi网络环境，继续下载将 产生数据流量";
+
+"transfer_pause_all" ="全部暂停";
+"transfer_resume_all" ="全部继续";
+
+"transfer_clear_history" ="清空全部记录";
+"transfer_clear_confirm_title" ="确定删除";
+"transfer_download_clear_confirm_message" ="只删除下载记录，已下载的文件\n不受影响";
+
+"transfer_upload_list" ="上传列表";
+"transfer_upload_ongoing" ="正在上传（%@）";
+"transfer_upload_complete" ="上传完成（%@）";
+"transfer_upload_pause" ="上传暂停";
+//"transfer_upload_failed" ="上传失败";
+"transfer_upload_failed" ="上传暂停";
+"transfer_upload_target" ="上传至：我的空间%@";
+"transfer_upload_clear_confirm_message" ="只清空上传记录，已上传的文件\n不受影响";
+
+"transfer_sync" ="相册同步";
+"transfer_sync_complete" ="%@ 个文件同步已完成";
+"transfer_sync_title" ="同步中（剩余%@个)";
+"transfer_sync_last_time" ="最近同步：%@";
+
+"me_setting_and_service" ="更多服务";
+"me_member" ="家庭";
+"me_member_count" ="当前人数";
+"me_more_function" ="更多服务";
+"me_trial_feedback" ="试用反馈";
+"me_faq" ="帮助与反馈";
+"me_device_manager" ="设备";
+"me_album_sync" ="相册同步";
+"me_album_sync_off" ="未开启";
+"me_web" ="访问网页端";
+"me_web_copy" ="已复制到剪切板，请使用浏览器打开";
+"me_clear_cache" ="清除缓存";
+"me_recycle_bin" ="回收站";
+"me_about" ="关于";
+"me_backup_and_restore" ="备份与恢复";
+"me_about_us" ="关于";
+"me_confirm_the_deletion_title" ="确定删除所有缓存（%@）？";
+"me_login_terminal" ="登录终端";
+
+"me_already_cleared_cache" ="已清除";
+
+"me_personal_info" ="个人信息";
+"me_personal_avatar" ="头像";
+"me_personal_nickname" ="昵称";
+"me_personal_sign" ="个性签名";
+"me_personal_domin" ="域名";
+"me_personal_no_sign" ="无";
+"me_personal_switch_account" ="切换账号";
+"me_camera" ="拍照";
+"me_album" ="从相册中选择";
+
+"me_nickname_placeholder" ="请输入您的昵称，长度为1-24位字符";
+"me_nickname_prompt" ="支持中文、英文、数字及下划线等部分特殊符号";
+"me_nickname_invalid_prompt" ="修改失败，昵称不合法";
+"me_sign_placeholder" ="请输入您的个性签名，长度为1-120位字符";
+
+
+"me_version_update" ="检查更新";
+"me_upgrade" ="更新";
+"me_upgrade_right_now" ="立即更新";
+"me_found_new_version" ="检查更新";
+"me_latest_version" ="最新版本：V%@";
+"me_version_desc" ="更新内容：\n%@";
+"me_uncompatible_title" ="程序不兼容";
+"me_uncompatible_admin_prompt" ="傲空间APP的版本与傲空间设备的版本\n存在兼容性问题，是否立即修复？";
+"me_uncompatible_member_prompt" ="傲空间APP的版本与傲空间设备的版本\n存在兼容性问题，请联系管理员修复";
+"me_repair_now" ="立即修复";
+
+"setting_clear_manager" ="缓存管理";
+
+"me_developer" ="开发者选项";
+//相册同步
+"sync_prompt" ="开启相册自动同步需授权手机相册权限，否则无法同步；默认仅在WiFi环境下备份，电量低于15%自动停止相册同步，打开后会消耗您的手机流量备份。";
+"sync_photo" ="自动同步照片";
+"sync_video" ="自动同步视频";
+"sync_background" ="后台自动同步";
+"sync_via_wwan" ="手机流量同步";
+"sync_directory_name_foramt" ="%@的相册";
+"sync_turn_on_album_sync" ="开启相册同步";
+"sync_turn_on_album_sync_prompt" ="您还没有开启相册同步功能， 是否立即开启？";
+"turn_on_now" ="立即开启";
+"sync_not_enough_space_prompt" ="空间不足，上传失败，请清理空间后再重试~";
+
+"autoupload_background_title" ="限制";
+"autoupload_background_msg" ="由于 iOS 限制，除非启用了 GPS 服务，否则无法执行后台处理。 一旦移动网络发生变化，系统会在短时间内唤醒，检查新的照片并上传到云端。";
+"autoupload_background_title"     ="限制";
+"autoupload_background_msg"       ="由于 iOS 限制，除非启用了 GPS 服务，否则无法执行后台处理。 一旦移动网络发生变化，系统会在短时间内唤醒，检查新的照片并上传到云端。";
+
+"error" ="错误";
+"err_permission_photo_library" ="请在设置中允许\"相册\"权限";
+"err_permission_location_manager" ="请从设置允许位置 - 始终";
+"open_settings" ="打开设置";
+
+/// v0.3.0 新加
+"current_family_members" ="当前家庭";
+"login_title" ="登录";
+"family_member" ="成员信息";
+"family_information_name" ="昵称";
+"family_information_name_id" ="成员ID";
+"family_information_space" ="已使用空间";
+"family_information_ipone" ="已绑定手机";
+"family_information_share_vx" ="微信";
+"family_information_share_line" ="复制链接";
+
+"cloud_image_title_format" ="图片（%zd张）";
+"cloud_image_select_title_format" ="已选择%zd张图片";
+"cloud_no_image" ="您还没有任何图片哦";
+
+/// v0.4.0 新加
+"me_backup" ="备份与恢复";
+"me_data_backup" ="数据备份";
+"me_data_recover" ="数据恢复";
+"me_backup_check" ="备份检查";
+"me_data_backuping" ="正在备份";
+"me_data_sucess" ="数据成功";
+"me_data_error" ="数据失败";
+"box_bind_unbind_prompt" ="是否确定解绑已绑定的手机?";
+
+
+///局域网访问
+
+"local_networking_auto_switch" ="已自动切换至局域网访问";
+"current_networking" ="当前网络";
+"current_networking_local" ="局域网";
+"current_networking_internet" ="互联网";
+
+
+"feedback" ="意见反馈";
+"feedback_desc" ="详细描述";
+"feedback_desc_pladeholder" ="欢迎提出您在使用过程中遇到的问题和宝贵意见，感谢您对傲空间产品的支持！";
+"feedback_upload_image_format" ="上传图片（%@/4）";
+"feedback_upload_image_prompt" ="建议图片格式：jpeg/bmp/png/gif";
+"feedback_email" ="联系邮箱";
+"feedback_email_pladeholder" ="请输入您的邮箱";
+"feedback_phone_number" ="联系方式";
+"feedback_phone_number_pladeholder" ="请输入您的手机号（便于我们联系您）";
+"feedback_submit" ="提交反馈";
+"feedback_submitted" ="已提交";
+"feedback_submitted_prompt" ="感谢您的关注与支持，我们会认真处理您的反馈信息，尽快修复和完善相关功能！";
+
+"feedback_check_no_desc" ="详细描述不能为空，请描述您的问题";
+"feedback_check_no_email_and_phone_number" ="电话和联系邮箱请至少填写一个";
+"feedback_check_email_format_error" ="联系邮箱格式错误，请填写正确的邮箱";
+"feedback_check_phone_number_format_error" ="电话格式错误，请填写正确的电话";
+"feedback_check_failed_to_upload_image" ="图片上传失败，请重新上传";
+
+"photo_power_setting" ="请在Iphone的“设置-隐私-照片”选项中，允许傲空间访问您的照片";
+
+"error_client_not_connected_to_Internet" ="手机网络异常\n请检查后重试";
+"error_box_not_connected_to_Internet" ="设备无法访问\n请检查设备网络连接\n是否正常";
+
+//applet
+"update_applet" ="更新应用";
+"uninstall_applet" ="卸载";
+"waiting_operate" ="请稍后";
+"already_the_latest_version" ="已经是最新版本";
+"applet_install_success" ="安装成功请使用";
+"applet_install_fail" ="安装失败";
+"applet_update_success" ="更新成功";
+"applet_update_fail" ="更新失败";
+"applet_uninstall_success" ="卸载成功";
+"applet_uninstall_fail" ="卸载失败";
+"applet_load_fail" ="加载失败";
+"applet_loading" ="加载中..";
+"applet_featured" ="精选应用";
+"applet_installing" ="正在安装...";
+
+"applet_uninstall_bt_title" ="卸载";
+"applet_uninstall_dialog_title" ="是否卸载%@？";
+"applet_uninstall_dialog_des" ="卸载“%@”，其数据不会被清除";
+
+"applet_update_dialog_goback" ="退出";
+"applet_update_dialog_update_late" ="以后再说";
+
+"applet_update_dialog_update_bt_title" ="立即更新";
+"applet_update_dialog_update_title" ="发现新版本";
+"applet_update_dialog_update_des" ="发现新版本，是否更新应用？";
+
+"applet_auth_confirm_dialog_refuse_bt_title" ="拒绝";
+"applet_auth_confirm_dialog_confirm_bt_title" ="允许";
+"applet_auth_confirm_dialog_title_endstring" ="申请";
+"applet_auth_confirm_dialog_des_prestring" ="获取你的";
+
+"applet_dialog_fail_bt_title" ="确定";
+"applet_dialog_fail_update_title" ="更新失败";
+"applet_dialog_fail_message" ="原因：傲空间系统版本过低";
+"applet_dialog_fail_message_detail" ="请在管理员绑定手机上完成【系统升级】后再操作小应用更新。";
+"applet_update_dialog_fail_bt_title" ="确定";
+
+"applet_dialog_fail_install_title" ="安装失败";
+/// 文件首页
+"file_share_weixin" ="微信";
+"file_share_qq" ="QQ";
+"file_share_copylink" ="复制链接";
+"file_share_other" ="其他分享";
+
+"file_to_share_auto_code" ="分享链接自动填充提取码";
+"file_to_share_date" ="有效期";
+"file_to_share_people_num" ="分享人数";
+
+
+"update_dialog_bt_install_now" ="现在安装";
+"update_dialog_bt_later" ="稍后";
+"update_dialog_bt_detail_info" ="详细信息";
+"update_dialog_title" ="系统升级";
+"update_dialog_detail" ="“傲空间 %@”可用于您的设备，是否现在安装？";
+
+"contact_dialog_title" ="“傲空间”想访问您的通讯录";
+"contact_dialog_message" ="用于导入联系人功能";
+"contact_dialog_cancel_bt_title" ="不允许";
+"contact_dialog_confirm_bt_title" ="好的";
+
+"common_app_name"="傲空间";
+"common_ok"="确定";
+"common_cancel"="取消";
+"common_back"="返回";
+"common_select_all"="全选";
+"common_unselect_all"="全不选";
+"common_delete"="删除";
+"common_confirm_deletion"="确认删除";
+"common_more"="更多";
+"common_button_done"="完成";
+"common_join"="加入";
+"common_next"="下一步";
+"common_setting"="设置";
+"common_share"="分享";
+"common_got_it"="我知道了";
+"common_turn_on"="立即开启";
+"common_view_now"="立即查看";
+"common_coming_soon"="敬请期待";
+"common_button_wait"="请等待…";
+"common_loading..."="努力加载中…";
+"common_unkown_error"="未知错误";
+"common_retry_later"="请稍后重试";
+"common_scan_qrcode"="扫描二维码";
+"common_open"="已开启";
+"common_close"="未开启";
+"common_get_bluetooth"="获取蓝牙权限";
+"common_get_bluetooth_prompt"="设备绑定功能需开启蓝牙权限，\n是否立即开启？";
+"common_get_album"="获取相册权限";
+"common_get_album_prompt"="相册同步功能需开启相册权限，\n是否立即开启？";
+"common_setting_hint"="请前往设置打开权限！";
+"common_open_failed"="权限拒绝，打开失败！";
+"common_exit_app"="再按一次退出傲空间";
+"home_main"="首页";
+"home_file"="文件";
+"home_photo"="图片";
+"home_mine"="我的";
+"home_all"="全部";
+"home_video"="视频";
+"home_document"="文档";
+"home_dos"="文档";
+"home_other"="其他";
+"home_synPhotoAlbum"="相册同步";
+"home_synAddressBook"="通讯录同步";
+"home_help"="帮助中心";
+"home_faq"="快速解答常见问题";
+"home_connect_device"="如何绑定设备？";
+"home_disconnect_device"="如何解绑设备？";
+"home_invite_member"="如何邀请家庭";
+"home_trial_feedback"="试用反馈";
+"home_feedback_experience"="反馈产品使用体验";
+"home_feedback"="意见反馈";
+"home_feedback_prompt"="产品功能、体验、建议等";
+"home_bottom"="已经到底啦";
+"file_bottom_down"="保存本地";
+
+"file_bottom_details"="详情";
+"file_bottom_rename"="重命名";
+"file_bottom_copy"="复制";
+"file_bottom_move"="移动";
+"file_downloading"="已完成%@%%";
+"file_preview_unsupport"="暂不支持预览该文件";
+"file_upload"="上传";
+"file_upload_or_new"="上传/新建";
+"file_upload_photo"="上传照片";
+"file_upload_video"="上传视频";
+"file_upload_document"="上传文件";
+"file_upload_myspace"="上传到“%@”";
+"file_new_file"="新建文件夹";
+"file_name_placeholder"="请输入文件夹名称";
+"file_upload_place"="上传位置:";
+"file_camera"="拍照";
+"file_album"="从相册中选择";
+
+"file_upload_progress"="上传(%@)";
+"file_image_select"="已选择%lu张图片";
+"file_video_select"="已选择%lu张视频";
+"file_select"="已选择 %lu 个文件";
+
+"file_photos"="图片(%@张)";
+"file_none_photos"="您还没有任何图片哦";
+"file_sort_order"="排序方式";
+"file_sort_name"="按名称排序";
+"file_sort_time"="按修改时间排序";
+"file_sort_type"="按文件类型排序";
+"file_list_show"="列表显示";
+"file_icon_show"="图标显示";
+"file_delete"="确定删除文件？";
+"file_delete_prompt"="已删除的文件会放入回收站中，如有需要您可以从回收站中恢复";
+"file_none_name"="文件名不能为空！";
+"file_name_rule"=" 仅支持中英文、数字和下划线";
+"file_name_length"="文件名过长，不能超过10个字符";
+"file_no_data"="暂无文件";
+"file_search_all"="搜索全部文件";
+"file_no_dt"="暂无个人动态";
+
+"file_search_prompt"="搜索内容不能为空！";
+"me_info" ="个人信息";
+"me_pro_file_photo"="头像";
+"me_nickname" ="昵称";
+"me_nickna_me_placeholder" ="请输入您的昵称，长度为1-24位字符";
+"me_nickna_me_prompt"="支持中文、英文、数字及下划线等部分特殊符号";
+"me_nickna_me_invalid"="修改失败，昵称不合法";
+"me_personalized_signature"="个性签名";
+"me_sign_placeholder"="请输入您的个性签名，长度为1-120位字符";
+"me_domain_name"="域名";
+"me_device_manager"="设备";
+"me_system_update"="系统升级";
+"me_member"="家庭";
+"me_current_peoples"="当前人数";
+"me_member_invite"="邀请成员";
+"me_current_member"="当前家庭:%lu/10人";
+"me_member_info"="成员信息";
+"me_member_id"="成员ID";
+"me_member_space"="已使用空间";
+"me_member_phone"="已绑定手机";
+"me_share_weixin"="微信";
+"me_share_link"="复制链接";
+"me_more_function"="更多服务";
+"me_recycle_bin"="回收站";
+"me_clear_cache"="清除缓存";
+"me_trial_feedback"="试用反馈";
+"me_faq"="帮助与反馈";
+"me_login_terminal"="登录终端";
+"me_message_setting" ="消息设置";
+"me_space" ="我的空间";
+"add_pointout" ="您的文件将以加密的形式从手机传输到私有网盘设备中，并且不会存在任何云服务器中，请放心使用。文件上传路径如下所示，支持手动更改。";
+"file_search_scope" ="搜索范围";
+"common_user_agree" ="用户协议及隐私政策";
+"common_agree" ="同意";
+"common_disagree" ="不同意并退出";
+"common_agree_pointout" ="的条款内容，以了解您的权利和义务。点击同意即表示您已充分阅读并接受以上协议内容。我们将严格按照条款规定内容，使用和保护您的个人信息，为您提供更好的服务。";
+
+"common_confirm" ="确定";
+"common_cancel" ="取消";
+
+
+"system_dialog_install_title" ="系统升级";
+"system_dialog_install_message" ="系统升级大约需要5分钟，在此期间 设备将无法访问，是否继续？";
+"system_dialog_install_bt_confirm_title" ="立即安装";
+"system_dialog_install_bt_confirm_upgrading_title" ="正在升级";
+
+
+"device_storage_info_total_title" ="总容量";
+"device_storage_info_free_title" ="未使用";
+"device_storage_info_usage_title" ="已使用";
+
+"device_base_info_box_name_default" ="傲空间";
+"device_base_info_detail" ="产品型号：%@ \nSN号：%@ \n系统版本：%@";
+"device_base_info_more_bt_title" ="更多信息";
+
+"message_notificcation" ="消息通知";
+"security setting" ="安全";
+"modify security password" ="修改安全密码";
+"modify security password hint" ="这些信息可用于验证确实是您本人在操作，保障您的数据安全。傲空间不会存储您的密保邮箱密码，仅用于登录验证。\n以下场景需要验证是否为管理员本人操作：\n1.重置安全密码；\n2.解绑设备；\n3.数据恢复；\n4.其他更多需要身份验证的场景。";
+"Original password" ="原密码";
+"New security password" ="新安全密码";
+"Repeat new security password" ="重复新安全密码";
+"modify security password input hint" ="安全密码为6位数字，只能由管理员设置和修改，请慎重保管此密码。";
+"Forgot password" ="忘记密码";
+"Please fill in and confirm again" ="请再次填写确认";
+"Tips" ="提示";
+"The security password must be 6 digits" ="安全密码必须是6位纯数字";
+"Please enter the complete content" ="请输入完整的内容";
+"The contents entered twice are inconsistent, please re-enter" ="两次输入的内容不一致，请重新输入";
+"The new password cannot be the same as the original password, please re-enter" ="新密码不能与原密码相同，请重新输入";
+"Verification timeout" ="验证超时";
+"The original password is incorrect" ="原密码错误";
+"Modified successfully" ="修改成功";
+"Authentication" ="身份验证";
+"Confidential email verification" ="密保邮箱验证";
+"Hardware device verification" ="硬件设备验证";
+"Mode 1" ="方式一";
+"Mode 2" ="方式二";
+"Start searching" ="开始搜索";
+"box search hint" ="硬件设备验证需要通过蓝牙或局域网连接傲空间设备，请打开手机的蓝牙设置。\n\n若蓝牙连接不成功，请将手机与傲空间设备连接到同一个网络，在局域网内搜索设备并连接。";
+
+
+"box search highlight hint" ="请打开手机的蓝牙设置";
+"Bluetooth connection in progress" ="蓝牙连接中…";
+"LAN search in progress" ="局域网搜索中…";
+"same LAN hint" ="请确保手机与傲空间设备连接的是同一个网络";
+"bleOrLanSearchHint" ="您可以重试蓝牙连接，或改为局域网内搜索？";
+"lan search" ="局域网内搜索";
+"lan search faild hint" ="无法连接设备，请确保傲空间设备在旁边且正常联网，\n确认无误后，点击”重新扫描”";
+"The request failed. Do you want to retry?" ="请求失败，是否重试？";
+"retry" ="重试";
+"operation failed" ="操作失败";
+"The two password entries are inconsistent, please re-enter" ="两次密码输入不一致，请重新输入";
+"req failed and retry later" ="请求失败，请稍后重试!";
+"timeout, start again" ="操作超时，请重新开始";
+"device offline" ="设备已离线";
+"device offline hint" ="设备离线无法访问，点击“网络设置”，重新为设备配置无线网络。";
+"device offline hint 1" ="点击“离线使用”，您可继续使用空间内的部分功能";
+"offline use" ="离线使用";
+"Not set" ="未设置";
+"Security mailbox" ="密保邮箱";
+"Unbound" ="未绑定";
+"Secure Password Authentication" ="安全密码验证";
+"retry 1 min later" ="请1分钟后重试";
+"Bind security email" ="绑定密保邮箱";
+"please enter the email account and password to be bound for login verification. view help" ="请输入要绑定的邮箱账号、密码进行登录验证。查看帮助";
+"view help" ="查看帮助";
+"security email help" ="密保邮箱帮助";
+"verify" ="验证";
+"verifying" ="正在验证...";
+"Account" ="账号";
+"Password" ="密码";
+"SMTP Service" ="SMTP服务器";
+"Port" ="端口";
+"Security type" ="安全类型";
+"Manual setting" ="手动设置";
+"Email password/verification code" ="邮箱密码/验证码";
+"None" ="无";
+"SSL" ="SSL";
+"email_format_error" ="邮箱格式错误，请填写正确的邮箱";
+"Please enter the email password or verification code" ="请输入邮箱密码或验证码";
+"Please input content" ="请输入内容";
+"bind failed" ="绑定失败";
+"Account, password, SMTP server and port are required" ="账号、密码、SMTP服务器、端口为必填项，请检查后重新输入";
+"email_format_error_1" ="邮箱格式错误，请重新输入";
+"This mailbox is not supported temporarily" ="暂不支持该邮箱";
+"Wrong account or password" ="账号或密码错误，请重新输入";
+"email already bind" ="您已绑定此邮箱，请输入新的邮箱账号";
+"security email bind success" ="密保邮箱绑定成功";
+"Currently bound mailbox" ="当前绑定邮箱";
+"securit email opt hint" ="当您需要进行管理员身份验证时，可以使用您的密保邮箱进行验证。";
+"change bound security email" ="更换绑定邮箱";
+"Mode 3" ="方式三";
+"verify old security email" ="原密保邮箱验证";
+"already bound security email hint" ="您已绑定密保邮箱 %@，请输入邮箱账号、密码进行登录验证。 查看帮助";
+"auth verify failed" ="身份验证失败";
+"service failed, retry later" ="服务异常，请稍候重试";
+"Mail server connection timeout" ="邮件服务器连接超时";
+"needs to verify your administrator identity" ="傲空间需要验证您的管理员身份";
+"confirm on the bound phone" ="请在绑定手机上确认";
+"bound phone is unavailable" ="绑定手机不可用";
+"auth_failed_reason" ="原因：管理员绑定端无法确认";
+"auth_failed_hint" ="请在新手机上完成【绑定设备】后再操作修改安全密码。";
+"request failed" ="请求失败";
+"retry again" ="是否重试？";
+"reason:admin refuse" ="原因：管理员在绑定端拒绝了此操作";
+"reason:admin not opt in time" ="原因：管理员未在绑定端进行确认操作";
+"The request is too frequent, try again later" ="请求太过频繁，稍后重试！";
+"security email online" ="密保邮箱上线啦！";
+"security email online hint" ="密保邮箱是管理员身份验证的工具，绑定后可以使用密保邮箱来重置安全密码";
+"to set security email" ="去设置";
+"security email verify failed" ="密保邮箱验证失败";
+"unset security email reason" ="原因：未绑定密保邮箱";
+"unset security email hint" ="您可以在原绑定或授权登录的终端上通过【硬件设备验证】或其他方式找回安全密码。";
+"admin unavailable, opt delay after 24 hours" ="管理员无法在原绑定端确认，本次修改内容将延迟24小时生效。在延迟生效期间若绑定端操作拒绝，本次修改将不生效。";
+"24 hours" ="24小时";
+"account_password_empty_hint" ="账号、密码为必填项，请检查后重新输入";
+"retry 10 min later" ="请10分钟后重试";
+"request is too frequent. Try again in 10 minutes" ="原因：请求次数过多，请10分钟后重试";
+"app management" ="应用管理";
+
+"box search highlight hint" = "请打开手机的蓝牙设置";
+"Bluetooth connection in progress" = "蓝牙连接中…";
+"LAN search in progress" = "局域网搜索中…";
+"same LAN hint" = "请确保手机与傲空间设备连接的是同一个网络";
+"bleOrLanSearchHint" = "您可以重试蓝牙连接，或改为局域网内搜索？";
+"lan search" = "局域网内搜索";
+"lan search faild hint" = "无法连接设备，请确保傲空间设备在旁边且正常联网，\n确认无误后，点击”重新扫描”";
+"The request failed. Do you want to retry?" = "请求失败，是否重试？";
+"retry" = "重试";
+"operation failed" = "操作失败";
+"The two password entries are inconsistent, please re-enter" = "两次密码输入不一致，请重新输入";
+"req failed and retry later" = "请求失败，请稍后重试!";
+"timeout, start again" = "操作超时，请重新开始";
+"device offline" = "设备已离线";
+"device offline hint" = "设备离线无法访问，点击“网络设置”，重新为设备配置无线网络。";
+"device offline hint 1" = "点击“离线使用”，您可继续使用空间内的部分功能";
+"offline use" = "离线使用";
+"Not set" = "未设置";
+"Security mailbox" = "密保邮箱";
+"Unbound" = "未绑定";
+"Secure Password Authentication" = "安全密码验证";
+"retry 1 min later" = "请1分钟后重试";
+"Bind security email" = "绑定密保邮箱";
+"please enter the email account and password to be bound for login verification. view help" = "请输入要绑定的邮箱账号、密码进行登录验证。查看帮助";
+"view help" = "查看帮助";
+"security email help" = "密保邮箱帮助";
+"verify" = "验证";
+"wont store your email password information only for login verification" = "傲空间不会存储您的邮箱密码信息，仅用于登录验证";
+"verifying" = "正在验证...";
+"Account" = "账号";
+"Password" = "密码";
+"SMTP Service" = "SMTP服务器";
+"Port" = "端口";
+"Security type" = "安全类型";
+"Manual setting" = "手动设置";
+"Email password/verification code" = "邮箱密码/验证码";
+"None" = "无";
+"SSL" = "SSL";
+"email_format_error" = "邮箱格式错误，请填写正确的邮箱";
+"Please enter the email password or verification code" = "请输入邮箱密码或验证码";
+"Please input content" = "请输入内容";
+"bind failed" = "绑定失败";
+"Account, password, SMTP server and port are required" = "账号、密码、SMTP服务器、端口为必填项，请检查后重新输入";
+"email_format_error_1" = "邮箱格式错误，请重新输入";
+"This mailbox is not supported temporarily" = "暂不支持该邮箱";
+"Wrong account or password" = "账号或密码错误，请重新输入";
+"email already bind" = "您已绑定此邮箱，请输入新的邮箱账号";
+"security email bind success" = "密保邮箱绑定成功";
+"Currently bound mailbox" = "当前绑定邮箱";
+"securit email opt hint" = "当您需要进行管理员身份验证时，可以使用您的密保邮箱进行验证。";
+"change bound security email" = "更换绑定邮箱";
+"Mode 3" = "方式三";
+"verify old security email" = "原密保邮箱验证";
+"already bound security email hint" = "您已绑定密保邮箱 %@，请输入邮箱账号、密码进行登录验证。 查看帮助";
+"auth verify failed" = "身份验证失败";
+"service failed, retry later" = "服务异常，请稍候重试";
+"Mail server connection timeout" = "邮件服务器连接超时";
+"needs to verify your administrator identity" = "傲空间需要验证您的管理员身份";
+"confirm on the bound phone" = "请在绑定手机上确认";
+"bound phone is unavailable" = "绑定手机不可用";
+"auth_failed_reason" = "原因：管理员绑定端无法确认";
+"auth_failed_hint" = "请在新手机上完成【绑定设备】后再操作修改安全密码。";
+"request failed" = "请求失败";
+"retry again" = "是否重试？";
+"reason:admin refuse" = "原因：管理员在绑定端拒绝了此操作";
+"reason:admin not opt in time" = "原因：管理员未在绑定端进行确认操作";
+"The request is too frequent, try again later" = "请求太过频繁，稍后重试！";
+"security email online" = "密保邮箱上线啦！";
+"security email online hint" = "密保邮箱是管理员身份验证的工具，绑定后可以使用密保邮箱来重置安全密码";
+"to set security email" = "去设置";
+"security email verify failed" = "密保邮箱验证失败";
+"unset security email reason" = "原因：未绑定密保邮箱";
+"unset security email hint" = "您可以在原绑定或授权登录的终端上通过【硬件设备验证】或其他方式找回安全密码。";
+"admin unavailable, opt delay after 24 hours" = "管理员无法在原绑定端确认，本次修改内容将延迟24小时生效。在延迟生效期间若绑定端操作拒绝，本次修改将不生效。";
+"24 hours" = "24小时";
+"account_password_empty_hint" = "账号、密码为必填项，请检查后重新输入";
+"retry 10 min later" = "请10分钟后重试";
+"request is too frequent. Try again in 10 minutes" = "原因：请求次数过多，请10分钟后重试";
+"app management" = "应用管理";
+
+"not disk init" ="傲空间未完成磁盘初始化";
+"not disk init 1" ="您需要使手机与傲空间设备处在同一局域网下，或将手机放置在傲空间设备附近恢复建立蓝牙通信。";
+"disk init" ="磁盘初始化";
+"network status" ="傲空间连接状态：";
+"disk init ing" ="正在进入磁盘初始化流程…";
+"enter disk init failed" ="进入磁盘初始化流程失败";
+"Disk 1" ="磁盘 1";
+"Disk 2" ="磁盘 2";
+"M2 SSD" ="M.2 固态硬盘";
+"M.2" ="M.2";
+"N/A" ="N/A";
+"Shutdown" ="关机";
+"Previous step" ="上一步";
+"Maximum capacity mode" ="最大容量模式";
+"Maximum capacity mode desc" ="个人空间存储容量为所有磁盘容量的总和";
+"Dual disk mutual backup mode" ="双盘互备模式";
+"Dual disk mutual backup mode desc" ="将磁盘 1 与磁盘 2 设置为 RAID 1，并仅提供一块磁盘的存储容量";
+"M2 SSD Cache" ="M.2 高速存储";
+"Disk 1 + Disk 2" ="磁盘 1 + 磁盘 2";
+"disk init main storage desc" ="您需要从中设置一块主存储，用来存放系统服务数据、个人配置文件、小程序安装文件等重要数据，是系统启动过程的必需设备。";
+"disk init main storage desc 1" ="* 此功能只能在初始化阶段设置";
+"Disk encryption" ="磁盘加密";
+"Disk encryption desc" ="选择磁盘加密，会使您磁盘内的数据在他人设备上无法被读取，大幅提升数据安全，推荐选择。";
+"initialization" ="初始化";
+"Disk init hint 2" ="* 磁盘初始化操作包含格式化过程，磁盘内原有数据将全部清除，请确认。";
+"Disk init hint 3" ="此过程约持续 5～10 分钟，\n请勿执行关机、拔出磁盘等操作";
+"Enter App" ="进入傲空间";
+"Disk Init Completed" ="磁盘初始化完成";
+"Mode" ="模式";
+"Shutdown Hint" ="关机提醒";
+"Shutdown Hint 1" ="是否确认关闭傲空间设备？";
+"Disk Manage" ="磁盘管理";
+"Capcity" ="容量";
+"Status" ="状态";
+"Model" ="型号";
+"Diskless" ="无磁盘";
+"Disk is ready" ="您的空间已就绪";
+"Miss mainstorage hint" ="个人空间磁盘缺失，导致无法启动傲空间。请在关机后，插回个人空间磁盘并重新启动傲空间。";
+"Miss mainstorage hint 1" ="若已确认无法找回数据磁盘，可参照使用说明书进行设备重置。";
+"Space ready chekc failed" ="空间状态检测失败，是否重试？";
+"Disk info check failed" ="磁盘信息检测失败，是否重试？";
+"Disk initialing" ="正在进行磁盘初始化…";
+"Disk data sync" ="正在同步必要数据…";
+"Disk init unknown error" ="磁盘初始化过程发生未知错误";
+"Disk may be faulty" ="您的磁盘可能存在故障";
+"Disk may be faulty hint" ="建议您检查磁盘状况，您也可以在关机后更换新的磁盘进行磁盘初始化";
+"Disk init error" ="磁盘初始化过程发生错误";
+"Error Num" ="错误编号";
+"Req Sent" ="已发送请求";
+"Register Device Failed" ="注册设备失败";
+"App Connecting Box" ="正在连接傲空间…";
+"Maximum capacity" ="最大容量";
+"Raid 1 Mode" ="双盘互备\n磁盘 1 + 磁盘 2";
+"Disk not Init" ="磁盘未初始化";
+"Missing primary storage" ="缺少主存储";
+"Normal" ="正常";
+"Searching box" ="搜索设备中…";
+"Search Failed" ="搜索失败";
+"box search hint 1" ="搜索需要通过蓝牙或局域网连接傲空间设备，请打开手机的蓝牙设置。\n\n若蓝牙连接不成功，请将手机与傲空间设备连接到同一个网络，在局域网内搜索设备并连接。";
+"Connect failed" ="连接失败";
+"Connect By BLE" ="蓝牙连接";
+"UnSearch By LAN" ="局域网内搜索失败";
+"bleOrLanSearchHint 1" ="您可以尝试蓝牙连接，或再次局域网内搜索";
+
+"Disk Mode" ="磁盘型号：";
+"Found New Disk" ="新磁盘加入";
+"Disk Expand Status" ="扩容";
+"Disk Expanding Status" ="扩容中";
+"Disk is Expanding, wait" ="新加磁盘正在扩容\n请稍后再试";
+"Disk Expand" ="磁盘扩容";
+"Before Disk Expand" ="扩容前";
+"After Disk Expand" ="扩容后";
+"Disk 1 (Expand)" ="磁盘 1（扩容）";
+"Disk 2 (Expand)" ="磁盘 2（扩容）";
+"M.2 (Expand)" ="M.2（扩容）";
+"M.2 (Expand) hint" ="不建议自行完成 M.2 高速存储扩容";
+"Disk Formatting" ="格式化";
+"Disk Expand Format Hint" ="* 此操作包含对新加磁盘的格式化过程，新磁盘内原有数据将全部清除，请确认。";
+"Disk expanding" ="正在扩容中…";
+"Quit Disk Expand" ="退出扩容";
+"Disk Expand Failed" ="磁盘扩容失败";
+"Disk Expand Failed Hint" ="建议您检查新加入的磁盘状况，并确保能够正常使用。";
+"Not connect Internet" ="无互联网连接";
+"Wired network" ="有线网络";
+"Automatic" ="自动";
+"Manual" ="手动";
+"Ingore Netwrok" ="忽略此网络";
+"Join Network" ="加入此网络";
+"IP Address" ="IP 地址";
+"Subnet mask" ="子网掩码";
+"Default Gateway" ="默认网关";
+"Box bind by other device" ="傲空间已绑定其他设备";
+"Disk Expand Completed" ="磁盘扩容完成";
+"v2 search hint" ="切换空间平台环境需要通过蓝牙或局域网连接傲空间设备，请打开手机的蓝牙设置。\n\n若蓝牙连接不成功，请将手机与傲空间设备连接到同一个网络，在局域网内搜索设备并连接。";
+
+"personal_dynamics" ="个人动态";
+"photo" ="相册";
+"v2_pointOut" ="一个真正属于您的数字空间";
+"album_footprint" ="足迹";
+
+"album_my" ="我的相簿";
+"album_memories" ="回忆";
+
+"album_collection" ="个人收藏";
+"album_collMemories"="收藏回忆";
+//"album_memories"="%@个回忆";
+"album_noMemories"="暂无收藏的回忆";
+"album_collectionSuccess"="收藏成功";
+"album_collectionFail"="收藏失败";
+"album_cancelCollection"="取消收藏";
+"album_delCollection"="删除回忆";
+//"album_delMemories"="个人收藏";
+//"album_memoriesDes"="个人收藏";
+//"album_like"="个人收藏";
+//"album_noLike"="个人收藏";
+//"album_screenshots"="个人收藏";
+//"album_noScreenshots"="个人收藏";
+//"album_dynamic"="个人收藏";
+//"album_noDynamic"="个人收藏";
+//"album_noVideo"="个人收藏";
+//"developer_options"="个人收藏";
+"security"="安全";
+"notifications"="通知";
+"Privacy"="隐私";
+"General"="通用";
+"Developer_options"="开发者选项";
+"Switching_account"="切换账号";
+"SecurePasswordAuthentication"="安全密码验证";
+"device_base_info_box_name_default"="傲空间";
+"device_base_info_detail"="产品型号：%@ \nSN号：%@ \n系统版本：%@";
+"device_base_info_more_bt_title"="更多信息";
+"device_storage_info_total_title"="总容量";
+"device_storage_info_free_title"="未使用";
+"device_storage_info_usage_title"="已使用";
+
+"Disk 1 and Disk 2 Stay RAID" ="磁盘 1 与磁盘 2 保持为 RAID";
+
+"box_pc"= "傲空间（PC 版）";
+"box_cloud"= "傲空间（在线版）";
+"box_gen_1"= "傲空间（第一代）";
+"box_gen_2"= "傲空间（第二代）";
+"box_default"= "傲空间";
+
+"Disk 1 and Disk 2 Stay RAID" = "磁盘 1 与磁盘 2 保持为 RAID";
+
+"waiting_operate"="请稍后";
+"close_applet"="退出应用";
+"language" ="多语言";
+"follow_system" ="跟随系统";
+"using" ="使用中";
+"Switch_Space_Platform_Environment" ="切换空间平台环境";
+"Device_Connection" ="连接设备";
+
+"Current Environment:AO.space Official Space Platform" ="当前环境：傲空间官方空间平台";
+"Current Environment:Private Space Platform" ="当前环境：私有空间平台";
+"Advantages of private space platform" ="私有空间平台的优势";
+"Public cloud, private cloud" ="1. 更灵活：公有云、私有云、混合云、本地服务器等多种部署方式。\n2. 更安全：可以部署在本地服务器上，自主掌握所有数据和权限\n3. 个性化：可按需进行个性化定制开发，满足用户不同需求.";
+"How to switch to a private platform" ="如何切换到私有平台：";
+"Precautions_dec" ="1. After switching to the private space platform, all members on the device will switch to the private space platform\n2. Members on the device will automatically connect to the new space platform within 180 days of the redirect validity period. If they cannot be redirected beyond the validity period, they should be invited by the administrator to use again\n3. The user originally shared the link can continue to visit\n4. The external authorization of the old space platform installed by the user will be invalid, and the new space platform should be used to re-authorize the external application";
+
+"Download the private dsc1" ="1. 下载私有空间平台软件包并按照操作手册进行安装部署。\n 下载地址:%@";
+
+"Click the Switch to privat" ="2. 点击【切换到私有空间平台】按钮，输入私有空间平台的域名，且该平台上已安装好软件服务包，点击【确认】按钮。\n3. 切换到私有空间平台后设备上所有的用户数据不会丢失，首次切换到私有平台需向私有平台注册并验证平台的合法性，可支持多个平台间切换，请放心使用。";
+
+
+"Security Email Describe Content" ="当您在新手机上重置安全密码时，密保邮箱用来验证是您本人操作，保障您的数据安全。";
+"The original file has been lost" ="原文件已丢失";
+"Download failed" ="下载失败，请重试";
+"File cache has been lost" ="文件缓存已丢失";
+
+"File Management" ="文件管理";
+"Device Management" ="设备管理";
+"AO.space Application" ="傲空间应用";
+"Backup and Restore" ="备份恢复";
+"home_add" ="添加";
+"Phone Storage" ="储容量";
+"Current Network" ="当前网络";
+"network_local" ="局域网";
+"network_internet" ="互联网";
+
+"Clear" ="清空";
+"Delete Success" ="删除成功";
+"Delete Fail" ="删除失败";
+"Restore"="还原";
+"Confirm"="确认";
+"Executing backup task"="正在执行备份任务，暂不支持此操作";
+"Network Settings"="网络设置";
+"System Update"="系统升级";
+"Disk Management"="磁盘管理";
+"All Tools"="全部工具";
+"task_upload_failed" ="上传失败";
+
+
+
+"Executing backup task"="正在执行备份任务，暂不支持此操作";
+"Clear Succeed"="清空成功";
+
+"Restore Succeed"="还原成功";
+"Restore Fail"="还原失败";
+
+"applet_uninstall_success"="卸载成功";
+
+"Application Center"="应用中心";
+
+"Install"="安装";
+"Installing"="安装中";
+
+"Install Fail"="安装失败";
+
+"Update"="更新";
+"Updating_point"="更新中...";
+"Update Success"="更新成功";
+"Update Fail"="更新失败";
+
+"Update Fail"="未安装";
+"Update Fail"="未知原因";
+
+"Open"="打开";
+"Install Success"="安装成功";
+
+"Application Introduction"="应用介绍";
+
+"Unshare"="取消分享";
+
+"ULink Failure"="链接失效";
+
+"Number of Views"="浏览次数: %@/%@";
+
+
+
+"After unsharing"="取消分享后，该记录将被删除，被分享者将无法继续访问此链接";
+
+"Expires in day"="%@ 天后过期";
+
+
+"%@ and so on"="%@等多个文件";
+
+"%@ and so on"="%@等多个文件";
+
+"and so on"="分享详情";
+
+"Share Time"="分享时间";
+
+"Details" ="详情";
+
+"File Name" ="文件名称";
+
+"Modify Time" ="修改时间";
+
+"File Size" ="文件大小";
+
+"file_bottom_details" ="详情";
+
+
+"Send & Share" ="发送与分享";
+
+"Extraction Code" ="提取码";
+
+"Extraction Code" ="提取码";
+
+"Share to more than one person" ="分享至多人，请注意遵循相关法律法规及司法解释等规定";
+
+"Auto Generation" ="自动生成";
+
+"7 Days" ="7 天";
+
+"1 day" ="1 天";
+
+"30 Days" ="30 天";
+
+"None" ="无";
+
+"person" ="人";
+
+"Day" ="天";
+
+"Only bind the phone can authorize other terminals" ="仅绑定手机可对其他端进行授权";
+
+
+"Day" ="天";
+
+
+"Delete Members" ="删除成员";
+
+"Invite Again" ="再次邀请";
+
+"Deleting a member will delete all data for this member in the space" ="删除成员将删除此成员在空间内的所有数据";
+
+"AO.space Application Configuration" ="傲空间应用配置";
+"Only administrators can modify member nicknames" ="只有管理员可以修改成员昵称";
+"Used when members need to change their bound phones" ="成员需要更换绑定手机时使用";
+
+"Search Results" ="搜索结果 （%lu）";
+"Search Results 0" ="搜索结果 （0）";
+"No files were searched" ="未搜索到任何文件";
+
+"The deleted files are put into the recycle bin, from which you can restore if needed" ="已删除的文件会放入回收站中，如有需要您可以从回收站中恢复";
+
+"File Path" ="文件路径";
+
+"Please enter a folder name" ="请输入文件夹名称";
+
+"You dont have any photos yet" ="还没有任何照片~";
+
+"Dont have any files yet, lets upload them" ="还没有任何文件，快来上传吧~";
+
+"The recycle bin is very clean" ="回收站很干净哦";
+
+"You dont have a folder yet" ="您还没有文件夹哦～";
+
+
+"Move to %@" ="移动到“%@“";
+
+"Copy to %@" ="复制到“%@“";
+"Upload to %@" ="上传到“%@“";
+"upload to %@" ="上传到“%@“";
+"Login Device" ="登录设备";
+
+
+"5 person" ="5 人";
+"1 person" ="1 人";
+"10 person" ="10 人";
+"Private Platform Address" ="私有平台地址";
+"Start with http, https" ="请以http、https开头";
+
+"Official Platform Address" ="官方平台地址";
+
+"The name dont meet the specification" ="名称不符合规范";
+
+"Display all the terminal" ="显示本空间已登录的所有终端信息，建议您对陌生终端进行下线操作，以防止隐私泄露。被下线的终端仍然可以再次扫码授权登录 * IP 属地仅供参考。";
+
+"Copy Success" ="复制成功";
+"Move Success" ="移动成功";
+"Copy Fail" ="复制失败";
+"Move Fail" ="移动失败";
+"Add to" ="添加到";
+"cancel" ="取消";
+
+"Please enter a new file name" ="请输入新的文件名";
+"Move to my space" ="移动到“我的空间”";
+"Copy to my space" ="复制到“我的空间”";
+"Upload to my space" ="上传到“我的空间”";
+
+"Modify Fail" ="修改失败";
+
+"A file with the same name already exists" ="当前目录已存在同名称文件";
+
+"Too many folder layers, no more than 5 layers" ="文件夹层数过多，不得超过5层";
+
+
+"Share Success" ="分享成功";
+
+"Share Fail" ="分享失败";
+
+"Send this File" ="发送该文件";
+
+
+"Delete Fail" ="删除失败";
+
+"Join Fail" ="加入失败";
+
+"Language Settings" ="语言设置";
+
+"Auto" ="跟随系统";
+
+"Switch Success" ="切换成功";
+
+"No permission to view" ="暂无查看权限";
+
+
+"No Document" ="暂无文件";
+
+"Select" ="选择";
+
+"No permission to view" ="暂无查看权限";
+
+"Only administrators can invite members" ="只有管理员可以邀请成员";
+
+"A box can have up to 10 members" ="一个盒子只能最多拥有10个成员";
+
+"Please enter a folder name" ="请输入文件夹名称";
+
+"Only Chinese and English, numbers and underscores are supported" ="仅支持中英文、数字和下划线";
+
+
+"The file name is too long and cannot exceed 10 characters" ="文件名过长，不能超过10个字符";
+
+
+"New Folder Succeed" ="新建文件夹成功";
+
+"New Folder Fail" ="新建文件夹失败";
+
+"A file with the same name already exists" ="当前目录已存在同名称文件";
+
+
+"Share Details" ="分享详情";
+
+"Share Time" ="分享时间";
+
+"Share Again" ="再次分享";
+
+"Please set the name" ="请设置名称";
+
+
+"ON" ="已开启";
+
+"OFF" ="已关闭";
+
+"Expired" ="已失效";
+
+"%ld天%ld:%ld 后失效" ="%ld天%ld:%ld 后失效";
+
+"Are you sure you want to restore the selected files?" ="是否确定还原选中的文件？";
+
+"Restore" ="还原";
+
+"Memories deleted will not be restored, memories of the file will not be deleted" ="是否确定删除？回忆删除后将无法恢复，回忆里的文件不会被删除";
+
+"Do you clear all files? It cannot be restored after emptying" ="是否清空全部文件？清空后将无法恢复";
+
+"Are you sure you want to delete the selected files? It cannot be recovered after deletion" ="是否确定删除已选中的文件？删除后将无法恢复";
+
+"Confirm Clear" ="确认清空";
+
+"Confirm Delete" ="确认删除";
+
+"Are you sure cancel the share?"="确定取消分享？";
+
+"Cancel Success"="取消成功";
+
+"Invitation Link Generated"="邀请链接已生成";
+
+"This invitation is limited to one member"="此邀请仅限1个成员";
+
+"iOS Client Version"="iOS 客户端版本";
+
+"System Version"="系统版本";
+
+
+"Privacy Policy"="隐私政策";
+
+"User Agreement"="用户协议";
+
+"Offline"="下线";
+
+"Login"="登录";
+
+"Login_p"="%@ 登录";
+
+"Unknown Location"="未知设备";
+
+"Web"="网页版·%@";
+
+"iOS"="iOS客户端·%@";
+
+"Android"="Android客户端·%@";
+
+"Unknown Device"="未知设备·%@";
+
+"Me"="当前终端";
+
+"MySelf"="我自己";
+
+"Bound Device"="绑定设备";
+
+"me_space%@"="我的空间%@";
+
+"Folder"="新建文件夹";
+
+"To be Used"="待使用";
+
+"You can edit the current users"="您可以编辑当前用户对傲空间应用的使用权限";
+
+
+"Offline Success"="下线成功";
+
+"Offline Terminal"="下线终端";
+
+"System Specifications"="系统规格";
+
+"Are you sure to offline %@ ?"="确认下线%@吗？";
+
+
+"URL dont conform to specifications"="URL地址不符合规范";
+
+"Modify only once a year"="一年仅可修改一次";
+
+"Start with a letter, 6-20 digits in length, supporting letters and numbers"="一年仅可修改一次";
+
+"Start with a letter, 6-20 digits in length, supporting letters and numbers"="以字母开头，长度6-20位，支持字母、数字";
+
+
+"Performing recovery task, this operation is not currently supported"="正在执行恢复任务，暂不支持此操作";
+
+"Domain name dont conform to specifications"="域名不符合规范";
+
+
+"The domain name has already been registered or is not available"="域名已被注册或不可用";
+
+
+"The domain name is already in use"="域名已被使用";
+
+"Start with a letter, 6-20 digits in length, supporting letters and numbers"="以字母开头，长度6-20位，支持字母、数字";
+
+"Enter your signature, 1-120 characters long"="请输入您的个性签名，长度为1-120位字符";
+
+
+"System"="系统";
+
+"Version"="版本";
+
+"Kernel Version"="Kernel 版本";
+
+"Service"="服务";
+
+"file_sort_order_title"="排序方式";
+
+
+"Select"="选择";
+
+"Number of Views no"="浏览次数";
+
+"Clear Succeed"="清空成功";
+
+"Move Successful"="移动成功";
+
+"open"="打开";
+
+"box_bind_A" ="绑定设备";
+
+"Login Device A" ="登录设备";
+
+"Shared links from have code more" ="来自「傲空间」文件 %@等 的分享链接： %@ 提取码：%@";
+
+"Shared links from have code" ="来自「傲空间」文件 %@ 的分享链接： %@ 提取码：%@";
+
+"Shared links from no code more" ="来自「傲空间」文件 %@等 的分享链接： %@";
+
+"Shared links from no code" ="来自「傲空间」文件 %@ 的分享链接： %@";
+
+
+"Copy Link to Clipboard" ="已复制链接到剪贴板";
+
+"Send this File" ="发送该文件";
+
+"elongs to your own personal digital space" ="%@等文件，点击该链接查看，「傲空间」属于你自己的个人数字空间";
+
+
+"share files from AO.space more" ="%@等」来自傲空间的分享文件。\n链接%@\n提取码:%@\n";
+
+"share files from AO.space more no code" ="%@等」来自傲空间的分享文件。\n链接%@\n";
+
+
+"share files from AO.space" ="来自傲空间%@的";
+
+
+"Upload File Missing Hint" ="原文件无法访问，请长按删除此条记录后重新上传";
+
+"LAN_directconnection" = "局域网直连";
+"LAN_P2Pacceleration" = "P2P加速";
+"LAN_Offline" = "离线";
+"LAN_internetforwarding" = "互联网转发";
+"LAN_NotReachable" = "网络不可达";
+
+"login authorization" = "登录授权";
+"login authorization hint" = "傲空间账号 %@ 在其他终端登录使用";
+"login authorization hint 1" = "傲空间账号在其他终端登录使用";
+"login_authorization" = "本次登录授权码为";
+"Automatic login within 15 days" = "15天内自动登录";
+"Login Auth Code Hint" = "为确保空间的数据安全，请勿泄漏此授权码";
+"Login Success" = "登录成功";
+"Dual-disk mutual backup data synchronization is complete!" = "双盘互备数据同步完成！";
+"Dual-disk mutual backup data synchronization, do not pull out the disk" = "双盘互备数据同步…%.2f%%，切勿拔出磁盘";
+"The request failed, please scan the qrcode again!" = "请求失败，请重新扫码！";
+"LAN_access" = "局域网 IP 直连";
+
+"Search Again" = "重新搜索";
+"Searching Device" = "正在搜索设备…";
+"Please connect your phone and device to the same network" = "请将手机与设备连接到同一个网络";
+"Check please" = "请检查：";
+"APP_APSPACE_SAME_LAN" = "手机与傲空间设备是否在同一局域网内";
+"Please select a device to log in:" = "请选择要登录的设备：";
+"AOSpace Gen 1" = "傲空间（第一代）";
+"AOSpace Gen 2" = "傲空间（第二代）";
+"Box OS lower, cannot login" = "系统版本过低，无法局域网内登录，请联系管理员进行系统升级";
+"Folder_Add" ="新建文件夹";
+
+
+"file_select_zero"="已选择0张文件";
+"file_video_select_zero"="已选择0张视频";
+"file_Picture_select_zero"="已选择0张图片";
+
+"Select Album"="选择相册";
+
+"Only Show not Uploaded"="仅显示未上传";
+
+"Please add to the transfer list later"="请稍后，将添加至传输列表";
+
+"Memories"="回忆";
+
+"Album Classify"="相册分类";
+
+"History Today"="历史今天";
+
+"You dont have any videos yet"="您还没有任何视频哦~";
+
+"You dont have any GIFs yet"="您还没有任何动图哦~";
+
+"Screenshots"="截图";
+
+"GIFs"="动图";
+
+"File name, album name, date"="文件名、相簿名、日期";
+
+
+"Selection operation is not supported in year mode"="年模式下不支持选择操作";
+
+"Today in History"="历史上的今天";
+
+"video_select_zero"="已选择0个视频";
+
+
+"AO.space helped you organize some memories of today"="小傲帮您整理了一些今天的记忆，赶紧去重温下吧~";
+
+"The memory has been deleted"="该回忆已删除";
+
+"You dont have a photo video yet"="您还没有照片视频哦";
+
+"There are %lu pictures and videos that have"="本地有%lu个图片及视频尚未同步，预计可节省%@空间";
+
+"Sync"="去同步";
+
+"Click Upload"="点击上传";
+
+"You havent left any footprints yet"="您还没留下任何足迹";
+
+"Monday"="星期一";
+"Tuesday"="星期二";
+"Wednesday"="星期三";
+"Thursday"="星期四";
+"Friday"="星期五";
+"Saturday"="星期六";
+"Sunday"="星期日";
+
+"photo data"="%lu年%lu月%lu日 %@";
+
+
+"photo_day"="星期";
+
+"New Album"="新建相簿";
+
+"The name doesnt conform to the specification"="名称输入不符合规范";
+
+"Duplicate with another album name"="与其他相簿名称重复";
+
+"File system format not supported"="文件系统格式不支持";
+
+"This is the latest version"="已是最新版本";
+
+"CheckFail"="检查失败";
+
+"types and retry fat32, ntfs (version 3.1), exfat"="请将文件系统格式化为以下类型后重试 fat32、ntfs（3.1版本）、exfat";
+ 
+"Checking"="正在检查";
+
+"Performing recovery task, this operation is not currently supported"="正在执行恢复任务，暂不支持此操作";
+
+"No external storage device detected"="未检测到外接存储设备";
+
+"Please connect the USB storage device to the box and try again"="请将USB存储设备与盒子连接后重试";
+
+"Upgrade Completed"="升级完成";
+
+"The system upgrade has been completed"="系统升级已完成，请您在退出应用后重新打开并使用.";
+
+"Last_backup"="最近一次备份%@";
+
+"Last_backup_no"="最近一次备份";
+
+"Backup_Succeeded"="备份成功";
+"Backup_Failed"="备份失败";
+
+"Backup_Succeeded"="恢复成功";
+"Backup_Failed"="恢复失败";
+"Backup_incomplete"="备份未完成，稍后重试";
+
+
+"Backuping"="正在备份";
+
+"Do_not_disconnect_the_USB"="请勿断开USB存储设备";
+
+
+"Automatic_Upgrade"="自动升级";
+
+"Download_Updates"="下载更新";
+
+"me_install" ="安装更新";
+"me_install_prompt" ="开启后，设备将在早上2:00-4:00处于空闲状态时自动安装并重启。";
+"me_specifications" ="系统规格";
+"me_system" ="系统";
+"me_service" ="服务";
+"me_download_and_install" ="下载并安装";
+"me_download_and_install_prompt" ="系统升级大约需要5分钟，在此期间设备将无法访问，是否继续？";
+"me_update_prompt" ="温馨提示：系统正在升级中，请勿切断设备电源";
+"me_updated" ="升级完成";
+"me_updated_prompt" ="系统升级已完成，请您在退出应用后重新打开并使用";
+
+"me_download_prompt" ="开启后，设备将通过网络自动下载更新。";
+
+
+"Check Fail" ="检查失败";
+
+"backup_install" ="正在安装系统更新";
+"Installing system updates" ="正在安装系统更新";
+"me_latest_version_prompt" ="已是最新版本";
+
+"message_none" ="暂无消息";
+
+"common_close" ="关闭";
+
+"common_beta" ="V%@(内测版)";
+
+
+"share_relatives" ="来自亲友的召唤：快来体验傲空间吧！";
+
+"share_experience" ="您已受邀体验傲空间，立即打开傲空间App和我们一起分享美好的时光吧";
+
+"album_none"="您的相簿没有任何照片~";
+"album_name"="相簿名称";
+"album_support"="支持中文、英文、数字、下划线，最长10个字";
+"album_specification"="名称输入不符合规范";
+"album_duplicate"="与其他相簿名称重复";
+"album_successed"="创建成功";
+"album_deleteAlbum"="删除相簿";
+"album_sureDelete"="是否确认删除相簿“%@”";
+"album_newDes"="还没有相簿，快去创建吧~";
+
+
+"album_deleteDes" ="相簿删除后，相簿内的文件将不被删除";
+"album_deleteFile" ="将文件移至回收站（照片将从所有创建的相簿中移除）或仅从当前相簿中移除？";
+"album_remove" ="从相簿中移除";
+"album_recycle" ="移至回收站";
+"album_deleteConfirm" ="是否确认删除选中文件";
+"album_recovered" ="已删除的文件会放入回收站中，如有需要您可以从回收站中恢复";
+"album_search" ="文件名、相簿名、日期";
+"album_classification" ="相册分类";
+"album_my" ="我的相簿";
+"album_noPhoto" ="还没有任何照片";
+"album_footprint" ="足迹";
+"album_nofootprint" ="您还没留下任何足迹哦";
+"album_memories" ="回忆";
+"album_noMemories" ="您还没有任何回忆，请多多上传文件才会生成哦~";
+"album_collection" ="个人收藏";
+"album_collMemories" ="收藏回忆";
+"album_noMemories" ="暂无收藏的回忆";
+"album_collectionSuccess" ="收藏成功";
+
+"album_collectionFail" ="收藏失败";
+"album_cancelCollection" ="取消收藏";
+"album_delCollection" ="删除回忆";
+"album_delMemories" ="是否删除回忆？";
+"album_memoriesDes" ="是否确定删除？回忆删除后将无法恢复，回忆里的文件不会被删除";
+"album_memoriesDelete" ="该回忆已删除";
+"album_noPhoto" ="您还没有照片";
+"album_like" ="喜欢";
+"album_noLike" ="您还没有标记任何喜欢的照片哦~";
+"album_screenshots" ="截图";
+"album_noScreenshots" ="您还没有任何截图哦~";
+"album_dynamic" ="动图";
+"album_noDynamic" ="您还没有任何动图哦~";
+"album_noVideo" ="您还没有任何视频哦~";
+"album_noVideoPhoto" ="您还没有照片视频哦";
+"album_saveSpace" ="本地有%@个图片及视频尚未同步，预计可节省%@空间";
+"album_sync" ="去同步";
+"album_search" ="搜索相册中的文件";
+"album_follow" ="试试搜索以下内容";
+"album_date" ="日期";
+"album_albumName" ="相簿名";
+"album_searchDes" ="1、支持文件名搜索；\n2、支持日期搜索，如2022年8月30日；\n3、支持相簿名搜索。";
+
+//"Album_ ="相簿“%@”创建成功";
+
+"album_successed_%@"="%@创建成功";
+"album_fail_%@"="%@创建失败";
+"Up_to_500_files_optional" ="最多可选500个文件";
+
+"album_mode"="模式切换";
+"album_day"="日";
+"album_month"="月";
+"album_year"="年";
+//"album_fail_%@"="%@创建失败";
+//"Up_to_500_files_optional" ="最多可选500个文件";
+
+"album_name"="相簿名称";
+
+"Precious_photos"="珍贵照片，值得永久保存";
+
+"Date_Switch"="日期切换";
+
+
+"album_deleted"="确定删除相簿“%@”吗？相簿内的文件将不会被删除。";
+
+
+
+"album_add"="从傲空间添加";
+"album_local"="从本地添加";
+
+"add_success"="添加成功";
+"add_fail"="添加失败";
+
+
+"face_unlock"="面容解锁";
+"application_lock_unsupported_hint"="当前手机不支持指纹、刷脸功能";
+"fingerprint_unlock"="指纹解锁";
+"application_lock_hint"="1. 打开傲空间 App 需要验证指纹或面容 ID；
+        \n2. 面容 ID、指纹仅对本机有效；
+        \n3. 傲空间不会存储您的指纹/面容 ID，如需修改，请在系统设置中操作。";
+
+
+"update_failed"="升级失败";
+
+"view_details"="查看详情";
+
+"latest_version_already"="已经是最新版本";
+"find_new_version"="发现新版本";
+"find_new_version_desc"="发现新版本，是否更新应用？";
+"update"="更新";
+"state_updating"="正在升级";
+"update_success"="升级成功";
+"update_failed"="升级失败";
+"newest_version"="最新版本";
+"new_version_size"="新版本大小";
+"update_content"="更新内容";
+"unknown"="未知";
+"download_newest_version"="正在为您下载最新版本";
+"applet_uninstall_title"="是否卸载“%@”？";
+"applet_uninstall_content_keep_data_and_service"="卸载“%@”，其数据不会被清除";
+"applet_uninstall_content_keep_data_only"="卸载“%@”，将删除其所有应用程序，但数据不会被清除";
+"applet_uninstall_content_clear_all"="卸载此应用将同时删除其数据及所有应用程序";
+"uninstalling"="卸载中";
+"confirm_uninstall"="卸载";
+
+
+
+"unbind_device"="解绑设备";
+"unbind_device_dialog_title"="解除设备绑定";
+"unbind_device_alert"="解绑后当前手机将无法继续使用空间";
+"unbind_toast_success"="解绑成功";
+"unbind_toast_failed"="解绑失败";
+
+"device_offline_title"="设备已离线";
+"offline_use"="离线使用";
+"device_offline_content_admin"="设备离线无法访问，点击“网络设置”，重新为设备配置无线网络。";
+"device_offline_content_member"="设备离线无法访问，请联系管理员！";
+"device_offline_content"="点击“离线使用”，您可继续使用空间内的部分功能。";
+
+"auto_update"="自动升级";
+"new_version"="新版本";
+"update_size"="更新大小：";
+"update_size_p"="更新大小：%@";
+
+"already_latest_version"="已是最新版本";
+"upgrade_open"="开启";
+"upgrade_close"="关闭";
+"download_and_install"="下载并安装";
+"system_update_alert"="系统升级大约需要5分钟，在此期间 设备将无法访问，是否继续？";
+"update_now"="立即更新";
+"upgrading_notice"="温馨提示：系统正在升级，请勿切断设备电源";
+"upgrade_complete"="升级完成";
+"upgrade_complete_desc"="系统升级已完成，请您在退出应用后重新打开并使用";
+
+
+"ao_space_p" ="傲空间：%@";
+
+
+"data_backup"="数据备份";
+"data_recover"="数据恢复";
+"backup_desc"="将所有数据备份到外接存储";
+"recover_desc"="从外接存储中选择备份文件恢复";
+"last_backup_time"="最近一次备份：";
+"backup_setting"="备份设置";
+"target_path"="目标路径";
+"backup_content"="备份内容";
+"file_and_app_data"="文件数据、应用数据";
+"backup_mode"="备份方式";
+"recover_setting"="恢复设置";
+"backup_file_path"="备份文件路径";
+"select_recover_data"="选择恢复数据";
+"last_backup_time_recover"="最近一次备份";
+"device_all_members_data"="设备上所有成员个人数据";
+"manual_backup"="手动备份";
+"all_members_data"="所有成员个人数据";
+"part_members_data"="指定用户数据";
+"start_backup"="开始备份";
+"start_recover"="开始恢复";
+"cancel_backup"="取消备份";
+"cancel_recover"="取消恢复";
+"recover_alert"="恢复数据将使用备份文件的数据覆盖当前设备内的所有数据，确认恢复吗？";
+"backup_state_no_file_to_recover"="未检测到需要恢复的备份文件";
+"backup_state_no_file_to_backup"="没有需要备份的数据";
+"backup_state_normal"="将设备上的所有数据加密备份到外接存储";
+"backup_state_check"="备份检查…";
+"backup_state_doing"="正在备份…";
+"backup_state_doing_desc"="备份大小%luM，预计需要%lu分钟";
+"backup_state_success"="备份成功";
+"backup_state_fail"="备份失败";
+"backup_state_cancel"="已取消";
+"recover_state_normal"="将外接存储中的备份文件恢复到设备";
+"recover_state_check"="恢复检查…";
+"recover_state_doing"="正在恢复…";
+"recover_state_doing_desc"="数据大小%lldM，预计需要%lld分钟";
+"recover_state_success"="恢复成功";
+"recover_state_fail"="恢复失败";
+"recover_state_fail_desc"="请稍候重试";
+"backup_no_enough_storage"="目标盘存储空间不足，备份文件约%lldM";
+"recover_no_enough_storage"="空间存储容量不足";
+"nothing"="无";
+"complete_time"="完成时间：%@";
+"alert_not_mount_title"="未检测到外接存储设备";
+"alert_not_mount_content"="请将USB存储设备与盒子连接后重试";
+"alert_not_usb_format_title"="文件系统格式不支持";
+"alert_not_usb_format_content"="请将文件系统格式化为以下类型后重试\nfat32、ntfs（3.1版本）、exfat";
+"choose_restore_source"="选择备份文件来源";
+"self_box_source"="本机备份文件";
+"other_box_source"="更多备份文件";
+"no_data"="数据为空";
+"select_restore_data"="选择恢复数据";
+"all_members"="所有成员";
+"recover_member_over"="成员数量超限无法恢复";
+"recover_member_over_desc"="请先删除部分成员";
+"backup_summary"="备份摘要";
+"recover_summary"="恢复摘要";
+"device_all_data"="设备上所有空间的数据";
+"select_backup_file"="选择备份文件";
+"select_recovery_content"="选择恢复内容";
+"select_target_user"="选择目标用户";
+"set_backup_password"="设置备份密码";
+"verify_backup_password"="验证备份密码";
+"more_than_six_pwd_hint"="6位及以上，字母、数字或组合";
+"please_input_again"="请再次输入";
+"pwd_notice_hint"="密码提示语（非必填，20字以内）";
+"set_backup_pwd_desc"="1. 为了保证数据安全，数据将被加密；\n2. 此密码丢失无法找回，请您牢记此密码；\n3. 密码提示语可在验证密码时查看，帮您回忆密码；\n4. 本次备份会丢弃掉原备份目录下所有文件，加密生成新的备份。";
+"two_pwd_not_match"="两次密码输入不一致，请重新输入";
+"input_first_backup_pwd_hint"="请输入第一次备份时设置的密码";
+"get_pwd_notice"="获取密码提示";
+"backup_verify_pwd_desc_part_1"="若忘记备份密码，可点击此处";
+"re_backup"="重新备份";
+"backup_verify_pwd_desc_part_2"="，将丢弃掉原备份目录下所有文件，重新设置备份密码生成新的备份。";
+"recover_verify_pwd_desc"="温馨提示：备份文件已加密，若密码错误将无法解密文件。";
+"no_data_select_file"="未找到可供恢复的备份文件";
+"file_data"="文件数据";
+"applet_data"="应用数据";
+"create_new_member"="创建一个新成员";
+"create_new_member_desc"="若创建新成员恢复，恢复完成后，需要在【我的-家庭-成员信息】页面操作再次邀请，成员确认加入后才可使用。";
+"backup_file"="备份文件";
+"recover_content"="恢复内容";
+"target_user"="目标用户";
+"recover_strategy"="恢复策略";
+"cover"="覆盖";
+"run_background"="后台执行";
+"data_not_decode"="数据无法解密，请重新输入";
+"password_hint"="密码提示";
+"not_password_hint"="未设置密码提示";
+"backup_doing_notice"="备份过程请勿操作空间数据，以免造成备份数据异常";
+"recover_doing_notice"="恢复过程请勿操作空间数据，以免造成备份数据异常";
+"recover_member_wrong_desc"="管理员备份数据不能恢复给成员";
+"backup_un_finish"="备份未完成";
+"backup_un_finish_desc"="正在执行数据备份任务，暂不支持此操作";
+"recover_un_finish"="恢复未完成";
+"recover_un_finish_desc"="正在执行数据恢复任务，暂不支持此操作";
+
+"Backup_Start"="备份开始";
+
+"Backup_Completed"="备份完成";
+
+"Not_Enough_Space"="没有足够的空间";
+
+"Not_restored"="无文件需要恢复";
+
+"Recover_Start"="恢复开始";
+"Password_is_greater_than_16_bits"="密码大于16位";
+
+"Passwords_letters"="密码只可以是数字或字母";
+"Password_error"="密码错误";
+"Password_Prompt"="密码提示";
+"Backup_error_please_wait"="备份错误，请稍后";
+
+"Backup_pointOut"="若忘记备份密码，可点击此处重新备份，将丢弃掉原备份目录下所有文件，重新设置备份密码生成新的备份。";
+
+
+"password_prompt_20"="密码提示语最长20位，不可多输入";
+
+
+"family_member_content_part_1"="当前家庭成员：";
+"family_member_content_part_2_singular"="人";
+"family_member_content_part_2_plural"="人";
+"me"="我自己";
+"invite_member"="邀请成员";
+"invite_member_short"="邀请成员";
+"no_permission_to_view"="暂无查看权限";
+"member_information"="成员信息";
+"member_id"="成员ID";
+"used_size"="已使用空间";
+"bind_phone"="绑定手机";
+"bind_phone_hint"="仅绑定手机可对其他端进行授权";
+"delete_member"="删除成员";
+"invite_again"="再次邀请";
+"invite_again_hint"="成员需要更换绑定手机时使用";
+"delete_member_content"="删除成员将删除此成员在空间内的所有数据，删除后将无法找回";
+"generate_invite_link"="邀请链接已生成";
+"we_chat"="微信";
+"copy_link"="复制链接";
+"generate_invite_link_hint"="将邀请链接发送给成员，成员根据引导安装傲空间App后，打开App并确认加入，即可开始共享使用空间啦。";
+"generate_invite_link_hint_v2"="此邀请仅限1个成员";
+"invite_fail"="邀请失败";
+"invite_fail_content"="成员数量已达上限";
+"invite_fail_hint"="获取邀请链接失败，请稍候重试";
+"granter_fail_hint"="获取授权码失败，请稍候重试";
+"we_chat_invite_title"="来自亲友的召唤：快来加入我的傲空间吧！";
+"we_chat_invite_description_part_1"="您已受邀体验";
+"we_chat_invite_description_part_2"="傲空间，立即打开傲空间和我们一起分享美好时光吧！";
+"confirm_join"="确认加入";
+"accept_member_title"="确认启用您的傲空间？";
+"accept_member_hint"="1-24 个字符，支持中英文、数字及部分特殊符号";
+"joining"="正在加入";
+"invite_link_expire"="邀请链接已过期";
+"join_success"="加入成功";
+"join_fail"="加入失败";
+"join_fail_wrong_name_form"="昵称不合法";
+"join_fail_member_duplicate"="您已绑定设备上的其他账号，请勿重复绑定";
+"join_fail_nickname_illegal"="昵称不合法，请重新输入";
+"join_fail_invalid_invite_code"="链接已失效，请联系管理员重新邀请";
+"join_fail_member_full"="加入失败，成员数量已达上限";
+"family_tip"="本地账号，空间数据隔离";
+
+"Please_enter_nickname"="请输入昵称";
+
+"Create_member_success"="创建成员成功";
+"confirm_join_p"="确认加入%@的傲空间";
+"privacy"="隐私";
+"general"="通用";
+"multi_language"="多语言";
+"follow_up_system"="跟随系统";
+"language_settings"="语言设置";
+"android_permission_manager"="iOS 权限管理";
+"storage"="存储";
+"location"="位置";
+"contacts"="通讯录";
+"camera"="相机";
+"storage_content"="访问设备上的照片、视频和文件，以及保存内容到手机本地。";
+"location_content"="允许 App 获取基于 GPS 等的精准地理位置，用于绑定设备时与设备进行蓝牙配对。";
+"contacts_content"="允许 App 读取用户通讯录，用于通讯录同步到傲空间或从傲空间同步到手机本地。";
+"camera_content"="允许 App 使用摄像头，用于拍摄后上传图片。";
+"storage_hint"="允许使用「存储」";
+"location_hint"="允许使用「位置」";
+"contacts_hint"="允许使用「通讯录」";
+"camera_hint"="允许使用「相机」";
+"go_to_system_settings"="前往系统设置";
+"Allow_hint"="允许使用「%@」";
+"photo_access" = "照片";
+"application_lock"="应用锁";
+"application_lock_unsupported_hint"="当前手机不支持指纹、刷脸功能";
+"fingerprint_unlock"="指纹解锁";
+"face_unlock"="面容解锁";
+"fingerprint_face_unlock"="指纹/面容解锁";
+"application_lock_hint"="1. 打开傲空间 App 需要验证指纹或面容 ID\n2. 面容 ID、指纹仅对本机有效\n3. 傲空间不会存储您的指纹/面容 ID，如需修改，请在系统设置中操作。";
+"fingerprint_authenticate_title"="指纹解锁";
+"fingerprint_authenticate_subtitle"="请按压手机指纹感应区验证指纹";
+"face_authenticate_title"="面容识别中";
+"biometric_authenticate_title"="正在识别中";
+"fingerprint_unlock_on_success"="已开启指纹解锁";
+"fingerprint_unlock_on_fail"="开启指纹解锁失败";
+"fingerprint_unlock_on_fail_no_fingerprint"="本地未录入指纹\n无法开启指纹解锁";
+"fingerprint_unlock_off_success"="已关闭指纹解锁";
+"fingerprint_unlock_off_fail"="关闭指纹解锁失败";
+"face_unlock_on_success"="已开启面容解锁";
+"face_unlock_on_fail"="开启面容解锁失败";
+"face_unlock_on_fail_no_face"="本地未录入面容\n无法开启面容解锁";
+"face_unlock_off_success"="已关闭面容解锁";
+"face_unlock_off_fail"="关闭面容解锁失败";
+"biometric_unlock_on_success"="已开启指纹/面容解锁";
+"biometric_unlock_on_fail"="开启指纹/面容解锁失败";
+"biometric_unlock_on_fail_no_biometric"="本地未录入指纹及面容\n无法开启指纹/面容解锁";
+"biometric_unlock_off_success"="已关闭指纹/面容解锁";
+"biometric_unlock_off_fail"="关闭指纹/面容解锁失败";
+
+"domain"="域名";
+"domain_hint"="以字母开头，长度6～20位，支持字母、数字";
+"domain_format_error"="域名不符合规范";
+"domain_error_hint"="此域名已被注册或不可用";
+"domain_recommend_hint"="您可以选择我们推荐的域名前缀";
+"modify_once_year"="一年仅可修改一次";
+
+"notification_reminder_title"="开启消息通知";
+"notification_reminder_content"="开启消息推送通知，不要错过任何重要通知哦～";
+"to_open"="去开启";
+"login_terminal_hint"="显示本空间已登录的所有终端信息，建议您对陌生终端进行下线操作，以防止隐私泄露。被下线的终端仍然可以再次扫码授权登录。";
+"login_terminal_hint_highlight"="* IP 属地仅供参考。";
+"go_offline"="下线";
+"offline_terminal"="下线终端";
+"unknown_terminal"="未知设备";
+"current_device"="当前设备";
+"android_client_simple"="Android";
+"ios_client_simple"="iOS";
+"web_browser_simple"="网页";
+"android_client"="Android客户端";
+"ios_client"="iOS客户端";
+"web_browser"="网页版";
+"offline_terminal_content_part_1"="确认下线";
+"offline_terminal_content_part_2"="吗？";
+"offline_success"="下线成功";
+"offline_fail"="下线失败";
+"receive_message_notification"="接收消息通知";
+"accept_notification_message_type"="接收通知消息类型";
+"system_message"="系统消息";
+"system_message_hint"="系统通知、系统升级消息";
+"business_message"="业务消息";
+"business_message_hint"="登录、文件更新、成员管理等消息";
+
+"logout_title"="下线通知";
+"logout_content"="您的登录已失效。如需再次登录，请点击“登录更多空间”进行扫码登录。";
+"member_delete_title"="空间注销";
+"member_delete_content"="您的傲空间已被注销，将无法继续使用，请联系管理员。";
+"member_self_delete_content"="您的傲空间已注销，将无法继续使用。";
+"login_notification_part_1"="您的空间已在";
+"login_notification_part_2"="登录";
+"view_now"="立即查看";
+
+"automatic_login_hint"="15天内自动登录";
+"login_expire"="登录失效";
+"login_expire_content_part_1"="您的登录已失效，此空间将不再允许访问。您可点击";
+"login_expire_content_part_2"="更多空间";
+"login_expire_content_part_3"="再次进行扫码登录。";
+"grantee_request_login_hint"="请在绑定手机上确定登录";
+"cancel_login"="取消登录";
+"mobile_phone"="手机";
+"browser"="浏览器";
+"granter_authorization_content_part_1"="授权";
+"granter_authorization_content_part_2"="登录";
+"me_imageDes"="允许App读取和写入照片库，用于照片、视频的上传和保存到本地，相册同步功能。";
+
+"me_offline"="允许App离线推送通知，用于接收系统消息和业务消息。";
+"Notifications"="通知";
+
+"mirror_install"="镜像安装";
+"search_mirror"="搜索镜像";
+"search_mirror_input_hint"="请输入镜像名称或镜像包地址";
+"introduce"="说明";
+"mirror_install_introduce_part_1"="1. 从 Docker 镜像仓库拉取镜像的命令是 docker pull。其命令格式为：$ docker pull [选项] [Docker Registry 地址 [:端口号]/] 仓库名 [:标签] \n \n2. Docker 镜像仓库地址（可选）：地址的格式一般是 <域名/IP> [:端口号]。未指定时默认为 Docker Hub (docker.io)。\n \n3. 仓库名（必需）：这里的仓库名是两段式名称，即 <用户名>/<软件名>。如果不给出用户名，则默认为  library，也就是官方镜像。 \n \n4. 标签（可选）：如果没有添加标签，则默认 latest。";
+"mirror_install_introduce_part_2"="[Docker Registry 地址 [:端口号]/] 仓库名 [:标签]";
+"mirror_install_introduce_part_3"="\n\n2. Docker 镜像仓库地址（可选）：地址的格式一般是 &#060;域名&#047;IP&#062; [:端口号]。未指定时默认为 Docker Hub (docker.io)。
+    \n\n3. 仓库名（必需）：这里的仓库名是两段式名称，即 &#060;用户名&#062;&#047;&#060;软件名&#062;。如果不给出用户名，则默认为 library，也就是官方镜像。
+    \n\n4. 标签（可选）：如果没有添加标签，则默认 latest。";
+"search_mirror_hint"="正在获取镜像信息\n请稍后";
+"search_mirror_error_hint"="未获取到镜像信息";
+"amd_64"="amd64";
+"mirror_search_hint_part_1"="* 自动过滤不支持ARM64架构的镜像包";
+
+"install_mirror"="安装镜像";
+"source"="来源";
+"private_library"="私有库";
+"size"="大小";
+"install"="安装";
+"installing"="安装中";
+"install_success_text"="安装成功";
+"install_fail_text"="安装失败";
+"unknown_reason"="未知原因";
+"install_mirror_hint_part_1"="* 确保镜像包支持&#160;";
+"install_mirror_hint_part_2"="&#160;架构，否则可能会导致安装失败或不可用";
+"general_setting"="常规设置";
+"advance_setting"="高级设置";
+"application_name"="应用名称";
+"container_name"="容器名称";
+"service_name"="服务名称";
+"domain_name_prefix"="域名前缀";
+"page_link"="网页链接";
+"performance_limitations"="性能限制";
+"self_start"="开机自启动";
+"unlimited"="不限制";
+"name_not_match_hint"="名称不符合规范";
+"applet_name_input_hint"="请输入应用名称";
+"applet_name_common_hint"="显示在快捷方式处的名称，支持中文、英文及特殊符号，最长 30 个字符";
+"service_name_input_hint"="请输入服务名称";
+"service_name_common_hint"="仅支持英文、数字，最长 40 个字符，不支持特殊符号";
+"domain_name_prefix_input_hint"="请输入域名前缀";
+"domain_name_prefix_common_hint"="域名前缀拼接用户域名形成应用的网页访问链接，限 3~20 个字符，支持字母、数字，不支持特殊符号";
+"service_name_exception_illegal"="服务名称不合法，请重新输入";
+"service_name_exception_duplicate"="服务名称重复，请重新输入";
+"domain_name_prefix_exception_illegal"="域名前缀不合法，请重新输入";
+"domain_name_prefix_exception_duplicate"="域名前缀重复，请重新输入";
+"storage_path"="存储路径";
+"container_internal_path"="容器内部路径";
+"insert_storage_path"="添加存储路径";
+"container_publish_port"="容器发布端口";
+"port_number"="端口号";
+"publication_type"="发布类型";
+"purpose"="用途";
+"insert_port"="添加端口";
+"port_forward_type"="端口转发类型";
+"port_forward_purpose"="端口转发用途";
+"internal_port"="内部端口";
+"lan_access_port"="局域网可访问端口";
+"http_request_forward"="http 请求转发";
+"network"="网络";
+"network_type"="网络类型";
+"environment"="环境";
+"variable_name"="变量名";
+"variable_value"="变量值";
+"insert_environment_variable"="添加环境变量";
+"storage_exception_settings_same"="容器内部路径重复，请重新输入";
+"port_exception_settings_same"="端口配置重复，请重新输入";
+"port_exception_port_number_empty"="端口号不能为空，请重新输入";
+"port_exception_port_number_illegal"="端口号不合法，范围：1~65535";
+"port_exception_purpose_http_multiple"="不支持配置多个用途为“http 请求转发”的端口";
+"environment_exception_settings_same"="变量名重复，请重新输入";
+"environment_exception_variable_key_empty"="变量名不能为空，请重新输入";
+"environment_exception_variable_key_illegal"="环境变量不合法，请重新输入";
+"checking_hint"="正在检查，请稍候";
+"param_illegal_hint"="参数设置不符合规范\n请点击查看原因";
+"Copy"="点击复制";
+
+"on_fail"="开启失败";
+"off_fail"="关闭失败";
+"developer_options"="开发者选项";
+"open_developer_options"="开启开发者选项";
+"developer_options_on_success"="已开启开发者选项";
+"developer_options_off_success"="已关闭开发者选项";
+"switch_space_platform_environment"="切换空间平台环境";
+"switch_space_platform_environment_head_part"="切换空间平台环境";
+"current_environment_is"="当前环境：";
+"current_environment_official_space_platform"="当前环境：傲空间官方空间平台";
+"current_environment_private_space_platform"="当前环境：私有空间平台";
+"server_url_is"="服务器地址：%@";
+"switch_space_platform_what_benefit"="空间平台的优势";
+"switch_private_space_platform_what_benefit"="私有空间平台的优势";
+"switch_official_space_platform_what_benefit"="傲空间官方空间平台的优势";
+"switch_private_space_platform_what_benefit_content"="1. 更灵活：公有云、私有云、混合云、本地服务器等多种部署方式。
+    \n2. 更安全：可以部署在本地服务器上，自主掌握所有数据和权限。
+    \n3. 个性化：可按需进行个性化定制开发，满足用户不同需求。";
+"switch_official_space_platform_what_benefit_content"="1. 更稳定：傲空间官方空间平台将提供全时段稳定的连接和转发服务。
+    \n2. 更安全：傲空间官方空间平台不会保存和获取用户的任何数据，请放心使用。
+    \n3. 更极速：傲空间官方平台将不断优化性能，自动选择更极速的转发服务。";
+"switch_space_platform_how"="如何切换到平台";
+"switch_private_space_platform_how"="如何切换到私有平台";
+"switch_official_space_platform_how"="如何切换到傲空间官方空间平台";
+"switch_private_space_platform_how_content_part_1"="1. 下载私有空间平台软件包并按照操作手册进行安装部署。
+    \n下载地址：";
+"switch_private_space_platform_how_content_part_2"="2. 点击【切换到私有空间平台】按钮，输入私有空间平台的域名，且该平台上已安装好软件服务包，点击【确认】按钮。
+    \n3. 切换到私有空间平台后设备上所有的用户数据不会丢失，首次切换到私有平台需向私有平台注册并验证平台的合法性，可支持多个平台间切换，请放心使用。";
+"switch_official_space_platform_how_content"="1. 点击【切换到官方空间平台】按钮，等待约10秒钟，收到切换成功提醒即代表切换成功。
+    \n2. 切换环境傲空间设备的数据不会丢失，可以支持多个环境来回切换，请放心使用。";
+"precautions"="注意事项";
+"other_precautions"="其他注意事项";
+"other_precautions_private_space_platform_content"="1. 切换到私有空间平台后，设备上所有成员均会切换到私有空间平台。
+    \n2. 设备上成员在重定向有效期180天内会自动连接到新的空间平台，超过有效期无法重定向需让管理员重新邀请再使用。
+    \n3. 用户原先分享出去的链接可以继续访问。
+    \n4. 用户安装的傲空间应用旧空间平台对外的授权将失效，需使用新的空间平台重新对外授权。";
+"other_precautions_official_space_platform_content"="1. 切换到官方空间平台后，设备上所有成员均会切换到官方空间平台。
+    \n2. 设备上成员在重定向有效期180天内会自动连接到新的空间平台，超过有效期无法重定向需让管理员重新邀请再使用。
+    \n3. 用户原先分享出去的链接可以继续访问。
+    \n4. 用户安装的傲空间应用旧空间平台对外的授权将失效，需使用新的空间平台重新对外授权。";
+"switch_private_space_platform"="切换到私有空间平台";
+"switch_official_space_platform"="切换到官方空间平台";
+"private_space_platform_address"="私有空间平台地址";
+"space_platform_input_hint"="请以http、https开头";
+"illegal_url_hint"="URL地址不符合规范";
+"switch_fail"="切换失败";
+"switch_success"="切换成功";
+"switch_fail_hint_part_1"="切换失败（错误码 %@)";
+"switch_fail_hint_part_2"="）";
+"switch_private_space_platform_hint"="已成功切换到新的空间平台 \n %@";
+"switch_official_space_platform_hint"="已成功切换到傲空间官方平台\n %@";
+"switch_space_platform_hint"="空间平台切换中\n预计等待10秒钟";
+"delete_login_record"="删除登录记录";
+"redirect_invalid_content"="登录空间失败，管理员将空间平台域名切换到新的地址，请联系管理员重新邀请后再使用。";
+"domain_non_exist_title"="域名不存在";
+"domain_non_exist_content"="您登录的空间域名不存在，请联系管理员重新邀请后再使用。";
+"switch_space_platform_resource_busy_error_content"="切换失败，新域名不可与当前域名一样";
+"switch_space_platform_connect_error_content"="输入的空间平台域名暂时无法建立连接，请确认域名是否正确";
+"space_platform_not_available"="空间平台不可用";
+"switch_official_platform_to_bind"="切换到官方平台绑定";
+
+"me_webpage_copy"="已复制到剪切板，请使用浏览器打开";
+
+"Search"="搜索";
+
+"feedback_email_error"="请输入正确的联系邮箱";
+"feedback_phone_error"="请输入正确的联系方式 ";
+
+"over_maxcount"="超过最大字符";
+
+"common_noOpen"="系统蓝牙未开启";
+"common_bluetoothDes"="蓝牙搜索设备功能需打开系统蓝牙，请开启!";
+
+"common_bluetoothSearch"="设备蓝牙搜索功能需开启蓝牙权限，是否立即开启";
+
+"LAN_IPinput" = "局域网 IP 输入";
+"LAN_enterIPaddress" = "请输入傲空间服务器的 IP 地址或局域网访问域名";
+"LAN_example" = "示例";
+"LAN_accessfailed" = "访问失败，请检查手机与傲空间服务器是否在同一局域网内";
+"home_noApplication" = "暂无可使用的傲空间应用";
+
+"Like"="喜欢";
+
+"face_permission" = "未开启面部权限，请前往设置去开启";
+"Fingerprint_permission" = "未开启指纹权限，请前往设置去开启";
+"no_password_set"="未设置本地密码";
+"No_facial_features"="本地未录入面容,无法开启面容解锁";
+
+"No_fingerprint_features"="本地未录入指纹,无法开启指纹解锁";
+
+"Searching"="搜索中";
+"no_data_history_today"="暂无任何内容";
+"memory_data_loading"="影集生成中";
+
+"developer_forwarding"="http 请求转发";
+
+"Ensure_that_the_image_package"="* 确保镜像包支持 ARM64 架构，否则可能会导致安装失败或不可用";
+
+"port_exception_settings_same_more" = "端口配置重复，请重新输入\n不支持配置多个用途为”http 请求转发“的端口";
+
+"please_re-enter"="请输入";
+"container_publish_port_more"="容器发布\n端口";
+
+"open"="打开";
+
+
+"no_data_tool_applet"="暂无可使用的傲空间应用";
+"no_data_appstore_center_list"="暂无任何应用";
+"appstore_state_install"="安装";
+"appstore_state_launch"="打开";
+"appstore_state_update"="更新";
+"appstore_state_installing"="安装中…";
+"appstore_state_updating"="更新中…";
+"appstore_center"="应用中心";
+"appstore_detail_no_desc"="暂无内容简介";
+"appstore_recent_update"="最近更新";
+"appstore_app_introduction"="应用介绍";
+"appstore_detail_no_content"="暂无内容。";
+"app_install_times"="次安装";
+"app_developer"="开发者";
+"app_size"="大小";
+"count_unit_hundred"="百";
+"count_unit_thousand"="千";
+"count_unit_ten_thousand"="万";
+"count_unit_billion"="亿";
+"service_error"="服务异常";
+"app_update_success"="更新成功";
+"app_update_failed"="更新失败";
+"app_install_success"="安装成功";
+"app_install_failed"="安装失败";
+"Updating"="更新中";
+
+"appstore_detail_no_content"="暂无内容。";
+"View_more"="查看更多";
+
+
+"applet_uninstall_content_keep_data_only"="卸载“%@”，将删除其所有应用程序，但数据不会被清除";
+"applet_uninstall_content_clear_all"="卸载此应用将同时删除其数据及所有应用程序";
+
+"open_failed"="打开失败";
+
+"process_status_message" = "正在删除...%ld%%";
+"delete_loading_message" = "正在删除";
+
+"security_authenticator" = "身份验证器";
+"security_authensettip" = "设置后可离线获取登录授权码，即使绑定手机没在身边也可完成空间授权登录。";
+"security_switchauthen_title" = "确认更换身份验证器？";
+"security_switchauthen_content" = "更换身份验证器，原手机将无法生成最新和最正确的身份验证代码";
+"security_authensetprepare" = "身份验证器应用可让您在手机上生成安全代码，如获取登录授权码，无需绑定手机扫码。
+
+如果您还没有身份验证器应用，您可以在手机上安装以下应用（任选其一）：
+
+Google Authenticator
+Tofu Authenticator
+Microsoft Authenticator
+Duo Mobile
+
+如果您已安装身份验证器应用，点击下方按钮，设置身份验证器。";
+"security_authenset" = "开始设置";
+"security_authensetcopy" = "点击复制";
+"security_authensethelp_1" = "1. 打开身份验证器应用，点按“+”。";
+"security_authensethelp_2" = "2. 使用以下任意一种方式添加。";
+"security_authensethelp_3" = "若需要同时在多个手机上使用，请在此处完成所有手机的设置。但这样可能会有多个设备彼此不同步的风险。";
+"security_authensethelp_4" = "方式一：使用您的身份验证器应用扫描下面的二维码。";
+"security_authensethelp_5" = "方式二：手动输入下方显示的密钥。";
+"security_authensetnext" = "已完成，下一步";
+"Empty_Conten" = "内容为空";
+"security_authensetverify" = "请输入您在该应用中看到的 6 位数验证码";
+"security_authensetsuccess" = "设置成功";
+"security_authencodeerror" = "验证码错误";
+"me_spaceidentification" = "空间标识";
+"me_spaceidentification_placeholder" = "请输入您的空间标识，长度为 1-24 位字符";
+"me_duplicatespaceidentify" = "空间标识重复，请重新输入";
+"Join Space Hint" = "确认启用您的傲空间？";
+"Join Space" = "确认加入";
+"common_isolation" = "本地账号，空间数据隔离";
+
+"Box can not access platform" = "无法完成此操作，原因：无法连接至傲空间平台";
+"Waiting for upload" = "等待上传";
+"Fast Upload" = "极速上传";
+"Fast Download" = "极速下载";
+"Delete Upload Records Hint" = "只删除上传记录，已上传的文件不受影响";
+"Delete Uploading task Hint" = "是否确定删除正在上传的任务？";
+"common_encrypted" = "加密传输，畅享极速";
+"join_fail_spaceId_illegal"="空间标识不合法，请重新输入";

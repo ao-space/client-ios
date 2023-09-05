@@ -1,0 +1,25 @@
+/* 
+  InfoPlist.strings
+  EulixSpace
+
+  Created by Ye Tao on 2021/7/12.
+  Copyright © 2021 eulix.xyz. All rights reserved.
+*/
+CFBundleDisplayName = "AO.space";
+
+mobile_phone_Scenario = "Scenario 1: A mobile phone is bound to a hardware device with a high space. A camera is required to scan the two-dimensional code on the device to obtain the identification of the hardware device.\nScenario 2: Using a mobile phone to configure the network of the offline hardware device, you need to use a camera to scan the two-dimensional code on the device to obtain the identification of the hardware device.\nScenario 3: The user scans the calling camera, scans the two-dimensional code on the Web side, and completes authorized login on the Web side.\nScenario 4: The user changes the profile picture, invokes the camera, takes a picture, and uploads the picture.";
+
+NSPhotoLibraryUsageDescription = "Used for photo upload/download, album synchronization, upload avatar, feedback function.";
+mobile_phone_Scenario = "Scenario 1: Mobile phones bind to proud space hardware devices, which need to use the camera, scanner the two-dimensional code on the device to get the identification of the hardware device.
+Scenario 2: To configure the network for the pride space hardware device which is disconnected from the network by mobile phone, you need to use the camera and the two-dimensional code on the scanner to get the identification of the hardware device.
+Scenario 3: Users complete authorized login on the Web side by sweeping the camera and scanning the two-dimensional code on the Web side.
+Scenario 4: Users change their avatars, call the camera to take photos and upload them.";
+NSBluetoothAlwaysUsageDescription= "Scenario 1: Mobile phone binds proud space hardware device, needs to use Bluetooth to pair with mobile phone, and sends network, password and other information to the device through Bluetooth.
+Scenario 2: The proud space hardware device disconnected from the network is configured by the mobile phone. It needs to be paired with the mobile phone using Bluetooth. Through Bluetooth, the information of the distribution network is sent to the device.";
+
+NSBluetoothPeripheralUsageDescription = "Scenario 1: Mobile phone binds proud space hardware device, needs to use Bluetooth to pair with mobile phone, and sends network, password and other information to the device through Bluetooth.
+Scenario 2: The proud space hardware device disconnected from the network is configured by the mobile phone. It needs to be paired with the mobile phone using Bluetooth. Through Bluetooth, the information of the distribution network is sent to the device.";
+
+NSLocalNetworkUsageDescription = "LAN access rights, Scenario 1: When the user's mobile phone and the proud space device are in the same WiFi network, the mobile phone will access the proud space through the LAN direct connection";
+
+NSCameraUsageDescription= "Used for device binding, network settings, scanning authorization login, and photo uploading avatar functions.";

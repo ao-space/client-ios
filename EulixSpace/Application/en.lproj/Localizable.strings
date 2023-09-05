@@ -1,0 +1,2500 @@
+/*
+  Localizable.strings
+  EulixSpace
+
+  Created by Ye Tao on 2021/7/12.
+  Copyright © 2021 eulix.xyz. All rights reserved.
+*/
+
+//Common
+"back" = "Back";
+"cancel" = "Cancel";
+"select_all" = "Select All";
+"unselect_all" = "Select None";
+"delete" = "Delete";
+"ok" = "Confirm";
+"confirm_the_deletion" = "Confirm Delete";
+"join" = "Join";
+"next" = "Next";
+"got_it" = "I know";
+"turn_on_now" = "Open Now";
+"view_now" = "View Now";
+"coming_soon" = "Coming Soon";
+"wait" = "Please Wait";
+"unkown_error" = "Unknown Error";
+"retry_later" = "Please try again later";
+"done" = "Done";
+
+"common_app_name"="AO.space";
+"common_ok"="Confirm";
+"common_cancel"="Cancel";
+"common_back"="Back";
+"common_select_all"="Select All";
+"me_pro_file_photo"="Select None";
+"common_delete"="Delete";
+"common_confirm_deletion"="Confirm Delete";
+"common_more"="More";
+"common_button_done"="Done";
+"common_join"="Join";
+"common_next"="Next";
+"common_setting"="Settings";
+"common_share"="Share";
+"common_got_it"="Iknow";
+"common_turn_on"="OpenNow";
+"common_view_now"="ViewNow";
+"common_coming_soon"="ComingSoon";
+"common_button_wait"="Waiting";
+"common_loading..."="Tryingtoload";
+"common_unkown_error"="UnknownError";
+"common_retry_later"="Please try again later";
+"common_scan_qrcode"="Scan QR Code";
+"common_open"="ON";
+"common_close"="OFF";
+"common_get_bluetooth"="Obtaining Bluetooth Permission";
+"common_get_bluetooth_prompt"="Device binding function requires Bluetooth permission to be enabled,\n Open now?";
+"common_get_album"="Obtaining Album Permission";
+"common_get_album_prompt"="Album synchronization function requires opening album permission,\n Open now?";
+"common_setting_hint"="Please go to set open permission!";
+"common_open_failed"="Permission denied, opening failed!";
+"common_exit_app"="Press again to exit the AO.space";
+"home_main"="Home";
+"home_file"="Files";
+"home_photo"="Photos";
+"home_mine"="Mine";
+"home_all"="All";
+"home_video"="Videos";
+"home_document"="Documents";
+"home_dos"="Docs";
+"home_other"="Other";
+"home_synPhotoAlbum"="Album Synchronization";
+"home_synAddressBook"="Contacts Sync";
+"home_help"="Help";
+"home_faq"="FAQ(Frequently Asked Questions)";
+"home_connect_device"="How to connect the device?";
+"home_disconnect_device"="How to disconnect the device?";
+"home_invite_member"="How to invite family members?";
+"home_trial_feedback"="Trial Feedback";
+"home_feedback_experience"="Feedback User Experience";
+"home_feedback"="Feedback";
+"home_feedback_prompt"="Product function,user experience,suggestions,etc";
+"home_bottom"="Tothebottom";
+"file_bottom_down"="Save";
+"file_bottom_details"="Details";
+"file_bottom_rename"="Rename";
+"file_bottom_copy"="Copy";
+"file_bottom_move"="Move";
+"file_origin_image"="View Original";
+"file_downloading"="Completed%@%%";
+"file_preview_unsupport"="Preview is not Supported";
+"file_upload"="Upload";
+"file_upload_or_new"="Upload or New";
+"file_upload_photo"="Photos";
+"file_upload_video"="Videos";
+"file_upload_document"="Documents";
+"file_upload_myspace"="Uploadto“%@”";
+"file_new_file"="New Folder";
+"file_name_placeholder"="Please enter a folder name";
+"file_upload_place"="Upload Location:";
+"file_camera"="Camera";
+"file_album"="Select from Album";
+"file_upload_progress"="Upload(%@)";
+"file_image_select"="%@ Photos Selected";
+"file_video_select"="%@ Videos Selected";
+"file_photos"="Photos（%@）";
+"file_none_photos"="You don't have a photo yet";
+"file_sort_order"="SORT ORDER";
+"file_sort_name"="Sort by Name";
+"file_sort_time"="Sort by Modified Time";
+"file_sort_type"="Sort by File Type";
+"file_list_show"="List Display";
+"file_icon_show"="Icon Display";
+"file_delete"="Are you sure to delete these files completely??";
+
+"file_delete_prompt"="The deleted files will be put into the recycle bin, and you can recover them from the recycle bin if necessary";
+"file_none_name"="File name cannot be empty!";
+"file_name_rule"="Only Chinese and English, numbers and underscores are supported";
+"file_name_length"="The file name is too long and cannot exceed 10 characters";
+"file_no_data"="No Document";
+"file_search_all"="Search all Files";
+"file_search_prompt"="Search content cannot be empty!";
+"me_info"="Personal Details";
+"me_profile_photo"="Profile Photo";
+"me_nickname"="Name";
+"me_nickname_placeholder"="Enter your nickname, 1-24 characters long";
+"me_nickname_prompt"="Support Chinese,English,numbers,underscores and other special symbols";
+"me_nickname_invalid"="Modify fail. The nickname is illegal";
+"me_personalized_signature"="Personalized Signature";
+"me_sign_placeholder"="Enter your signature, 1-120 characters long";
+"me_domain_name"="Domain Name";
+"me_device_manager"="Device";
+"me_system_update"="System Update";
+"me_member"="Family";
+"me_current_peoples"="Current Number";
+"me_member_invite"="Invite";
+"me_current_member"="Current members:%lu/10";
+"me_member_info"="Member Information";
+"me_member_id"="MemberID";
+"me_member_space"="Used Space";
+"me_member_phone"="Bound Phone";
+"me_share_weixin"="We Chat";
+"me_share_link"="Copy Link";
+"me_more_function"="More Services";
+"me_recycle_bin"="RecycleBin";
+"me_clear_cache"="Clear Cache";
+"me_trial_feedback"="TrialFeedback";
+"me_faq"="Help&Feedback";
+"me_login_terminal"="Login Terminal";
+"me_current_terminal"="Current Terminal";
+"me_binding_terminal"="Binding Terminal";
+
+"setting_clear_manager" = "Cache Management";
+"me_developer" = "Developer Options";
+//Box
+"box_bind" = "Binding Device";
+"box_list" = "Device List";
+"box_in_use" = "Using";
+"box_login_more" = "Login to More Space";
+"box_online" = "Online";
+"box_offline" = "Offline";
+"box_offline_prompt" = "The device is offline.Please connect the device to the network cable and try again.";
+"box_auth" = "Authorized Use of the Device";
+"box_click_to_use" = "Click to Use";
+"box_click_to_login" = "Click to Login";
+"box_login_ongoing" = "Logging";
+
+"box_empty_list" = "If you do not have a device attached, click ”Attach Device” or ”Login to More Space” below to enable the use of space. ";
+"trial_describle" = "If you do not have an AO.space device, you can experience it online or self-hosted, and click ”Try Now” to request an activation code.";
+
+
+"box_scan_no_box" = "A valid QR code was not recognized";
+"box_scan_no_box_prompt" = "The desired device is not found. Please ensure that the power supply and network cable are connected.\n Click “Rescan” after confirmation”";
+"box_scan_member_exist_prompt" = "You are already a member of this device，\n please do not bind repeatedly";
+"box_scan_again" = "Rescan";
+"box_bind_confirm" = "Confirm Binding";
+"box_bind_ongoing" = "Binding";
+"box_bind_success" = "Binding Succeed";
+"box_bind_setup_space_info" = "Set Spatial Information";
+"box_bind_fail" = "Binding Fail";
+"box_bind_fail_prompt" = "This device has been bound by the administrator, please do not repeat the operation";
+"box_bind_register_device" = "Register Device";
+"box_already_binded_prompt" = "This device has been initialized, continue operation will bind the administrator space on the device, the original phone will automatically unbind and can no longer access.";
+
+"box_bind_ble_failed" = "Bluetooth Connection Fail";
+"box_bind_ble_failed_prompt" = "Bluetooth connection fail. You can retry the Bluetooth connection or use wired connection instead";
+"box_bind_retry_ble" = "Bluetooth Retry";
+"box_bind_try_wired_connection" = "Use Wired Binding";
+"box_bind_wired_connection_prompt" = "Please ensure that the device is powered on and connected to the route with a network cable";
+"box_bind_not_found" = "No Devices Found";
+
+"box_unbind" = "Unbind Device";
+"box_unbind_success" = "Unbinding Succeed";
+"box_unbind_fail" = "Unbind Fail";
+"box_unbind_fail_prompt" = "Unbinding fail, please try again later";
+"box_unbind_password_error_prompt" = "Security password error,% @ opportunities left";
+
+
+
+"All Tools" = "All Tools";
+
+
+//设置网络
+"box_network_prompt_connecting" = "Connecting...";
+"box_network_input_wifi_password_placeholder" = "Please input a password";
+"box_network_input_wifi_password" = "Enter the password for '%@'";
+"box_network_wrong_wifi_password" = "Password error, connection failure";
+"box_network_correct_wifi_password" = "Connected";
+"box_network_available_wifi" = "List of Available WLAN";
+"box_network_no_network" = "Device Offline";
+"box_network_local_network" = "Local Connection";
+"box_network_prompt_no_network" = "The device is not connected to the network. Please select the network to which the device will connect";
+"box_network_setup" = "Network Settings";
+"box_network_connected" = "Connected Network";
+"box_network_connecting" = "The device is connecting to '% @', please wait...";
+"box_network_ip_address" = "IP Address";
+"box_network_no_wifi" = "No WLAN Available";
+"box_network_no_wifi_prompt" = "If you want to change the wireless network, you need to manually restart the space device. Are you sure to restart it?";
+
+"box_bind_result" = "Binding Result";
+"box_bind_start_to_use" = "Start Using";
+"box_bind_unbind" = "Unbind Device";
+
+//蓝牙
+
+"bluetooth_get_permission" = "Obtaining Bluetooth Permission";
+"bluetooth_get_permission_prompt" = "Device binding function requires Bluetooth permission to be enabled,\n Open now?";
+
+//安全密码
+"security_password_setup" = "Set Security Password";
+"security_password" = "Security Password";
+"security_password_confirm" = "Password Confirmation";
+"security_password_placeholder" = "Input the security password";
+"security_password_confirm_placeholder" = "Please enter the security password again";
+"security_password_prompt" = "Tips: The security password is 6 digits, which can only be set and modified by the administrator. Please keep this password carefully.";
+"security_password_not_match" = "The input content is inconsistent";
+"security_password_error_and_retry_later_prompt" = "Incorrect security password, please try again after 1 minute";
+
+
+"security_password_input" = "Please enter the security password";
+
+"security_password_input_prompt" = "6-digit digital password";
+
+
+"security_password_prompt_title" = "Device Security Password";
+"security_password_prompt_detail" = "\n1. The security password is 6 digits, which can only be set and modified by the administrator. Please keep this password carefully.
+\n\n2. Application scenario:
+\n(1) To unbind the device, the administrator needs to enter the security password correctly to complete the unbinding operation.
+\n(2) Other situations where it is necessary to enter a security password to verify the administrator's identity.";
+
+//Space
+"space_loading" = "Loading...";
+"space_initialization" = "Space Initialization";
+"space_initialization_ongoing" = "Initializing Space...";
+"space_initialization_prompt" = "Initializing Space,waiting...";
+"space_specific_identifier" = "Space Specific Logo";
+"space_country" = "Country";
+"space_return_box_list" = "Return to Device List";
+"space_language" = "Select Language";
+"space_enter" = "Enter Space";
+
+//Main主页
+"main_intoPhotoBtn" = "Albums";
+"main_intoVideoBtn" = "Videos";
+"main_intoMusicBtn" = "音频";
+"main_other" = "Other";
+"main_intofileBtn" = "Documents";
+"main_intelligenceViewTitle" = "最近";
+"main_synchronizationAlbumBtn" = "Album Synchronization";
+"main_synchronizationAddressBookBtn" = "通讯录同步";
+"main_meShareBtn" = "My Shares";
+"main_recycleBinBtn" = "Recycle Bin";
+"main_no_operation_record" = "暂无操作记录";
+"main_Help" = "Help";
+"main_trial_feedback" = "Trial Feedback";
+"main_feedback" = "Feedback";
+"main_faq" = "FAQ(Frequently Asked Questions)";
+"main_feedback_user_experience" = "Feedback user experience";
+
+/// 文件首页
+"file_bottom_down" = "Save";
+"file_bottom_share" = "Share";
+"file_bottom_details" = "Details";
+"file_bottom_delect" = "Delete";
+"file_bottom_more" = "More";
+"file_bottom_rename"="Rename";
+"file_bottom_copy"="Copy";
+///文件预览
+"file_origin_image" = "查看原图%@";
+"file_origin_image_downloading" = "已完成%@%%";
+"file_preview_unsupport_file" = "Preview is not Supported";
+
+///相册上传
+"album_upload_no_count" = "上传";
+"album_upload_with_count" = "上传(%@)";
+"album_image_select_count" = "%@ Selected";
+"album_video_select_count" = "%@ Selected";
+
+//传输列表
+"phone_storage_info_title" = "Phone Storage";
+"phone_storage_info" = "%@ / %@";
+"box_storage_info_title" = "Space Storage";
+"box_storage_info" = "%@ / %@";
+
+"transfer_list" = "Transfer List";
+"added_to_transfer_list" = "The file has been added to the transport list";
+"transfer_no_task" = "There is no transfer task currently";
+
+"transfer_download_list" = "Download List";
+"transfer_download_ongoing" = "Downloading（%@）";
+"transfer_download_complete" = "Download Completed（%@）";
+"transfer_download_pause" = "Download Paused";
+"transfer_download_failed" = "Download Failed";
+"transfer_download_via_wwan_title" = "Using traffic to download?";
+"transfer_download_via_wwan_message" = "The current non Wi Fi network environment will generate data traffic if you continue downloading";
+
+"transfer_pause_all" = "Pause All";
+"transfer_resume_all" = "Continue All";
+
+"transfer_clear_history" = "Clear All Records";
+"transfer_clear_confirm_title" = "Confirm Delete";
+"transfer_download_clear_confirm_message" = "Only the download record is deleted,\n and the downloaded files are not affected";
+
+"transfer_upload_list" = "Upload List";
+"transfer_upload_ongoing" = "Uploading（%@）";
+"transfer_upload_complete" = "Upload Completed（%@）";
+"transfer_upload_pause" = "Upload Paused";
+//"transfer_upload_failed" = "上传失败";
+"transfer_upload_failed" = "Upload Failed";
+"transfer_upload_target" = "Location: My Space %@";
+"transfer_upload_clear_confirm_message" = "Only upload records are cleared, \n and uploaded files are not affected";
+
+"transfer_sync" = "Album Synchronization";
+"transfer_sync_complete" = "%@ files have been synchronized";
+"transfer_sync_title" = "Synchronizing（Remaining %@ Pieces)";
+"transfer_sync_last_time" = "Recent Sync：%@";
+
+"me_setting_and_service" = "More Services";
+"me_member" = "Family";
+"me_member_count" = "Current Number";
+"me_more_function" = "More Services";
+"me_trial_feedback" = "Trial Feedback";
+"me_faq" = "Help&Feedback";
+"me_device_manager" = "Device";
+"me_album_sync" = "Album Synchronization";
+"me_album_sync_off" = "OFF";
+"me_web" = "Visit Webpage";
+"me_web_copy" = "Content has been copied to the clipboard, please use a browser to open";
+"me_clear_cache" = "Clear Cache";
+"me_recycle_bin" = "Recycle Bin";
+
+"me_about" = "About";
+"me_backup_and_restore" = "Backup & Restore";
+"me_about_us" = "About";
+"me_confirm_the_deletion_title" = "确定删除所有缓存（%@）？";
+"me_login_terminal" = "Login Terminal";
+
+"me_already_cleared_cache" = "已清除";
+
+"me_personal_info" = "Personal Details";
+"me_personal_avatar" = "Profile Photo";
+"me_personal_nickname" = "Nickname";
+"me_personal_sign" = "Personalized Signature";
+"me_personal_domin" = "Domain Name";
+"me_personal_no_sign" = "无";
+"me_personal_switch_account" = "Switch Account";
+
+
+
+"me_version_update" = "Check for Updates";
+"me_upgrade" = "Update";
+"me_upgrade_right_now" = "Update Now";
+"me_found_new_version" = "Check for Updates";
+"me_latest_version" = "Latest Version：V%@";
+"me_version_desc" = "Update:\n%@";
+"me_uncompatible_title" = "Program Incompatible";
+"me_uncompatible_admin_prompt" = "傲APP的版本与傲来设备的版本\n存在兼容性问题，是否立即修复？";
+"me_uncompatible_member_prompt" = "傲APP的版本与傲来设备的版本\n存在兼容性问题，请联系管理员修复";
+"me_repair_now" = "Repair Now";
+
+//相册同步
+"sync_prompt" = "To enable album automatic synchronization, you need to authorize the phone album permission, otherwise it cannot be synchronized; By default, the backup is only in WiFi environment. If the battery is less than 15%, the photo album synchronization will stop automatically.";
+"sync_photo" = "Auto Sync Photos";
+"sync_video" = "Auto Sync Videos";
+"sync_background" = "后台自动同步";
+"sync_via_wwan" = "Mobile Traffic Sync";
+"sync_directory_name_foramt" = "%@的相册";
+"sync_turn_on_album_sync" = "开启相册同步";
+"sync_turn_on_album_sync_prompt" = "您还没有开启相册同步功能， 是否立即开启？";
+"turn_on_now" = "Open Now";
+"sync_not_enough_space_prompt" = "空间不足，上传失败，请清理空间后再重试~";
+
+"autoupload_background_title"     = "限制";
+"autoupload_background_msg"       = "由于 iOS 限制，除非启用了 GPS 服务，否则无法执行后台处理。 一旦移动网络发生变化，系统会在短时间内唤醒，检查新的照片并上传到云端。";
+
+"error" = "error";
+"err_permission_photo_library" = "请在设置中允许\"相册\"权限";
+"err_permission_location_manager" = "请从设置允许位置 - 始终";
+"open_settings" = "打开设置";
+
+/// v0.3.0 新加
+"current_family_members" = "Current members";
+"login_title" = "Login";
+"family_member" = "Member Information";
+"family_information_name" = "Nickname";
+"family_information_name_id" = "Member ID";
+"family_information_space" = "Used Space";
+"family_information_ipone" = "Bound Phone";
+"family_information_share_vx" = "WeChat";
+"family_information_share_line" = "Copy Link";
+
+"cloud_image_title_format" = "图片（%zd张）";
+"cloud_image_select_title_format" = "已选择%zd张图片";
+"cloud_no_image" = "您还没有任何图片哦";
+
+/// v0.4.0 新加
+"me_backup" = "Backup & Restore";
+"me_data_backup" = "Backup";
+"me_data_recover" = "Restore";
+"me_backup_check" = "Backup Check";
+"me_data_backuping" = "Backuping";
+
+
+
+"local_networking_auto_switch" = "Automatically switched to LAN access";
+"current_networking" = "Current Network";
+"current_networking_local" = "LAN";
+"current_networking_internet" = "Internet";
+
+
+"feedback" = "Feedback";
+"feedback_desc" = "Description";
+"feedback_desc_pladeholder" = "Your valuable comments are welcome.Thank you for your support to AO.space!";
+"feedback_upload_image_format" = "Upload Pictures (%@/4)";
+"feedback_upload_image_prompt" = "Suggested picture format: jpeg/bmp/png/gif";
+"feedback_email" = "Email";
+"feedback_email_pladeholder" = "Please enter your email address";
+"feedback_phone_number" = "Contact Information";
+"feedback_phone_number_pladeholder" = "Please enter your mobile phone number";
+"feedback_submit" = "Submit";
+"feedback_submitted" = "Submitted";
+"feedback_submitted_prompt" = "Thank you for your attention and support, we will seriously deal with your feedback, repair and improve the relevant functions as soon as possible!";
+
+"feedback_check_no_desc" = "Detailed description cannot be empty, please describe your problem.";
+"feedback_check_no_email_and_phone_number" = "Please fill in at least one mobile phone number and email address.";
+"feedback_check_email_format_error" = "Mailbox format error, please re-enter";
+"feedback_check_phone_number_format_error" = "Please enter the correct contact information";
+"feedback_check_failed_to_upload_image" = "Picture upload failed, please upload again";
+
+"photo_power_setting" = "Please allow AO.space to access your photos in the “Settings - Privacy - Photos” option of iPhone";
+
+
+"error_client_not_connected_to_Internet" = "Mobile network exception \n Please check and try again";
+"error_box_not_connected_to_Internet" = "The device cannot be accessed \n Please check whether the device network connection is normal";
+
+/// 文件首页
+"file_share_weixin" = "微信";
+"file_share_qq" = "QQ";
+"file_share_copylink" = "复制链接";
+"file_share_other" = "其他分享";
+
+"file_to_share_auto_code" = "分享链接自动填充提取码";
+"file_to_share_date" = "有效期";
+"file_to_share_people_num" = "分享人数";
+"me_message_setting" = "Message Settings";
+"me_space" = "My Space";
+"add_pointout" = "Your files will be transferred from the mobile phone to the private network disk device in encrypted form, and will not exist in any ECs. Please rest assured. The file upload path is shown below and can be changed manually.";
+
+"cloud_image_title_format" = "Photos（%zd）";
+"cloud_image_select_title_format" = "已选择%zd张图片";
+"cloud_no_image" = "您还没有任何图片哦";
+"me_more_function" = "More Services";
+"file_search_scope" = "Search Scope";
+"common_user_agree" = "User agreement & privacy policy";
+"common_agree" = "Agree";
+"common_disagree" = "Disagree & Quit";
+"common_confirm" = "Confirm";
+"common_cancel" = "Cancel";
+"common_agree_pointout" = "for understand your rights and obligations. Clicking agree means that you have fully read and accepted the contents of the above agreement. We will use and protect your personal information in strict accordance with the provisions of the terms and provide you with better services";
+
+"message_notificcation" = "Notifications";
+"security setting" = "Security";
+"modify security password" = "Modify Security Passcode";
+"modify security password hint" = "This information can be used to verify that it is really you who is doing the work and to keep your data safe. AO.space will not store your secret email password, only for login verification. \nThe following scenarios need to verify that it is the administrator himself:\n1. Reset the security password\n2. Unbinding of devices\n3. Data recovery\n4. Other more authentication scenarios.";
+"Original password" = "Original Passcode";
+"New security password" = "New Passcode";
+"Repeat new security password" = "Repeat New Passcode";
+"modify security password input hint" = "Tips: The security password is 6 digits, which can only be set and modified by the administrator. Please keep this password carefully.";
+
+"Forgot password" = "Forget";
+
+"Please fill in and confirm again" = "Please confirm again";
+"Tips" = "Tips";
+"The security password must be 6 digits" = "The security password must be 6 digits";
+"Please enter the complete content" = "Please enter the complete content";
+"The contents entered twice are inconsistent, please re-enter" = "The contents entered twice are inconsistent, please re-enter";
+"The new password cannot be the same as the original password, please re-enter" = "The new password cannot be the same as the original password, please re-enter";
+"Verification timeout" = "Verification timeout";
+"The original password is incorrect" = "The original password is incorrect";
+"Modified successfully" = "Modified successfully";
+"Authentication" = "Authentication";
+"Confidential email verification" = "Original Secret Mailbox Verification";
+"Hardware device verification" = "Hardware Device Verification";
+"Mode 1" = "Mode 1";
+"Mode 2" = "Mode 2";
+"Start searching" = "Start Searching";
+
+"box search hint" = "Hardware device verification requires a Bluetooth or LAN connection to the AO.space device. \n\nPlease open the Bluetooth settings on your phone.";
+"box search highlight hint" = "Please turn on the bluetooth settings of your mobile phone";
+"Bluetooth connection in progress" = "Bluetooth Connection…";
+"LAN search in progress" = "LAN Searching...…";
+"same LAN hint" = "Make sure your phone is connected to the same network as your device";
+"bleOrLanSearchHint" = "You can retry the bluetooth connection, or search in LAN instead？";
+"lan search" = "LAN Search";
+"lan search faild hint" = "Unable to connect to the device, please make sure that the AO.space device is nearby and connected to the Internet normally,\nAfter confirming that it is correct, click “Rescan”";
+"The request failed. Do you want to retry?" = "Request failed, whether to retry？";
+"retry" = "Retry";
+"operation failed" = "Operation Failed";
+"The two password entries are inconsistent, please re-enter" = "The two passcode entries are inconsistent, please re-enter";
+"req failed and retry later" = "Request failed, please try again later!";
+"timeout, start again" = "Operation timed out, please start over";
+"device offline" = "Device is Offline";
+"device offline hint" = "The device cannot be accessed offline. Click “Network Settings” to reconfigure the wireless network for the device.";
+"device offline hint 1" = "Click “Use Offline”, you can continue to use some functions in the space";
+"offline use" = "use offline";
+"Not set" = "Not Set";
+"Security mailbox" = "Secure Mailbox";
+"Unbound" = "Unbound";
+"Secure Password Authentication" = "Secure Passcode Verification";
+"retry 1 min later" = "Please try again in 1 minute";
+"Bind security email" = "Bind Secret Mailbox";
+"please enter the email account and password to be bound for login verification. view help" = "Please enter the email account and password to be bound for login verification. View help";
+"view help" = "View help";
+"security email help" = "Secure Mailbox Help";
+"verify" = "Verify";
+
+"wont store your email password information only for login verification" = "Ao.space will not store your email password information, it is only used for login verification";
+"verifying" = "verifying...";
+
+"Account" = "Account";
+"Password" = "Password";
+"SMTP Service" = "SMTP Service";
+"Port" = "Port";
+"Security type" = "Security type";
+"Manual setting" = "Manual setting";
+"Email password/verification code" = "Email Password/Ver Code";
+"None" = "None";
+
+"SSL" = "SSL";
+"email_format_error" = "Mailbox format error, please re-enter";
+"Please enter the email password or verification code" = "Please enter the email password or verification code";
+"Please input content" = "Please input content";
+"bind failed" = "Binding Failed";
+"Account, password, SMTP server and port are required" = "Account, password, SMTP server and port are required";
+"email_format_error_1" = "Mailbox format error, please re-enter";
+"This mailbox is not supported temporarily" = "This email address is not supported";
+"Wrong account or password" = "Account or password error, please re-enter";
+"email already bind" = "You have bound this email, please enter a new email account";
+"security email bind success" = "The password-protected mailbox is bound successfully";
+"Currently bound mailbox" = "Currently Bound Mailbox";
+"securit email opt hint" = "When you need to authenticate as an administrator, you can use your secret email address for verification.";
+"change bound security email" = "Replace Mailbox";
+"Mode 3" = "Mode 3";
+"verify old security email" = "Original Secret Mailbox Verification";
+"already bound security email hint" = "You have bound your secure email address %@, please enter your email account and password for login verification. View help";
+"auth verify failed" = "Authentication failed";
+"service failed, retry later" = "Service exception, please try again later";
+"Mail server connection timeout" = "Mail server connection timed out";
+"needs to verify your administrator identity" = "AO.space needs to verify your administrator identity";
+"confirm on the bound phone" = "Please confirm on the bound phone";
+"bound phone is unavailable" = "Binding phone is not available";
+"auth_failed_reason" = "Reason: Administrator binding side cannot confirm";
+"auth_failed_hint" = "Please complete [Binding Device] on the new phone before modifying the security passcode.";
+"request failed" = "Request failed";
+"retry again" = "Whether to retry？";
+"reason:admin refuse" = "Reason: The administrator rejected this operation on the binding side";
+"reason:admin not opt in time" = "Reason: Administrator binding side could not confirm";
+"The request is too frequent, try again later" = "Too many requests, try again later!";
+"security email online" = "Secret mailbox is online！";
+"security email online hint" = "The secret mailbox is a tool for administrator authentication. After binding, you can use the secret mailbox to reset the security password";
+"to set security email" = "Go to settings";
+"security email verify failed" = "Security email verification failed";
+"unset security email reason" = "Reason: The security mailbox is not bound";
+"unset security email hint" = "You can retrieve the security password through [hardware device verification] or other methods on the original bound or authorized login terminal.";
+"admin unavailable, opt delay after 24 hours" = "The administrator cannot confirm on the original binding terminal, and the modified content will be delayed for 24 hours to take effect. If the binding terminal operation refuses during the delayed effective period, this modification will not take effect.";
+"24 hours" = "24 hours";
+"account_password_empty_hint" = "Account and password are required, please check and re-enter";
+"retry 10 min later" = "Please try again in 10 minutes";
+"request is too frequent. Try again in 10 minutes" = "Reason: Too many requests, please try again in 10 minutes";
+"appmanagement" = "Application Management";
+"v2 search hint" = "To switch the environment of the space platform, you need to connect the AO.space device through Bluetooth or LAN. Please open the Bluetooth setting of the mobile phone.
+\n\nIf the Bluetooth connection is not successful, please connect the mobile phone and the wireless device to the same network, search for the device in the local area network and connect.";
+
+"not disk init" = "AO.space has not completed disk initialization";
+"not disk init 1" = "You need to either keep your mobile phone under the same LAN as your AO.space device or place your mobile phone near your AO.space device to resume Bluetooth communication.";
+"disk init" = "Disk Initialization";
+"network status" = "AO.space Connection Status：";
+"disk init ing" = "Entering disk initialization process…";
+"enter disk init failed" = "Failed to enter disk initialization process";
+"Disk 1" = "Disk 1";
+"Disk 2" = "Disk 2";
+"M2 SSD" = "M.2 SSD";
+"M.2" = "M.2";
+"N/A" = "N/A";
+
+"Shutdown" = "Shutdown";
+"Previous step" = "Previous";
+"Maximum capacity mode" = "Maximum Capacity Mode";
+"Maximum capacity mode desc" = "The personal space storage capacity is the sum of all disk capacities";
+"Dual disk mutual backup mode" = "Dual Disk Backup Mode";
+"Dual disk mutual backup mode desc" = "Set disk 1 and disk 2 to RAID1 and provide the storage capacity of only one disk";
+"M2 SSD Cache" = "M.2 High Speed Storage";
+"Disk 1 + Disk 2" = "Disk 1 + Disk 2";
+"disk init main storage desc" = "You need to set up a primary storage area from which to store important data such as system service data, personal configuration files, and applet installation files. It is a necessary device for the system startup process.";
+"disk init main storage desc 1" = "* This function can only be set during initialization";
+"Disk encryption" = "Disk Encryption";
+"Disk encryption desc" = "Selecting disk encryption will make the data in your disk unreadable on other people's devices, greatly improving data security. It is recommended.";
+"initialization" = "Initialize";
+"Disk init hint 2" = "* The disk initialization operation includes a formatting process. All original data on the disk will be cleared. Please confirm";
+"Disk init hint 3" = "Initializing disk\nThis process lasts about 5-10 minutes, Do not shutdown or unplug the disk";
+"Enter App" = "Enter AO.space";
+"Disk Init Completed" = "Disk initialization complete";
+"Mode" = "Mode";
+"Shutdown Hint" = "Shutdown reminder";
+"Shutdown Hint 1" = "Are you sure to close the AO.space device？";
+"Disk Manage" = "Disk Management";
+"Capcity" = "Capacity";
+"Status" = "State";
+"Model" = "Model";
+"Diskless" = "Diskless";
+"Disk is ready" = "Your device is ready";
+"Miss mainstorage hint" = "The personal space disk is missing, which makes it impossible to start AO.space. After shutting down, please insert the personal space disk and restart AO.space.";
+"Miss mainstorage hint 1" = "If it is confirmed that the data disk cannot be retrieved, you can reset the device by referring to the user manual.";
+"Space ready chekc failed" = "Space status check failed, try again？";
+"Disk info check failed" = "Disk information detection failed, try again？";
+"Disk initialing" = "Initializing disk…";
+"Disk data sync" = "Synchronizing required data…";
+"Disk init unknown error" = "An unknown error occurred during disk initialization";
+"Disk may be faulty" = "Your disk may be faulty";
+"Disk may be faulty hint" = "It is recommended that you check the condition of the disk, you can also replace the new disk after shutdown to initialize the disk";
+"Disk init error" = "An error occurred during disk initialization";
+"Error Num" = "Error NO. ";
+"Req Sent" = "Request sent";
+"Register Device Failed" = "Failed to register device";
+"App Connecting Box" = "Connecting to Ao.space…";
+"Maximum capacity" = "Maximum Capacity";
+"Raid 1 Mode" = "Dual Disk Backup\nDisk 1 + Disk 2";
+"Disk not Init" = "The disk is not initialized";
+"Missing primary storage" = "lack of primary storage";
+"Normal" = "Normal";
+"Searching box" = "Search device…";
+"Search Failed" = "Search Failed";
+"box search hint 1" = "Hardware device verification requires a Bluetooth or LAN connection to the AO.space device. \n\nPlease open the Bluetooth settings on your phone.";
+"Connect failed" = "Connection Failed";
+"Connect By BLE" = "Bluetooth Connection";
+"UnSearch By LAN" = "Search in LAN failed";
+"bleOrLanSearchHint 1" = "You can try to connect via bluetooth, or search again in the local area network";
+
+
+"Disk Mode" = "Disk Model：";
+"Found New Disk" = "New Disk Join";
+"Disk Expand Status" = "Expand";
+"Disk Expanding Status" = "Expanding";
+"Disk is Expanding, wait" = "The new disk is expanding, please try again later";
+"Disk Expand" = "Disk Expansion";
+"Before Disk Expand" = "Before Expansion";
+"After Disk Expand" = "After Expansion";
+"Disk 1 (Expand)" = "Disk 1（Expansion）";
+"Disk 2 (Expand)" = "Disk 2（Expansion）";
+"M.2 (Expand)" = "M.2（Expansion）";
+"M.2 (Expand) hint" = "It is not recommended to complete the M.2 high-speed storage expansion by yourself";
+"Disk Formatting" = "Format";
+"Disk Expand Format Hint" = "* This operation includes the formatting process for the newly added disk. The original data in the new disk will be completely cleared. Please confirm";
+"Disk expanding" = "Expanding…";
+"Quit Disk Expand" = "Exit Expansion";
+"Disk Expand Failed" = "Disk expansion failed";
+"Disk Expand Failed Hint" = "It is recommended that you check the condition of the newly added disk and ensure that it can be used normally.";
+"Not connect Internet" = "No internet connection";
+"Wired network" = "Wired Network";
+"Automatic" = "Auto";
+"Manual" = "Manual";
+"Ingore Netwrok" = "Ingore Netwrok";
+"Join Network" = "Join Network";
+"IP Address" = "IP Address";
+"Subnet mask" = "Subnet mask";
+"Default Gateway" = "Default Gateway";
+"Box bind by other device" = "AO.space has been bound to other devices";
+"Disk Expand Completed" = "Disk expansion completed";
+
+
+// v2
+"personal_dynamics" = "Personal Dynamics";
+"file_no_dt"="None Personal Dynamics";
+"photo" = "Albums";
+"v2_pointOut" = "An Owned Space";
+"album_footprint" = "Footprint";
+
+"album_my" = "My Albums";
+"security"= "Security";
+"Notifications"= "Notifications";
+"Privacy"= "Privacy";
+"General"= "General";
+"Developer_options"= "Developer Options";
+"Switching_account"= "Switch Account";
+"SecurePasswordAuthentication"= "Secure Passcode Verification";
+"Disk 1 and Disk 2 Stay RAID" = "Disk 1 and Disk 2 remain in RAID";
+
+
+
+"album_collMemories"="Collecting Memories";
+//"album_memories"="%@个回忆";
+"album_noMemories"="There is no memory of the collection";
+"album_collectionSuccess"="Collection Success";
+"album_collectionFail"="Collection Fail";
+
+"album_delCollection"="Delete Memories";
+
+
+///连接盒子
+"box_scan_qrcode" = "Scan Device QR Code";
+"box_scan_prompt_power_on" = "Ensure that the device is powered on.";
+"box_scan_prompt_bluetooth_on" = "Please turn on your phone's bluetooth settings.";
+"box_scan_prompt_scan_qrcode" = "Click “Scan QR Code” below.";
+"box_scan_prompt_bind_confirm" = "After discovering the device, click “Confirm Binding“.";
+"box_scan_prompt_scaning" = "Scaning...";
+"box_bluetooth_name_format" = "eulixspace-%@";
+"box_mdns_name_format" = "btidhash=%@";
+
+"language" = "Language";
+"follow_system" = "Follow System";
+"using" = "Using";
+"Switch_Space_Platform_Environment" = "Switch Space Platform Environment";
+
+"waiting_operate" = "Waiting";
+"Device_Connection" = "Device Connection";
+"Bluetooth connection in progress" = "Bluetooth Connection...";
+
+"Current Environment:AO.space Official Space Platform" ="Current Environment:AO.space Official Space Platform";
+"Current Environment_Private Space Platform" = "Current Environment:Private Space Platform";
+"Advantages of private space platform" = "Advantages of private space platform";
+
+"Public cloud, private cloud" = "[More flexible] Public cloud, private cloud, hybrid cloud, local server and other deployment methods
+\n[More secure] Can be deployed on a local server, autonomous control of all data and permissions
+\n [Personalized] Can be customized according to the needs of the development, to meet the different needs of users";
+
+"How to switch to a private platform" = "How to switch to a private platform:";
+
+"Precautions" = "Precautions";
+
+"Precautions_dec" = "1. After switching to the private space platform, all members on the device will switch to the private space platform\n2. Members on the device will automatically connect to the new space platform within 180 days of the redirect validity period. If they cannot be redirected beyond the validity period, they should be invited by the administrator to use again\n3. The user originally shared the link can continue to visit\n4. The external authorization of the old space platform installed by the user will be invalid, and the new space platform should be used to re-authorize the external application";
+
+"Download the private dsc1" = "1. Download the private space platform package and install and deploy it according to the operation manual. \nDownload address:%@";
+
+"Click the Switch to privat" = "2. Click the Switch to private space platform button, enter the domain name of the private space platform, and the software service package has been installed on the platform, and click the Confirm button";
+
+"Security Email Describe Content" = "When you reset the security password on a new mobile phone, the secret mailbox is used to verify that it is your operation to ensure the security of your data.";
+
+"The original file has been lost" = "The original file has been lost";
+"Download failed" = "Download failed";
+"File cache has been lost" = "File cache has been lost";
+
+
+"File Management" = "File Management";
+"Device Management" = "Device Management";
+
+"LAN_directconnection" = "Direct LAN connection";
+"LAN_P2Pacceleration" = "P2P acceleration";
+"LAN_Offline" = "Off-line";
+"LAN_internetforwarding" = "Internet forwarding";
+"LAN_NotReachable" = "Network Not Reachable";
+
+"login authorization" = "Login Authorization";
+"login authorization hint" = "AO.space account %@ is used to log in on other terminals";
+"login authorization hint 1" = "AO.space account is used to log in on other terminals";
+
+"login_authorization" = "Login Authorization Code";
+"Automatic login within 15 days" = "Automatic login within 15 days";
+"Login Auth Code Hint" = "In order to ensure the data security of the space, do not leak this authorization code";
+"Login Success" = "Login Success";
+"Dual-disk mutual backup data synchronization is complete!" = "Dual-disk mutual backup data synchronization is complete!";
+"Dual-disk mutual backup data synchronization, do not pull out the disk" = "Dual-disk mutual backup data synchronization...%.2f%%, do not pull out the disk";
+"The request failed, please scan the qrcode again!" = "The request failed, please scan the qrcode again!";
+"LAN_access" = "Direct LAN IP connection";
+"AO.space Application" = "AO.space Application";
+
+"Backup and Restore" = "Backup & Restore";
+
+
+"Clear" = "Clear";
+"Delete Success" = "Delete Success";
+"Delete Fail" = "Delete Fail";
+"file_select"="%lu Selected";
+"file_select_p"="%@ Selected";
+"Restore"="Restore";
+
+"Executing backup task"="Executing backup task. This operation is not supported temporarily";
+
+"common_unselect_all"="Select None";
+
+"Confirm"="Confirm";
+
+"device_base_info_detail"= "SN Code：%@ \nSystem Version：%@";
+
+"box_pc"= "AO.space(Self-hosting)";
+"box_cloud"= "AO.space(Cloud)";
+"box_gen_1"= "AO.space Server（1nd Generation）";
+"box_gen_2"= "AO.space Server（2nd Generation）";
+"box_default"= "AO.space";
+
+"device_storage_info_total_title"= "Total";
+"device_storage_info_free_title"= "Unused";
+"device_storage_info_usage_title"= "Used";
+"Network Settings"="Network Settings";
+"System Update"="System Update";
+"Disk Management"="Disk Management";
+
+"home_add" = "Add";
+
+"Clear" = "Clear";
+"Delete Success" = "Delete Success";
+"Delete Fail" = "Delete Fail";
+"file_select"="%lu Selected";
+"Restore"="Restore";
+
+"Executing backup task"="Executing backup task. This operation is not supported temporarily";
+
+"common_unselect_all"="Select None";
+
+"Confirm"="Confirm";
+
+
+
+"Clear Succeed"="Clear Succeed";
+"file_select"="%lu Selected";
+"Restore Succeed"="Restore Succeed";
+
+"Restore Fail"="Restore Fail";
+
+
+//applet
+"update_applet" = "Update";
+"uninstall_applet" = "Uninstall";
+"applet_uninstall_bt_title" = "Uninstall";
+
+"waiting_operate" = "Waiting";
+
+
+"applet_install_fail" = "Install Fail";
+"applet_update_success" = "Update Success";
+"applet_update_fail" = "Update Fail";
+"applet_uninstall_success" = "Uninstall Success";
+"applet_uninstall_fail" = "Uninstall Fail";
+"applet_load_fail" = "Loading Failed";
+"applet_loading" = "Waiting";
+"applet_featured" = "Selected Applications";
+"applet_installing" = "Installing...";
+
+
+"applet_update_dialog_goback" ="Exit";
+"applet_update_dialog_update_late" ="Talk Later";
+
+"applet_update_dialog_update_title" ="New Version Found";
+"applet_update_dialog_update_des" ="New Version Found，do you want to update the application?";
+
+"applet_auth_confirm_dialog_refuse_bt_title" ="Refuse";
+"applet_auth_confirm_dialog_confirm_bt_title" ="Allow";
+"applet_auth_confirm_dialog_title_endstring" ="Apply";
+"applet_auth_confirm_dialog_des_prestring" ="Get Your";
+
+"applet_dialog_fail_bt_title" ="Confirm";
+"applet_dialog_fail_update_title" ="Update Fail";
+"applet_dialog_fail_message" ="Reason: Ao Space system version is too low";
+"applet_dialog_fail_message_detail" ="Please complete the 'System Upgrade' on the administrator's bound phone before operating the mini app update.";
+"applet_update_dialog_fail_bt_title" ="Confirm";
+
+"applet_dialog_fail_install_title" ="Install Fail";
+
+
+"Application Center"="Application Center";
+
+"Install"="Install";
+"Install Fail"="Install Fail";
+"Install Success"="Install Success";
+"Update"="Update";
+"Updating_point"="Updating...";
+"Update Success"="Update Success";
+"Update Fail"="Update Fail";
+
+"Update"="Update";
+"Open"="Open";
+
+"Installing"="Installing";
+
+
+"Application Introduction"="Application Introduction";
+
+
+"Unshare"="Unshare";
+"Number of Views"="Views: %@/%@";
+
+
+
+"Expires in %@ Day"="%@  Expires after Day";
+
+"ULink Failure"="Link Failure";
+
+"After unsharing"="After unsharing, the record will be deleted and no longer be able to access this link. Are you sure you want to cancel?";
+
+"Expires in day"="Expires after %@ Days";
+
+
+"and so on"="%@ and so on";
+
+"Share Time"="Share Time";
+
+
+"Details" = "Details";
+
+"File Name" = "File Name";
+
+"Modify Time" = "Modify Time";
+
+"File Size" = "File Size";
+
+"Send & Share" = "Send & Share";
+
+/// 文件首页
+"file_share_weixin" = "WeChat";
+"file_share_qq" = "QQ";
+"file_share_copylink" = "Copy Link";
+"file_share_other" = "Other Shares";
+
+"file_to_share_auto_code" = "Auto Fill-in Extraction Code";
+"file_to_share_date" = "Expiration Date";
+"file_to_share_people_num" = "Number of Participants";
+"Extraction Code" = "Extraction Code";
+"Share to more than one person" = "Share to many people，please observe relevant laws and regulations and judicial interpretation";
+
+"Auto Generation" = "Auto Generation";
+
+"7 Days" = "7 days";
+"1 day" = "1 day";
+"30 Days" = "30 days";
+"None" = "None";
+
+"Day" = "day";
+
+
+"person" = "person";
+
+"Only bind the phone can authorize other terminals" = "Only bind the phone can authorize other terminals";
+
+"family_information_space" = "Used Space";
+
+
+"Delete Members" = "Delete Members";
+
+"Invite Again" = "Invite Again";
+
+"AO.space Application Configuration" = "AO.space Application Configuration";
+
+
+
+"Deleting a member will delete all data for this member in the space" = "Deleting a member will delete all data for this member in the space";
+
+"me_camera" = "Camera";
+"me_album" = "Select from Album";
+
+"Only administrators can modify member nicknames" = "Only administrators can modify member nicknames";
+
+"Used when members need to change their bound phones" = "Used when members need to change their bound phones";
+
+"Search Results" = "Search Results （%lu）";
+
+"Search Results 0" = "Search Results （0）";
+
+
+"No files were searched" = "No files were searched";
+
+
+"file_delete_prompt"="The deleted files are put into the recycle bin, from which you can restore if needed";
+"added_to_transfer_list" = "The file has been added to the transport list";
+
+
+"File Path" = "File Path";
+"file_new_file" = "New Folder";
+"Please enter a folder name" = "Please enter a folder name";
+
+"You dont have any photos yet" = "You don't have any photos yet";
+
+
+"Dont have any files yet, let's upload them" = "Don't have any files yet, let's upload them";
+
+
+"The recycle bin is very clean" = "The recycle bin is very clean";
+
+
+
+"You dont have a folder yet" = "You don't have a folder yet";
+
+"Move to %@" = "Move to \"%@\"";
+
+"Copy to %@" = "Copy to \"%@\"";
+"Upload to %@" = "Upload to \"%@\"";
+
+"box_network_setup" = "Network Settings";
+
+"device_base_info_more_bt_title" = "More Info";
+
+
+"Login Device" = "Login Device";
+
+"me_nickname_placeholder" = "Enter your nickname, 1-24 characters long";
+"me_nickname_prompt" = "Support Chinese,English,numbers,underscores and other special symbols";
+"me_nickname_invalid_prompt" = "Modify fail. The nickname is illegal";
+"me_sign_placeholder" = "Enter your signature, 1-120 characters long";
+
+
+"5 person" = "5 person";
+"1 person" = "1 person";
+"10 person" = "10 person";
+
+"Private Platform Address" = "Private Platform Address";
+"Official Platform Address" = "Official Platform Address";
+"Start with http, https" = "Start with http, https";
+"Display all the terminal" = "Display all logged in terminal information. It is recommended that you perform offline operations on unfamiliar terminals to prevent privacy disclosure. The offline terminal can still scan the code again to authorize login * The IP address is for reference only.";
+
+"Copy Success" = "Copy Success";
+"Move Success" = "Copy Success";
+
+"Copy Fail" = "Copy Fail";
+"Move Fail" = "Move Fail";
+"Add to" = "Add to";
+
+"Please enter a new file name" = "Please enter a new file name";
+
+
+"Move to my space" = "Move to “My Space”";
+"Copy to my space" = "Copy to “My Space”";
+"Upload to my space" = "Upload to “My space“";
+
+"Modify Fail" = "Modify Fail";
+
+"A file with the same name already exists" = "A file with the same name already exists";
+
+"Too many folder layers, no more than 20 layers" = "Too many folder layers, no more than 20 layers";
+
+
+"Modify Fail" = "Modify Fail";
+
+"Share Success" = "Share Success";
+
+"Share Fail" = "Share Fail";
+"Send this File" = "Send this File";
+"Delete Fail" = "Delete Fail";
+
+"Join Fail" = "Join Fail";
+"Language Settings" = "Language Settings";
+
+"Auto" = "Auto";
+
+"Switch Success" = "Switch Success";
+
+"common_more" = "More";
+
+
+"file_sort_order"="Sort Order";
+"file_sort_name"="Sort by Name";
+"file_sort_time"="Sort by Modified Time";
+"file_sort_type"="Sort by File Type";
+"No Document" = "No Document";
+
+"Select" = "Select";
+
+"No permission to view" = "No permission to view";
+
+"Only administrators can invite members" = "Only administrators can invite members";
+
+"A box can have up to 10 members" = "A box can have up to 10 members";
+
+"Modified successfully" = "Modify Success";
+
+"Modify Fail" = "Modify Fail";
+
+"Please enter a folder name" = "Please enter a folder name";
+
+"Only Chinese and English, numbers and underscores are supported" = "Only Chinese and English, numbers and underscores are supported";
+
+"The file name is too long and cannot exceed 10 characters" = "The file name is too long and cannot exceed 10 characters";
+
+
+
+
+"New Folder Succeed" = "New Folder Succeed";
+
+"New Folder Fail" = "New Folder Fail";
+
+"A file with the same name already exists" = "A file with the same name already exists";
+
+"Share Details" = "Share Details";
+
+"Share Time" = "Share Time";
+
+"Number of Views" = "Views: %@/%@";
+
+
+"Share Again" = "Share Again";
+
+"Please set the name" = "Please set the name";
+
+"ON" = "ON";
+
+"OFF" = "OFF";
+
+
+"Expired" = "Expired";
+
+"%ld天%ld:%ld 后失效" = "Expires after %ld days %02ld:%02ld";
+ 
+"Are you sure you want to restore the selected files?" = "Are you sure you want to restore the selected files?";
+
+"Restore" = "Restore";
+
+"Confirm Clear" = "Confirm Clear";
+
+"Confirm Delete" = "Confirm Delete";
+
+"Memories deleted will not be restored, memories of the file will not be deleted" = "Memories deleted will not be restored, memories of the file will not be deleted";
+
+
+"Do you clear all files? It cannot be restored after emptying" = "Do you clear all files? It cannot be restored after emptying";
+
+"Are you sure you want to delete the selected files? It cannot be recovered after deletion" = "Are you sure you want to delete the selected files? It cannot be recovered after deletion";
+
+"Are you sure cancel the share?" = "Are you sure cancel the share?";
+
+"Confirm Clear" = "Confirm Clear";
+
+"Confirm Delete" = "Confirm Delete";
+
+"After unsharing"="After unsharing, the record will be deleted and no longer be able to access this link. Are you sure you want to cancel?";
+
+
+"Cancel Success"="Cancel Success";
+
+
+"Invitation Link Generated"="Invitation Link Generated";
+
+"This invitation is limited to one member"="This invitation is limited to one member";
+
+"iOS Client Version"="iOS Client Version";
+
+"System Version"="System Version";
+
+"Privacy Policy"="Privacy Policy";
+
+"User Agreement"="User Agreement";
+
+"Offline"="Offline";
+
+"already_the_latest_version" = "It's the latest version";
+
+"box_bind_unbind_prompt" = "Are you sure you want to unbind the bound mobile phone?";
+
+"Login"="Login";
+
+"Login_p"="%@ Login";
+
+"Unknown Location"="Unknown Location";
+
+"Web"="Web·%@";
+
+"iOS"="iOS Client·%@";
+
+"Android"="Android Client·%@";
+
+"Unknown Device"="Unknown Device·%@";
+
+
+"Me"="Me";
+
+"Bound Device"="Bound Device";
+
+"me_space%@"="My Space%@";
+
+"Folder"="New Folder";
+
+"MySelf"="Me";
+
+"To be Used"="To use";
+
+"You can edit the current user's"="You can edit the current user's permissions for the AO.space application";
+
+"Offline Success"="Offline Success";
+
+"Offline Terminal"="Offline Terminal";
+
+"System Specifications"="System Specifications";
+
+"Are you sure to offline %@ ?"="Are you sure to offline %@ ?";
+
+"URL dont conform to specifications"="URL don't conform to specifications";
+
+"Modify only once a year"="Modify only once a year";
+
+"Start with a letter, 6-20 digits in length, supporting letters and numbers"="Start with a letter, 6-20 digits in length, supporting letters and numbers";
+
+"Performing recovery task, this operation is not currently supported"="Performing recovery task, this operation is not currently supported";
+
+"You can choose the domain prefix we recommend"="You can choose the domain prefix we recommend";
+
+"Domain name dont conform to specifications"="Domain name don't conform to specifications";
+
+"The domain name has already been registered or is not available"="The domain name has already been registered or is not available";
+
+"The domain name is already in use"="The domain name is already in use";
+
+"Start with a letter, 6-20 digits in length, supporting letters and numbers"="Start with a letter, 6-20 digits in length, supporting letters and numbers";
+
+"System"="System";
+
+"Version"="Version";
+
+"Kernel Version"="Kernel Version";
+
+"Service"="Service";
+
+"file_sort_order_title"="SORT ORDER";
+
+"Select" = "Select";
+
+"Enter your signature, 1-120 characters long"="Enter your signature, 1-120 characters long";
+
+"Number of Views no"="Number of Views";
+
+"Clear Succeed"="Clear Succeed";
+
+"Move Successful"="Move Success";
+
+"open"="open";
+
+
+"box_bind_A" = "BINDING DEVICE";
+
+"Login Device A" = "LOGIN DEVICE";
+
+
+"Shared links from" = "Shared links from “AO.space” files such as % @:%@ extraction code:%@";
+
+"Shared links from no code more" = "Shared links from “AO.space” files such as % @:%@";
+
+
+"Shared links from have code more" = "Shared links from “AO.space” files such as % @:%@ extraction code:%@";
+
+"Shared links from have code" = "Sharing link from “AO.space” file %@:%@ extraction code:%@";
+
+"Shared links from no code more" = "Sharing link from “AO.space” files such as % @:%@";
+
+"Shared links from no code" = "Sharing link from “AO.space” file %@:%@";
+
+"Copy Link to Clipboard" = "Copy Link to Clipboard";
+
+"Send this File" = "Send this File";
+
+"elongs to your own personal digital space" = "%@ etc,click this link to view. “AO.space” belongs to your own personal digital space";
+
+"share files from AO.space more" = "%@ etc,share files from AO.space.\nLink% @ \nExtraction Code:%@\n";
+
+"share files from AO.space" = "%@share files from AO.space";
+
+"share files from AO.space more no code " = "%@ etc,share files from AO.space.\nLink% @ \n";
+
+"box_bind_result" = "Binding Result";
+
+"task_upload_failed" = "Upload Failed";
+"Upload File Missing Hint" = "The original file cannot be accessed, please long press to delete this record and upload it again.";
+
+"System_A"="SYSTEM";
+
+"Service_A"="SERVICE";
+
+"Folder_Add" ="Folder";
+
+"file_select_zero"="0 Selected";
+
+"file_image_select"="%@ Selected";
+"file_video_select"="%@ Selected";
+
+"Select Album"="Select Album";
+
+"Only Show not Uploaded"="Only Show not Uploaded";
+
+"Please add to the transfer list later"="Please add to the transfer list later";
+
+"common_loading..."="Loading...";
+
+"Memories"="Memories";
+
+
+"album_memories"="Memories";
+
+"Album Classify"="Album Classify";
+
+"History Today"="History Today";
+
+"Like"="Like";
+
+"You dont have any videos yet"="You don't have any videos yet";
+
+"You dont have any GIFs yet"="You don't have any GIFs yet";
+
+"Screenshots"="Screenshots";
+
+"GIFs"="GIFs";
+
+"File name, album name, date"="File name, album name, date";
+
+"Selection operation is not supported in year mode"="Selection operation is not supported in year mode";
+
+"Today in History"="Today in History";
+
+"file_select_zero"="0 Selected";
+
+"video_select_zero"="0 Selected";
+
+"file_Picture_select_zero"="0 Selected";
+
+"Today in History"="Today in History";
+
+"AO.space helped you organize some memories of today"="AO.space helped you organize some memories of today";
+
+
+"The memory has been deleted"="The memory has been deleted";
+
+"You dont have a photo yet"="You don't have a photo yet";
+
+"You dont have a photo video yet"="You don't have a photo video yet";
+
+"There are %lu pictures and videos that have"="There are %lu pictures and videos that have not been synced locally. It is estimated that %@ space will be saved";
+
+"Sync"="Sync";
+
+"Click Upload"="Click Upload";
+
+"You havent left any footprints yet"="You haven't left any footprints yet";
+
+
+
+"Monday"="Monday";
+"Tuesday"="Tuesday";
+"Wednesday"="Wednesday";
+"Thursday"="Thursday";
+"Friday"="Friday";
+"Saturday"="Saturday";
+"Sunday"="Sunday";
+
+"photo data"="%lu-%lu-%lu %@";
+
+"photo_day"="day";
+
+"New Album"="New Album";
+
+"The name doesnt conform to the specification"="The name doesn't conform to the specification";
+
+
+"Duplicate with another album name"="Duplicate with another album name";
+
+"File system format not supported"="File system format not supported";
+
+
+"This is the latest version"="This is the latest version";
+
+"CheckFail"="Check Fail";
+
+"types and retry fat32, ntfs (version 3.1), exfat"="Please format the file system to the following types and retry fat32, ntfs (version 3.1), exfat";
+
+"Checking"="Checking";
+
+"Please Try Again Later"="Please Try Again Later";
+"Performing recovery task, this operation is not currently supported"="Performing recovery task, this operation is not currently supported";
+
+"No external storage device detected"="No external storage device detected";
+
+"Please connect the USB storage device to the box and try again"="Please connect the USB storage device to the box and try again";
+
+"Upgrade Completed"="Upgrade Completed";
+"The system upgrade has been completed"="The system upgrade has been completed. Please re-open it after you exit the App.";
+
+"Last_backup"="Last backup time: %@";
+
+"Backup_Succeeded"="Backup Succeeded";
+"Backup_Failed"="Backup Failed";
+
+"Restore_Succeeded"="Restore Succeeded";
+"Restore_Failed"="Backup Failed";
+
+"Backup_incomplete"="Backup incomplete, try again later";
+
+"Last_backup_no"="Last backup";
+"Backuping"="Backuping";
+"back" = "back";
+"Do_not_disconnect_the_USB"="Do not disconnect the USB storage device";
+
+"Automatic_Upgrade"="Automatic Upgrade";
+"Download_Updates"="Download Updates";
+
+"me_install" = "Install Updates";
+"me_install_prompt" = "When on,the device will be automatically installed and restarted when it is idle from 2:00 to 4:00 in the morning.";
+"me_specifications" = "System Specifications";
+"me_system" = "System";
+"me_service" = "Service";
+"me_download_and_install" = "Download";
+"me_download_and_install_prompt" = "The system upgrade takes about 5 minutes. During this time, the device cannot be accessed. Do you want to continue?";
+"me_update_prompt" = "Warm prompt: The system is being upgraded. Do not power off the device.";
+"me_updated" = "Upgrade Completed";
+"me_updated_prompt" = "The system upgrade has been completed. Please re-open it after you exit the App.";
+"me_download_prompt" = "When on,the device will automatically download updates through the network.";
+"Check Fail" = "Check Fail";
+
+"backup_install" = "Installing system updates";
+"me_restarting" ="Restarting device";
+
+"me_latest_version_prompt" = "This is the latest version";
+"message_none" = "No message yet";
+
+"common_close" = "Close";
+
+"common_version" = "V%@";
+
+"share_relatives" = "Come and experience the AO.space!";
+
+"share_experience" = "You have been invited to experience AO.space. Open App now and share a wonderful time with us!";
+
+
+"album_newDes"="There are no albums yet, so go ahead and create one.";
+"album_none"="Your album doesn't have any photos";
+"album_name"="Album Name";
+"album_support"="Supports Chinese, English, numbers, underscores, up to 10 words";
+"album_specification"="The name doesn't conform to the specification";
+"album_duplicate"="Duplicate with another album name";
+"album_successed"="Create Successed";
+"album_add"="Add from AO.space";
+"album_local"="Add from Local";
+"album_upload"="Select File to Upload";
+"album_deleteAlbum"="Delete Album";
+
+
+"album_searchDes" = "1. Support file name search;\n2. Support date search, such as 2022-08-30; \n3. Support album name search.";
+
+"album_cancelCollection" = "Cancel Collection";
+"album_delCollection" = "Delete Memories";
+"album_delMemories" = "Do you delete memories?";
+"album_memoriesDes" = "Memories deleted will not be restored, memories of the file will not be deleted";
+"album_memoriesDelete" = "The memory has been deleted";
+"album_noPhoto" = "You don't have a photo yet";
+"album_like" = "Like";
+"album_noLike" = "You don't have any favorite photos yet";
+"album_screenshots" = "Screenshots";
+"album_noScreenshots" = "You don't have any screenshots yet";
+"album_dynamic" = "GIFs";
+"album_noDynamic" = "You don't have any GIFs yet";
+"album_noVideo" = "You don't have any videos yet";
+"album_noVideoPhoto" = "You don't have a photo video yet";
+"album_saveSpace" = "There are %1$@ pictures and videos that have not been synced locally. It is estimated that %2$@ space will be saved";
+"album_sync" = "Sync";
+"album_search" = "Search for files in an album";
+"album_follow" = "Try searching for the following";
+"album_date" = "Date";
+"album_albumName" = "Album Name";
+
+"album_successed_%@"="%@ Create Successed";
+"album_fail_%@"="%@ Create Fail";
+
+"album_collection" = "Collection";
+
+"file_origin_image" = "View Original";
+
+"Up_to_500_files_optional" = "Up to 500 files optional";
+"album_mode"="MODE SWITCH";
+"album_day"="Day";
+"album_month"="Month";
+"album_year"="Year";
+"album_name"="Album Name";
+
+"Precious_photos"="Precious photos, worth keeping forever";
+"Date_Switch"="Date Switch";
+"album_deleted"="Do you want to delete the album'%@'? Files in the album will not be deleted.";
+
+"album_add"="Add from AO.space";
+"album_local"="Add from Local";
+"album_upload_no_count"="upload";
+
+"add_success"="Add success";
+"add_fail"="Add fail";
+
+"add_success"="Add Success";
+"add_fail"="Add Fail";
+"security_lock" = "Application Lock";
+"face_unlock"="Face Unlock";
+
+"face_unlock"="Face Unlock";
+"application_lock_unsupported_hint"="Fingerprint / Face Unlock";
+"fingerprint_unlock"="Fingerprint Unlock";
+"application_lock_hint"="1. Opening AO.space App requires verifying fingerprints or face IDs\n2. Face ID and fingerprint are only valid for this machine\n3. AO.space will not store your fingerprint / face ID. If you need to modify it, please operate in the system settings.";
+"update_failed"="Update Fail";
+"view_details"="View Details";
+
+
+"my_space"="My Space";
+"search_result"="Search Results";
+"search_scope"="Search Scope";
+"latest_version_already"="It's the latest version!";
+"find_new_version_desc"="New version found, update applet?";
+"find_new_version"="New Version Found";
+"update"="Update";
+"state_updating"="Updating";
+"state_installing"="Installing";
+"state_downloading"="Downloading";
+"update_success"="Update success";
+"update_failed"="Update failed";
+"newest_version"="Latest version";
+"new_version_size"="New Version Size";
+"update_content"="Update";
+"unknown"="unknown";
+"download_newest_version"="Downloading newest version.";
+"applet_uninstall_title"="Uninstall %@?";
+"applet_uninstall_content_keep_data_and_service"="Uninstall the %@ app, its data will not be cleared";
+"applet_uninstall_content_keep_data_only"="Uninstall the %@ app, all its applications will be deleted, but the data will not be cleared";
+"applet_uninstall_content_clear_all"="Uninstall this app will delete its data and all applications at the same time";
+"uninstalling"="Uninstalling...";
+"confirm_uninstall"="Uninstall";
+
+
+
+"unbind_device"="Unbinding Device";
+"unbind_device_dialog_title"="Unbinding Device";
+"unbind_toast_success"="Unbind Succeed";
+"unbind_toast_failed"="Unbind Fail";
+"unbind_device_alert"="After unbinding, the current phone will no longer be able to use space.";
+
+"device_offline_title"="Device is Offline";
+"offline_use"="Offline Use";
+"device_offline_content_admin"="The device cannot be accessed offline. Click \"Network Settings\" to reconfigure the wireless network for the device.";
+"device_offline_content_member"="The device cannot be accessed offline. Please contact the administrator!";
+"device_offline_content"="Click \"Offline Use\", you can continue to use some functions in the space.";
+
+"auto_update"="Automatic Upgrade";
+"new_version"="New version";
+"update_size"="Size:";
+"update_size_p"="Size: %@";
+"already_latest_version"="This is the latest version.";
+"upgrade_open"="ON";
+"upgrade_close"="OFF";
+"download_and_install"="Download";
+"system_update_alert"="The system upgrade takes about 5 minutes. During this time, the device cannot be accessed. Do you want to continue?";
+"update_now"="Update Now";
+"upgrading_notice"="Warm prompt: The system is being upgraded. Do not power off the device.";
+"upgrade_complete"="Upgrade Complete";
+"upgrade_complete_desc"="The system upgrade has been completed. Please re-open it after you exit the App.";
+"ao_space_p" ="AO.space：%@";
+
+
+"data_backup"="Data backup";
+"data_recover"="Data recover";
+"backup_desc"="Back up all data to external storage";
+"recover_desc"="Recover data from external storage";
+"last_backup_time"="Last backup time:";
+"backup_setting"="Backup setting";
+"target_path"="Target path";
+"backup_content"="Backup content";
+"file_and_app_data"="File data, App data";
+"backup_mode"="Backup mode";
+"recover_setting"="Recover setting";
+"backup_file_path"="Backup file path";
+"select_recover_data"="Select recover data";
+"last_backup_time_recover"="Last backup time";
+"device_all_members_data"="Personal data of all members on the device";
+"manual_backup"="Manual backup";
+"all_members_data"="All members data";
+"part_members_data"="Part members data";
+"start_backup"="Start backup";
+"start_recover"="Start recover";
+"cancel_backup"="Cancel backup";
+"cancel_recover"="Cancel recover";
+"recover_alert"="Restoring data will overwrite all data in the current device with the data of the backup file. Are you sure to restore?";
+"backup_state_no_file_to_recover"="No backup files to restore";
+"backup_state_no_file_to_backup"="No data to back up";
+"backup_state_normal"="Back up all data to external storage";
+"backup_state_check"="Backup check…";
+"backup_state_doing"="Backing up…";
+"backup_state_doing_desc"="Backup data size is %luM,which expected to  take %lu minutes";
+"backup_state_success"="Backup Success";
+"backup_state_fail"="Backup failed";
+"backup_state_cancel"="Cancelled";
+"recover_state_normal"="Restore backup files from external storage to the device";
+"recover_state_check"="Recover check…";
+"recover_state_doing"="Recovering…";
+"recover_state_doing_desc"="The data size is %lldM,which expected to  take %lld minutes";
+"recover_state_success"="Recover success";
+"recover_state_fail"="Recover failed";
+"recover_state_fail_desc"="Please try later";
+"backup_no_enough_storage"="The storage space of the target disk is insufficient, and the backup file is about %lldM";
+"recover_no_enough_storage"="The storage of AO Space is insufficient";
+"nothing"="nothing";
+"complete_time"="complete time: %@";
+"alert_not_mount_title"="Storage device is not mounted";
+"alert_not_mount_content"="Please connect the USB storage device to the box and try again";
+"alert_not_usb_format_title"="File system format not supported";
+"alert_not_usb_format_content"="Please format the file system into the following types and try again\nfat32, NTFS (version 3.1), exFAT";
+"choose_restore_source"="Choose restore source";
+"self_box_source"="Self box backup file";
+"other_box_source"="More box backup files";
+"no_data"="Data is empty";
+"select_restore_data"="Select recover data";
+"all_members"="All members";
+"recover_member_over"="Members size over limit";
+"recover_member_over_desc"="Please delete current users";
+"backup_summary"="Backup summary";
+"recover_summary"="Recover summary";
+"device_all_data"="Data for all spaces on the device";
+"select_backup_file"="Select backup file";
+"select_recovery_content"="Select recovery content";
+"select_target_user"="Select target user";
+"set_backup_password"="Set backup password";
+"verify_backup_password"="Verify backup password";
+"more_than_six_pwd_hint"="6 digits and above, letters, numbers or combinations";
+"please_input_again"="Please input again";
+"pwd_notice_hint"="Password prompt (not required, within 20 words)";
+"set_backup_pwd_desc"="1. To ensure data security, data will be encrypted;\n2. This password is lost and cannot be retrieved. Please remember this password;\n3. The password prompt can be viewed when verifying the password to help you recall the password;\n4. This backup will discard all files in the original backup directory and generate a new backup by encryption.\n";
+"two_pwd_not_match"="The two password entries are inconsistent, please re-enter";
+"input_first_backup_pwd_hint"="Enter the password you set for the first backup";
+"get_pwd_notice"="Get password prompt";
+"backup_verify_pwd_desc_part_1"="If you forget your backup password, click here ";
+"re_backup"="Back up again";
+"backup_verify_pwd_desc_part_2"=", all files in the original backup directory will be discarded, and the backup password will be reset to generate a new backup.";
+"recover_verify_pwd_desc"="Warm prompt: the backup file has been encrypted. If the password is wrong, the file cannot be decrypted.";
+"no_data_select_file"="No backup files were found for recovery";
+"file_data"="File data";
+"applet_data"="App data";
+"create_new_member"="Create a new member";
+"create_new_member_desc"="If you create a new member to restore, after the restoration is completed, you need to re invite on the [my family - member information] page. Members can only use it after they confirm to join.";
+"backup_file"="Backup file";
+"recover_content"="Recover content";
+"target_user"="Target user";
+"recover_strategy"="Recover strategy";
+"cover"="Cover";
+"run_background"="Background execution";
+"data_not_decode"="Data cannot be decrypted, please re-enter";
+"password_hint"="Password hint";
+"not_password_hint"="Password hint not set";
+"backup_doing_notice"="Do not operate spatial data in the backup process to avoid abnormal backup data";
+"recover_doing_notice"="Do not operate spatial data in the recover process to avoid abnormal backup data";
+"recover_member_wrong_desc"="Administrator backup data cannot be restored to members";
+"backup_un_finish"="Backup incomplete";
+"backup_un_finish_desc"="The data backup task is in progress. This operation is not supported at present";
+"recover_un_finish"="Recover incomplete";
+"recover_un_finish_desc"="The data recover task is in progress. This operation is not supported at present";
+"Backup_Start"="Backup Start";
+"Backup_Completed"="Backup Completed";
+"Not_Enough_Space"="Not Enough Space";
+"Not_restored"="No files need to be restored";
+"Recover_Start"="Recover Start";
+"Password_is_greater_than_16_bits"="Password is greater than 16 bits";
+"Passwords_letters"="Passwords can only be numbers or letters";
+"Password_error"="Password Error";
+"Password_Prompt"="Password Prompt";
+"Backup_error_please_wait"="Backup error, please wait";
+"Backup_pointOut"="If you forget the backup password, click here to re-backup. All files in the original backup directory will be discarded and the backup password will be reset to generate a new backup.";
+
+"password_prompt_20"="The password prompt can be up to 20 digits long and cannot be entered more than once";
+
+
+"device_base_info_box_name_default"="AO.space";
+
+
+"family_member_content_part_2_singular"="person";
+"family_member_content_part_2_plural"="persons";
+"me"="Me";
+"invite_member"="Invite Members";
+"invite_member_short"="Invite";
+"no_permission_to_view"="No permission to view!";
+"member_information"="Member Information";
+"member_id"="Member ID";
+"used_size"="Used Space";
+"bind_phone"="Bound Phone";
+"bind_phone_hint"="Only bind the phone can authorize other terminals.";
+"delete_member"="Delete Member";
+"invite_again"="Invite Again";
+"invite_again_hint"="Used when the member needs to change the bound mobile phone.";
+"delete_member_content"="Deleting a member will delete all the data of this member in the space. After deletion, it will not be retrieved.";
+"generate_invite_link"="Invitation Link Generated";
+"we_chat"="WeChat";
+"copy_link"="Copy Link";
+"generate_invite_link_hint"="Send the invitation link to the members. After the members install the AO.space App according to the guidance, open the app and confirm to join, and then start sharing the space.";
+"generate_invite_link_hint_v2"="This invitation is limited to only 1 member!";
+"invite_fail"="Invite Failed";
+"invite_fail_content"="The number of members has reached the maximum.";
+"invite_fail_hint"="Failed to get invitation link. Please try again later.";
+"granter_fail_hint"="Failed to obtain authorization code. Please try again later.";
+"we_chat_invite_title"="Call from relatives and friends: come and join my AO space!";
+"we_chat_invite_description_part_1"="You have been invited to experience;";
+"we_chat_invite_description_part_2"="AO space. Open AO.space App now and share a good time with us!";
+"confirm_join"="Confirm Joining";
+"accept_member_title"="Are you sure to enable your AO.space?";
+"accept_member_hint"="1-24 characters, supporting Chinese and English, numbers and some special symbols.";
+"joining"="Joining";
+"invite_link_expire"="Invite link expired!";
+"join_success"="Join succeed!";
+"join_fail"="Join failed!";
+"join_fail_wrong_name_form"="Illegal nickname!";
+"join_fail_member_duplicate"="You have bound other accounts on the device. Please do not bind again.";
+"join_fail_nickname_illegal"="The nickname is illegal, please re-enter.";
+"join_fail_invalid_invite_code"="The link has expired. Please contact the administrator to invite again.";
+"join_fail_member_full"="Failed to join. The number of members has reached the maximum.";
+"family_tip"="Local account and spatial data isolation";
+"Please_enter_nickname"="Enter your nickname";
+
+"Create_member_success"="Create Member Sccess";
+"confirm_join_p"="Confirm Joining %@ My Space";
+
+"notification"="Notifications";
+"privacy"="Privacy";
+"general"="General";
+"multi_language"="Language";
+"follow_up_system"="Auto";
+"language_settings"="Language Settings";
+"android_permission_manager"="iOS Permissions";
+"storage"="Storage";
+"location"="Location";
+"contacts"="Contacts";
+"camera"="Camera";
+"storage_content"="Access photos, videos, and files on the device, as well as save content locally to the phone.";
+"location_content"="Allow the App to obtain accurate geolocation based on GPS, etc., for Bluetooth pairing with devices when tethering them.";
+"contacts_content"="Allow the app to read the user\'s address book, which is used to synchronize the address book to AO.space or from AO.space to the local phone.";
+"camera_content"="Allow the App to use the camera for uploading photos after taking them.";
+"storage_hint"="Allow access to \"Storage\"";
+"location_hint"="Allow access to \"Location\"";
+"contacts_hint"="Allow access to \"Contacts\"";
+"camera_hint"="Allow access to \"Camera\"";
+"Allow_hint"="Allow access 「%@」";
+
+
+"go_to_system_settings"="Go to system settings";
+"application_lock"="Application Lock";
+"application_lock_unsupported_hint"="The current mobile phone does not support fingerprint and face brushing functions.";
+"fingerprint_unlock"="Fingerprint Unlock";
+"face_unlock"="Face Unlock";
+"fingerprint_face_unlock"="Fingerprint / Face Unlock";
+"application_lock_hint"="1. Opening AO.space App requires verifying fingerprints or face IDs;
+    \n2. Face ID and fingerprint are only valid for this machine;
+    \n3. AO.space will not store your fingerprint / face ID. If you need to modify it, please operate in the system settings.";
+"fingerprint_authenticate_title"="Fingerprint Unlocking";
+"fingerprint_authenticate_subtitle"="Please press the fingerprint sensing area of the mobile phone to verify the fingerprint.";
+"face_authenticate_title"="Face Recognizing";
+"biometric_authenticate_title"="Identifying";
+"fingerprint_unlock_on_success"="Fingerprint unlocking has been enabled.";
+"fingerprint_unlock_on_fail"="Failed to open fingerprint unlocking.";
+"fingerprint_unlock_on_fail_no_fingerprint"="No fingerprint has been entered locally.\nUnable to open fingerprint unlocking.";
+"fingerprint_unlock_off_success"="Fingerprint unlocking has been disabled.";
+"fingerprint_unlock_off_fail"="Failed to close fingerprint unlocking.";
+"face_unlock_on_success"="Face unlocking has been enabled.";
+"face_unlock_on_fail"="Failed to open face unlocking.";
+"face_unlock_on_fail_no_face"="No Face has been entered locally.\nUnable to open face unlocking.";
+"face_unlock_off_success"="Face unlocking has been disabled.";
+"face_unlock_off_fail"="Failed to close face unlocking.";
+"biometric_unlock_on_success"="Fingerprint/Face unlocking has been enabled.";
+"biometric_unlock_on_fail"="Failed to open fingerprint/face unlocking.";
+"biometric_unlock_on_fail_no_biometric"="Fingerprint and face not entered locally.\nUnable to open fingerprint/face unlocking.";
+"biometric_unlock_off_success"="Fingerprint/Face unlocking has been disabled.";
+"biometric_unlock_off_fail"="Failed to close fingerprint/face unlocking.";
+"album_upload_no_count"="Upload";
+"album_upload_with_count"="Upload(%@)";
+
+"domain"="Domain Name";
+"domain_hint"="It starts with a letter and has a length of 6 ~ 20 digits. It supports letters and numbers.";
+"domain_format_error"="Domain name don\'t conform to specifications!";
+"domain_error_hint"="This domain name is registered or unavailable!";
+"domain_recommend_hint"="You can choose the domain name prefix we recommend.";
+"modify_once_year"="It can only be modified once a year!";
+
+"notification_reminder_title"="Turn on Notifications";
+"notification_reminder_content"="Enable push notifications and don\'t miss any important notifications.";
+"to_open"="Open Now";
+"login_terminal_hint"="Information about all terminals that have logged in to the device is displayed. You are advised to log out unfamiliar terminals to prevent privacy disclosure. The offline terminal can scan the code again to authorize login.";
+"login_terminal_hint_highlight"="* IP dependencies for reference only.";
+"go_offline"="Offline";
+"offline_terminal"="Offline Terminal";
+"unknown_terminal"="Unknown Terminal";
+"current_device"="Current Device";
+"android_client_simple"="Android";
+"ios_client_simple"="iOS";
+"web_browser_simple"="Web";
+"android_client"="Android Client";
+"ios_client"="iOS Client";
+"web_browser"="Web Browser";
+"offline_terminal_content_part_1"="Are you sure to offline;";
+"offline_terminal_content_part_2"="\?";
+"offline_success"="Logout succeed!";
+"offline_fail"="Logout failed!";
+"receive_message_notification"="Receive Notification";
+"accept_notification_message_type"="Notification Type";
+"system_message"="System Messages";
+"system_message_hint"="System Notifications, System Upgrade Messages";
+"business_message"="Business Messages";
+"business_message_hint"="Login, File Updates, Member Management, and so on";
+
+"logout_title"="Logout Notification";
+"logout_content"="Your login has expired. If you need to log in again, please click \"Login to More Space\" to scan the code for login.";
+"member_delete_title"="Space Logout";
+"member_delete_content"="Your AO space has been logged off and cannot be used any more. Please contact the administrator.";
+"member_self_delete_content"="Your AO space has been signed out and will no longer be available.";
+"login_notification_part_1"="Your space has been signed in";
+"login_notification_part_2"=".";
+"view_now"="View Now";
+
+"automatic_login_hint"="Automatic login within 15 days.";
+"login_expire"="Login Expired";
+"login_expire_content_part_1"="Your login has expired. If you need to log in again, please click";
+
+"login_expire_content_part_2"="\"Login to More Space\"";
+"login_expire_content_part_3"="to scan the code for login.";
+
+"grantee_request_login_hint"="Please confirm login on the bound mobile phone.";
+"cancel_login"="Cancel Login";
+"mobile_phone"="mobile phone";
+"browser"="browser";
+"granter_authorization_content_part_1"="Authorize ";
+"me_imageDes"="It allows the App to read and write the photo library, for uploading and saving photos and videos to the local, and the album synchronization function.";
+"me_offline"="Allows the App to send offline push notifications for receiving system messages and business messages.";
+
+"mirror_install"="Image Installation";
+"search_mirror"="Search Image";
+"search_mirror_input_hint"="Enter the image name or address";
+"introduce"="Introduction";
+"mirror_install_introduce_part_1"="1. Run the docker pull command to pull an image from the docker image repository. The command format is:$docker pull [option] [Docker Registry address [: port number]/] Warehouse name [: tag] \n \n 2. Docker image warehouse address (optional) : The address format is generally &lt; Domain name /IP&gt; [: port number]. If not specified, the default is docker Hub (docker.io).\n \n 3. Warehouse name (required) : The warehouse name here is a two-part name, &lt; User name &gt; /&lt; Software name &gt; . If you do not give a user name, the default is library, which is the official image.\n \n4. Tags (Optional) : If no tag is added, the default value is latest.";
+
+"mirror_install_introduce_part_2"="[Docker Registry address [: port number]&#047;] Warehouse Name [: tag]";
+"mirror_install_introduce_part_3"="\n\n2. Docker image warehouse address (optional): The address format is generally &#060;Domain name&#047;IP&#062; [: port number]. If not specified, the default is docker Hub (docker.io).
+    \n\n3. Warehouse name (required): The warehouse name here is a two-part name, &#060;User Name&#062;&#047;&#060;Software name&#062;. If you do not give a user name, the default is library, which is the official image.
+    \n\n4. Tags (optional): If no tag is added, the default value is latest.";
+"search_mirror_hint"="Getting image information.\nPlease wait.";
+"search_mirror_error_hint"="No image information obtained.";
+"amd_64"="amd64";
+"mirror_search_hint_part_1"="* Auto filter image packages that do not support ARM64 architecture";
+
+"install_mirror"="Install Image";
+"source"="Source";
+"private_library"="Private Library";
+"size"="Size";
+"install"="Install";
+
+"install_success_text"="Install Success";
+"install_fail_text"="Install Fail";
+"unknown_reason"="Unknown Reason";
+"install_mirror_hint_part_1"="* Ensure that the image package supports the;";
+"install_mirror_hint_part_2"=";architecture, otherwise the installation may fail or become unavailable.";
+"general_setting"="General Settings";
+"advance_setting"="Advanced Settings";
+"application_name"="Application Name";
+"container_name"="Container Name";
+"service_name"="Service Name";
+"domain_name_prefix"="Domain Name Prefix";
+"page_link"="Web Link";
+"performance_limitations"="Performance Limitation";
+"self_start"="Boot Self Start";
+"unlimited"="Unlimited";
+"name_not_match_hint"="Name does not conform to specification.";
+"applet_name_input_hint"="Please enter an application name.";
+"applet_name_common_hint"="Name displayed at the shortcut, supporting Chinese, English and special symbols up to 30 characters.";
+"service_name_input_hint"="Please enter a service name.";
+"service_name_common_hint"="Only English, numeric, up to 40 characters, no special symbols supported.";
+"domain_name_prefix_input_hint"="Please enter a domain name prefix.";
+"domain_name_prefix_common_hint"="Domain name prefix stitches user domain names to form web page access links for applications, limited to 3-20 characters, supporting only letters and numbers.";
+"service_name_exception_illegal"="Illegal service name, please re-enter";
+"service_name_exception_duplicate"="Duplicate service name, please re-enter";
+"domain_name_prefix_exception_illegal"="Domain prefix is illegal, please re-enter";
+"domain_name_prefix_exception_duplicate"="Domain prefix is duplicated, please re-enter";
+"storage_path"="Storage Path";
+"container_internal_path"="Container Path";
+"insert_storage_path"="Add Path";
+"container_publish_port"="Container Port";
+"port_number"="Port Number";
+"publication_type"="Publication Type";
+"purpose"="Purpose";
+"insert_port"="Add Port";
+"port_forward_type"="Port Forwarding Type";
+"port_forward_purpose"="Port Forwarding Purpose";
+"internal_port"="Internal Port";
+"lan_access_port"="LAN Accessible Port";
+"http_request_forward"="Http Request Forwarding";
+"network"="Network";
+"network_type"="Network Type";
+"environment"="Environment";
+"variable_name"="Variable Name";
+"variable_value"="Variable Value";
+"insert_environment_variable"="Add Environment Variable";
+"storage_exception_settings_same"="Duplicate container internal path, please re-enter";
+"port_exception_settings_same"="Duplicate port configuration, please re-enter";
+"port_exception_port_number_empty"="Port number cannot be empty, please re-enter";
+"port_exception_port_number_illegal"="Illegal port number, range: 1~65535";
+"port_exception_purpose_http_multiple"="Configuring multiple ports for “Http Request Forwarding” is not supported";
+"environment_exception_settings_same"="Duplicate variable name, please re-enter";
+"environment_exception_variable_key_empty"="Variable name cannot be empty, please re-enter";
+"environment_exception_variable_key_illegal"="The environment variable is illegal, please re-enter";
+"checking_hint"="Checking, please wait.";
+"param_illegal_hint"="Parameter settings do not conform to specifications.\nPlease click to view the reason.";
+
+"Secure Password Authentication"="Secure Password Authentication";
+
+"Copy"="Copy";
+
+"on_fail"="Failed to turn on.";
+"off_fail"="Failed to turn off.";
+"developer_options"="Developer Options";
+"open_developer_options"="Turn on Developer Options";
+"developer_options_on_success"="Developer options turned on.";
+"developer_options_off_success"="Developer options turned off.";
+"switch_space_platform_environment"="Switch Space Platform Environment";
+"switch_space_platform_environment_head_part"="Switching the space platform environment";
+"current_environment_is"="Current Environment:;";
+"current_environment_official_space_platform"="Current Environment: AO.space Official Space Platform";
+"current_environment_private_space_platform"="Current Environment: Private Space Platform";
+"server_url_is"="Server Address: %@";
+"switch_space_platform_what_benefit"="Advantages of Space Platform";
+"switch_private_space_platform_what_benefit"="Advantages of Private Space Platform";
+"switch_official_space_platform_what_benefit"="Advantages of Official Space Platform";
+"switch_private_space_platform_what_benefit_content"="1. More flexible: multiple deployment methods such as public cloud, private cloud, hybrid cloud, and local server.
+    \n2. More secure: can be deployed on a local server, with autonomous control of all data and permissions.
+    \n3. Personalization: personalized customization development can be carried out as needed to meet different needs of users.";
+"switch_official_space_platform_what_benefit_content"="1. More stable: The official space platform of AO.space will provide stable connection and forwarding services throughout the time.
+    \n2. More secure: The official space platform of AO.space will not save or obtain any data of users, so please rest assured to use it.
+    \n3. Faster speed: The official platform of AO.space will continuously optimize performance and automatically select faster forwarding services.";
+"switch_space_platform_how"="How to Switch to The Platform";
+"switch_private_space_platform_how"="How to Switch to A Private Platform";
+"switch_official_space_platform_how"="How to switch to The Official Space Platform";
+"switch_private_space_platform_how_content_part_1"="1. Download the private space platform software package and install and deploy it according to the operation manual.
+    \nDownload address:;";
+"switch_private_space_platform_how_content_part_2"="2. Click the ”Switch to Private Space Platform“ button, enter the domain name of the private space platform, and the software service package has been installed on the platform. Click the “Confirm” button.
+    \n3. After switching to a private space platform, all user data on the device will not be lost. To switch to a private platform for the first time, you need to register with the private platform and verify the legitimacy of the platform. It can support switching between multiple platforms. Please rest assured to use it.";
+"switch_official_space_platform_how_content"="1. Click the ”Switch to The Official Space Platform“ button, wait for about 10 seconds, and receiving a successful switch reminder indicates that the switch was successful.
+    \n2. Switching environment: The data of the AO.space device will not be lost, and it can support multiple environments to switch back and forth. Please rest assured to use it.";
+"precautions"="Precautions";
+"other_precautions"="Other Precautions";
+"other_precautions_private_space_platform_content"="1. After switching to the private space platform, all members on the device will switch to the private space platform.
+    \n2. Members on the device will automatically connect to the new space platform within 180 days of the expiration date of redirection. If redirection is not possible beyond the expiration date, ask the administrator to invite them again before using it.
+    \n3. Users can continue to access the links they previously shared.
+    \n4. The external authorization of the old space platform for the AO.space application installed by the user will be invalid, and the new space platform needs to be used to re authorize the external authorization.";
+"other_precautions_official_space_platform_content"="1. After switching to the official space platform, all members on the device will switch to the official space platform;
+    \n2. Members on the device will automatically connect to the new space platform within 180 days of the expiration date of redirection. If redirection is not possible beyond the expiration date, ask the administrator to invite them again before using it.
+    \n3. Users can continue to access the links they previously shared.
+    \n4. The external authorization of the old space platform for the AO.space application installed by the user will be invalid, and the new space platform needs to be used to re authorize the external authorization.";
+"switch_private_space_platform"="Switch to Private Space Platform";
+"switch_official_space_platform"="Switch to The Official Space Platform";
+"private_space_platform_address"="Private Platform Address";
+"space_platform_input_hint"="Start with http, https.";
+"illegal_url_hint"="URL don\'t conform to specifications.";
+"switch_fail"="Switch failed";
+"switch_success"="Switch Succeed";
+"switch_fail_hint_part_1"="Switch failed.(Error Code %@)";
+"switch_fail_hint_part_2"=")";
+"switch_private_space_platform_hint"="Successfully switched to the new space platform. \n %@";
+"switch_official_space_platform_hint"="Successfully switched to the official platform. \n %@";
+"switch_space_platform_hint"="Space platform switching...\nExpect to wait 10 seconds.";
+"delete_login_record"="Delete Login Records";
+"redirect_invalid_content"="Login space failed, the administrator changed the space platform domain name to a new address, please contact the administrator to invite again before using.";
+"domain_non_exist_title"="Domain Not Exist";
+"domain_non_exist_content"="The domain name you logged in does not exist, please contact the administrator to re-invite before using.";
+"switch_space_platform_resource_busy_error_content"="Switching failed. The new domain name cannot be the same as the current domain name.";
+"switch_space_platform_connect_error_content"="The space platform domain name entered cannot be established. Please confirm that the domain name is correct.";
+"space_platform_not_available"="Space platform not available.";
+"switch_official_platform_to_bind"="Switch to Official Platform Binding";
+"me_webpage_copy"="Has been copied to the clipboard, please open it using a browser";
+
+"Search"="Search";
+"feedback_email_error"="Please enter the correct contact email";
+"feedback_phone_error"="Please enter the correct contact information";
+"applet_update_dialog_update_late" ="Update later";
+"applet_update_dialog_update_bt_title" ="Update Now";
+
+"system_dialog_install_title" ="System Update";
+"system_dialog_install_message" ="The system upgrade takes about 5 minutes. During this time, the device cannot be accessed. Do you want to continue?";
+"system_dialog_install_bt_confirm_title" ="Install Now";
+"system_dialog_install_bt_confirm_upgrading_title" ="Updating...";
+"update_failed"="Update failed";
+"me_kernelupdate" ="Upgrade and Restart";
+"system_upgrade_notification_title"="System Upgrade Reminder";
+"message_systemRestart"="Restarting AO.space server, please use after restart is complete";
+
+"view_details"="Details";
+
+
+"update_dialog_bt_install_now" ="Install Now";
+"update_dialog_bt_later" ="Waiting";
+"update_dialog_bt_detail_info" ="Details";
+"update_dialog_title" ="System Update";
+"update_dialog_detail" ="“%@” can be used for your device. Do you want to install it now?";
+"over_maxcount"="Maximum character limit exceeded";
+"common_noOpen"="System bluetooth is not on";
+"common_bluetoothDes"="The function of Bluetooth search device needs to turn on system Bluetooth, please turn on!";
+
+"common_bluetoothSearch"="Device bluetooth search requires Bluetooth privilege to be turned on or off immediately";
+
+"Search Again" = "Re-search";
+"Searching Device" = "Searching for AO.space Server";
+"Please connect your phone and device to the same network" = "Please connect your mobile phone to the same network as your AO.space Server";
+"Check please" = "Please check:";
+"APP_APSPACE_SAME_LAN" = "Is mobile phone and AO.space Server in the same LAN";
+"Please select a device to log in:" = "Please select the device to login:";
+"AOSpace Gen 1" = "AO.space Server (1nd Generation)";
+"AOSpace Gen 2" = "AO.space Server (2nd Generation)";
+"Box OS lower, cannot login" = "System version is too low to log on in LAN, please contact administrator for system upgrade";
+"LAN_IPinput" = "LAN IP input";
+"LAN_enterIPaddress" = "Please enter the IP address or LAN access domain name of AO.space server";
+"LAN_example" = "Example";
+"LAN_accessfailed" = "Access failed. Please check whether the mobile phone and AO.space server are in the same LAN";
+"home_noApplication" = "No available AO.space application";
+
+"process_status_message" = "deleting...%ld%%";
+"delete_loading_message" = "deleting";
+"recover_loading_message" = "recovering";
+
+"face_permission" = "Facial permission is not enabled. Please go to Settings to enable it";
+
+"Fingerprint_permission" = "Facial permission is not enabled. Please go to Settings to enable it";
+"no_password_set"="No local password set";
+
+"No_facial_features"="No facial features have been entered locally, unable to unlock facial features";
+"No_fingerprint_features"="No fingerprint has been entered locally, unable to unlock fingerprint";
+"close_applet"="Exit";
+
+"Searching"="Searching";
+"no_data_history_today"="No content at present";
+"memory_data_loading"="Album generation in progress";
+"Ensure_that_the_image_package"="*Ensure that the image package supports the ARM64 architecture, otherwise it may cause installation failure or unavailability";
+"developer_forwarding"="Http Request Forwarding";
+
+"port_exception_settings_same_more" = "Duplicate port configuration, please re-enter \nConfiguring multiple ports for “Http Request Forwarding” is not supported";
+
+"please_re-enter"="please input";
+"container_publish_port_more"="container publish\nPort";
+
+"open"="open";
+
+"no_data_tool_applet"="No available AO.space application.";
+"no_data_appstore_center_list"="There is no application";
+"appstore_state_install"="Install";
+"appstore_state_launch"="Open";
+"appstore_state_update"="Update";
+"appstore_state_installing"="Installing…";
+"appstore_state_updating"="Updating…";
+"appstore_center"="Application Center";
+"appstore_detail_no_desc"="No content introduction";
+"appstore_recent_update"="Recent Updates";
+"appstore_app_introduction"="Application Introduction";
+"appstore_detail_no_content"="No content at present.";
+"app_install_times"="Installations";
+"app_developer"="Developer";
+"app_size"="Size";
+"count_unit_hundred"="hundred";
+"count_unit_thousand"="thousand";
+"count_unit_ten_thousand"="ten thousand";
+"count_unit_billion"="billion";
+"service_error"="Service exception";
+"app_update_success"="Update success";
+"app_update_failed"="Update failed";
+"app_install_success"="Install success";
+"app_install_failed"="Install failed";
+"Updating"="Updating";
+
+"appstore_detail_no_content"="No content at present.";
+
+"applet_uninstall_dialog_title" ="Are you sure to uninstall %@?";
+"applet_uninstall_dialog_des" ="Uninstall the “%@” app, its data will not be cleared";
+"View_more"="View More";
+"applet_uninstall_content_keep_data_only"="Uninstall the “%@” app, all its applications will be deleted, but the data will not be cleared";
+"applet_uninstall_content_clear_all"="Uninstall this app will delete its data and all applications at the same time";
+"open_failed"="open failed";
+"main_other"="other";
+"Account_switch_failed"="Account switch failed";
+"Authorization_Error"="Authorization Error";
+
+"photo_access"="Photo";
+
+"security_authenticator" = "Authenticator";
+"security_authensettip" = "After setting, the login authorization code can be obtained offline, and the space authorization login can be completed even if the bound mobile phone is not nearby.";
+"security_switchauthen_title" = "Confirm to replace the authenticator?";
+"security_switchauthen_content" = "Changing the authenticator will prevent the original phone from generating the latest and most correct authentication code";
+"security_authensetprepare" = "The authenticator application allows you to generate a security code on your mobile phone. For example, to obtain a login authorization code, you do not need to bind the mobile phone to scan the code.
+
+If you do not have an authenticator application, you can install one of the following applications on your phone:
+Google Authenticator
+Tofu Authenticator
+Microsoft Authenticator
+Duo Mobile
+
+If you have installed the authenticator application, click the button below to set the authenticator";
+"security_authenset" = "Start setting";
+"security_authensetcopy" = "Copy";
+"security_authensethelp_1" = "1. Open the authenticator application and click+";
+"security_authensethelp_2" = "2. Add in any of the following ways";
+"security_authensethelp_3" = "If you need to use on multiple phones at the same time, please complete the settings for all phones here. However, there may be a risk that multiple devices are not synchronized with each other";
+"security_authensethelp_4" = "Method 1: Use your authenticator application to scan the following QR code";
+"security_authensethelp_5" = "Method 2: manually enter the key shown below";
+"security_authensetnext" = "Finished, next step";
+"Empty_Conten" = "It is Empty!";
+"security_authensetverify" = "Please enter the 6-digit verification code you see in the authenticator";
+"security_authensetsuccess" = "Successful setting";
+"security_authencodeerror" = "Verification code error";
+"me_spaceidentification" = "Space ID";
+"me_spaceidentification_placeholder" = "Enter your Space ID, 1-24 characters";
+"me_duplicatespaceidentify" = "Duplicate Space ID, please re-enter";
+"Join Space Hint" = "Confirm to enable your AO.space?";
+"Join Space" = "Join AO.space";
+"common_isolation" = "Local account, data isolation";
+"Box can not access platform" = "The operation could not be completed. Reason: Can't connect to AO.space platform";
+"Waiting for upload" = "Waiting for upload";
+"Fast Upload" = "Fast Upload ";
+"Fast Download" = "Fast Download ";
+"Delete Upload Records Hint" = "Only upload records will be deleted, and uploaded files will not be affected";
+"Delete Uploading task Hint" = "Are you sure to delete the task being uploaded?";
+"common_encrypted" = "Encrypted transmission for maximum speed";
+"join_fail_spaceId_illegal"="The space ID is illegal, please re-enter.";
+
+"no_data_select_file"="The space ID is illegal, please re-enter.";
+
+"re_backup"="re-backup";
+
+"message_center"="Message Center";
+"message_none"="No message yet";
+"message_clearAll"="All messages cleared";
+
+"applet_auth_scope_userinfo"="Avatar、Nickname、Domain";
+
+"applet_auth_scope_desc_contact"="Create/modify/delete contacts ";
+
+"applet_auth_scope_desc_read"="read contacts";
+
+"applet_auth_scope_contact"="Contact";
+
+"applet_and"="and%@";
+
+"click_copy"="copy";
+
+"cache_calculate_loading_notice"="Computing cache size. It may take a long time. Please wait";
+
+"clear_cache_data_notice"="It is estimated that %@ space can be freed. It may take a little time to clear the cache. Please be patient";
+
+"clear_cache_data_clear"="clear";
+
+"clear_cache_data_clear_short"="It is estimated that %@ space can be freed";
+
+"used_cache_size"="Used cache size";
+
+"cache_manage_desc"="Caching is temporary data generated during use. Album caching is recommended to be retained, so that you can have a better experience when browsing albums.";
+
+"usage"="Usage";
+
+"use_details"="Use details";
+
+"family_members"="Members:%lu/10";
+
+"onlineOff"="Device offline, check device or network conditions";
+
+"tip_permissions" = "AO.space requires that you grant the following permissions:";
+"tip_bluetoothpermissions" = "Bluetooth permissions: need to obtain Bluetooth rights, for binding devices, network setup functions. Use Bluetooth to confirm that you are near the hardware device and transfer the distribution network data to the device.";
+"tip_photopermissions" = "Photo permissions: Allow access to all photos for photo upload/download, album synchronization, upload avatars, feedback functions.";
+"tip_camerapermissions" = "Camera permissions: You need to acquire camera privileges for binding devices, network settings, sweeping authorized login, and photo upload Avatar functions.";
+"tip_addressbookpermissions" = "Address book permission: Need to obtain address book permission for importing contacts function.";
+"tip_locationpermissions" = "Location permissions: Location information is required to search for and connect AO.space Server using Bluetooth";
+
+"trial_beta"="Join Beta";
+
+"trial_experience"="Try Now";
+
+
+"trial_expired"="User Expired";
+"trial_userExpired"="The user has expired, please apply for an activation code again";
+
+"Data_is_completely_under_your_control" ="Data is completely under your control";
+
+"common_encrypted_main"="Multiple security technologies to protect data privacy";
+
+"common_encrypted_Family" ="Local account, data isolation";
+
+"binding_checknetwork1" = "Please check whether the network of the device is normal.";
+"binding_checknetwork" = "Please check whether the network of the device is normal. If you need to reconfigure the network, please click:";
+"binding_Offlineaccess1"= "* Offline access to downloaded or cached data";
+"bind_box_bt_title"= "Bind";
+
+"binding_connectingdevice"= "Connecting device...";
+"binding_enableBluetooth"= "Please enable the Bluetooth Settings of your phone or connect your phone to the same network as your device";
+"box_power_on"= "Ensure that the device is powered on.";
+"box_bind_step_next"= "Next";
+"box_background" = "Background execution";
+"box_bind_network" = "Network";
+
+"binding_checkBluetooth" = "You have bound this AO.space Server, please do not bind again";
+"binding_spacenamerules" = "1-24 characters, support Chinese and English, numbers and some special symbols.Space names cannot be repeated on the same space device.";
+"binding_spatialinformation" = "Spatial information";
+"binding_spacename1" = "Set the space name to create a personal digital space";
+"binding_yourspacename" = "Your space name";
+"binding_securitypassword" = "Security password can protect your data security, but also can verify the identity of the administrator, please carefully keep this password";
+"binding_reenterpassword" = "The two entries are not consistent. Please reenter";
+"binding_enterpassword" = "Enter the password again";
+"binding_LANchannel" = "LAN channel";
+"binding_IPdirectaccess" = "Mobile phones, AO.space Server in the same network, through IP direct access";
+"binding_internetaccess" = "Internet channel";
+"binding_end-to-endencrypted" = "Open end-to-end encrypted access channel, real-time access anytime and anywhere";
+"binding_peer-to-peerdelivery" = "To establish a peer-to-peer delivery service, ";
+"binding_peer-to-peerdelivery2" = "you need to open an Internet channel";
+
+
+
+"binding_spacename" = "Space name";
+"box_list_clear_title"= "Clear";
+"binding_checkBluetooth1"= "Please check:";
+"binding_checkBluetooth2"= "Whether the Bluetooth of the mobile phone has been turned on and is in communication range with the wireless device";
+"binding_checkBluetooth3"= "Whether the mobile phone is on the same LAN as the wireless device";
+
+"disk_initialization"= "Disk Initialization";
+"binding_recommendeddiskSettings"= "Here are the recommended disk Settings that you can use to initialize the disk, or you can customize the disk Settings one by one";
+"binding_customsettings"= "Custom Settings";
+"binding_formattingtips"= "Formatting Tips";
+"binding_diskinitializationtips"= "Disk initialization involves a formatting process that cleaves all the data from the disk";
+"binding_shutdownprompt"= "Shutdown prompt";
+"binding_shutdown"= "Are you sure to shut down the AO.space Server and return to the login page?";
+"binding_executedbackground"= "The task will be executed in the background. To restore progress, click space on the login page to restore this progress.";
+"binding_minimization"= "Minimization";
+"binding_countryandlanguage"= "Country and Language";
+"binding_systemerror"= "The task will be executed in the background. To restore the progress, click ”Bind Device“ in the login page, and follow the boot operation to restore the progress.";
+"binding_initializingspace1"= "Initializing your AO.space";
+"binding_initializingtip"= "Do not turn off or cut off the power";
+"binding_initializationfailure"= "Initialization failure";
+"binding_systemerror"= "System error, please ";
+"binding_systemerror"= "try again";
+"binding_accesschannel"= "Space access channel";
+"binding_accessmethods"= "A variety of optional access methods, anytime and anywhere speed access";
+"binding_save"= "Save";
+"binding_UnableInternetchannel"= "Unable to open the Internet channel, please connect the AO.space Server to the Internet and try again";
+"binding_closeInternetchannel"= "Are you sure to close the Internet channel?";
+"binding_closeInternetchannel1"= "Closing the internet channel will make it impossible to access the external network anytime and anywhere";
+"binding_Internetchanneltip"= "The Internet channel is provided by the official space platform of AO.space. Based on end-to-end encryption technology, the platform cannot parse personal data.";
+"binding_deployprivateplatform"= "AO.space supports users to deploy private space platform, you can switch to the personal private space platform on demand.";
+"binding_welcome"= "Welcome to the AO.space\n(Open Source)";
+"binding_start"= "Swipe left to start";
+"binding_country"= "China";
+"binding_language"= "Simplified Chinese";
+"binding_encryptedchannels"= "Start encrypted channel";
+"binding_fileservice"= "Start file service";
+"binding_encryptiongateway"= "Start encryption gateway";
+"binding_corecomponents"= "Start core components";
+"box_setup_space"= "设置空间信息";
+"binding_spatialinformation"= "Spatial information";
+
+"HW_monitor_cpu_U" = "CPU Utilization"; //
+"HW_monitor_cpu_T" = "CPU Temperature";       //
+"HW_monitor_cpu_mem" = "CPU and Memory Status";      //
+"HW_monitor_mem" = "Memory Utilization";    //
+"HW_monitor_net" = "Network Speed";    //
+"HW_monitor_netR" = "Received";   //
+"HW_monitor_netS" = "Sent";    //
+"HW_monitor_device" = "Device Status";//
+"HW_monitor_fan" = "Fan Speed";  //
+"HW_monitor_netUS" = "Upload Speed";    //
+"HW_monitor_netDS" = "Download Speed";//
+"HW_monitor_Disk" = "Disk Status";    //
+"HW_monitor_Tem" = "Temperature";//
+"HW_monitor_SMART" = "SMART Status";//
+"HW_monitor_CurrentTem" = "Current Temperature";   //
+"HW_monitor_SN" = "SN";//
+"HW_monitor_Type" = "Type";//
+"HW_monitor_clickBackup" = "If you need to back up the data on the disk, please click \"Data-backup\"";//
+"HW_monitor_backup" = "Data-backup";//
+"HW_monitor_SMARTreport" = "S. M.A.R.T. Test reports various indicators of disk's reliability. The threshold is defined by the disk manufacturer. When the value is below the threshold, please make sure to back up the data on the disk to prevent potential data loss caused by disk failure.The system automatically and quickly tests at 9:00 am on the 5th, 15th, 20th and 25th of each month, and automatically and completely tests at at 9:00 am on the 1st of each month. Skips this test if the disk hibernates or the device is powered off.";
+"HW_monitor_HealthStatus" = "Health Status";    //
+"HW_monitor_LastTestTime" = "Last Test Time:";    //
+"HW_monitor_NextTestTime" = "Next Test Time:";//
+"HW_monitor_Details" = "Details:";    //
+"HW_monitor_Testing" = "Testing";//
+"HW_monitor_Retest" = "Retest"; //
+"HW_monitor_DiskChoose" = "Disk Choose";//
+"HW_Setup_LED" = " LED";    //
+"HW_Setup_DiskHibernation" = "Disk Hibernation";//
+"HW_Setup_PowerRecover" = "Power Recover";//
+"HW_Setup_TimedUpAndDown" = "Timed Startup and Shutdown";//
+"HW_Setup_UPS" = "UPS";
+"HW_Setup" = "Hardware Setup";    //
+"HW_Setup_StatusLED" = "Status LED";//
+"HW_Setup_DiskLED" = "Disk LED";//
+"HW_Setup_LEDNote" = "In several scenarios such as device startup, device shutdown, abnormal device operation, and device reset, the LED is turned on.";//
+"HW_Setup_DiskHibernationSet" = "Disk Hibernation Setup";    //
+"HW_Setup_HibernationTime" = "The Disk will hibernate after being inactive for the configured time period.";//
+"HW_Setup_AutoHibernation" = "Auto Hibernation";//
+"HW_Setup_Hafter10Minutes" = "Hibernation after 10 Minutes";//
+"HW_Setup_Hafter20Minutes" = "Hibernation after 20 Minutes";//
+"HW_Setup_Hafter30Minutes" = "Hibernation after 30 Minutes";//
+"HW_Setup_Hafter1hour" = "Hibernation after 1 hour";//
+"HW_Setup_Hafter2hours" = "Hibernation after 2 hours";//
+"HW_Setup_NoHibernation" = "No Hibernation";//
+"HW_Setup_PRDirection" = "After enable \"Power Recover\", the device can restart automatically when power supply issue is fixed";
+"HW_Setup_PWRecoverNote" = "The time difference between timed startup and shutdown shall be at least 15 minutes.";//
+"HW_Setup_TimedStartup" = "Timed Startup";//
+"HW_Setup_TimedShutdown" = "Timed Shutdown";//
+"HW_Setup_StartupTime" = "Startup Time";//
+"HW_Setup_ShutdownTime" = "Shutdown Time";//
+"HW_Setup_RepetitionRule" = "Repetition Rule";    //
+"HW_Setup_Monday" = "Monday";//
+"HW_Setup_Tuesday" = "Tuesday";//
+"HW_Setup_Wednesday" = "Wednesday";//
+"HW_Setup_Thursday" = "Thursday";//
+"HW_Setup_Friday" = "Friday";//
+"HW_Setup_Saturday" = "Saturday";//
+"HW_Setup_Sunday" = "Sunday";//
+"HW_Setup_Save" = "Save";    //
+"HW_Setup_SaveSuccessed" = "Save Successed";//
+"HW_Setup_PWRecoverNote1" = "The time difference between timed startup and shutdown\nshall be at least 15 minutes.";//
+"HW_Setup_EnableUPS" = "Enable UPS";//
+"HW_Setup_UPSNote" = "AO.space server supports UPS devices from mainstream manufacturers such as Schneider and Santak.";//
+"HW_Setup_UPSype" = "UPS Type";//
+"HW_Setup_UPSTimeNote" = "Time before AO.space Server Enters Safe Standby Mode";    //
+"HW_Setup_UPS0m" = "0 Minutes";//
+"HW_Setup_UPS5m" = "5 Minutes";//
+"HW_Setup_UPS10m" = "10 Minutes";//
+"HW_Setup_UPS20m" = "20 Minutes";//
+"HW_Setup_UPS30m" = "30 Minutes";//
+"HW_Setup_UPSInformation" = "UPS Device Information";    //
+"HW_Setup_Manufacturer" = "Manufacturer";//
+"HW_Setup_BatteryLevel" = "Battery Level";//
+"HW_Setup_Estimatedruntime" = "Estimated Runtime";//
+"HW_Setup_SaveFailed" = "Save Failed";    //
+"HW_Storage_Manage" = "Storage Manage";//
+"HW_Setup_Hour" = "Hour";    //
+"HW_Setup_Minute" = "Minute";//
+"HW_Disk_Detail_Status" = "Disk Detail Status";//
+"HW_Setup_NoConnected" = "No Connected";   //
+"HW_Hour" = "Hour";//
+"HW_Hours" = "Hours";//
+"HW_Minute" = "Minute";
+"HW_Minutes" = "Minutes";
+"HW_monitor_Faulty" = "Faulty";//
+"HW_monitor_Value" = "Value";//
+"HW_monitor_Worst" = "Worst";//
+"HW_monitor_Threshold" = "Threshold";//
+"HW_monitor_Raw" = "Raw Data";//
+"HW_monitor_Healthy" = "Healthy";//
+"HW_Setup_Connected" = "Connected";//
+"HW_Setup_RepRuleSel" = "Please Select \"Repetition Rule\"";//
+"HW_monitor_Nodata" = "No data"; //
+"SwitchSuccess" ="Switch Success";
+"CancelSuccess" ="Cancel Success";
+
+
+"Disk Physical 1" = "Disk 1";
+"Disk Physical 2" = "Disk 2";
+"M2 SSD Cache Physical" = "M.2";
+"ES_Symbol_Comma" = ", ";
+"HW_Mes_UPS_Shd" = "Shutdown after UPS Battery Depletion";
+"HW_Mes_UPS_ShdDetail" = "The AO.space server has safely shut down after  UPS battery depletion.";
+"HW_Mes_Abnormal_Shd" = "Abnormal Shutdown";
+"HW_Mes_Abnormal_ShdDetail" = "The AO.space server has been abnormally shut down. For your data security, AO.space recommends that you configure a UPS for the AO.space server.";
+"HW_Mes_UPS_Information" = "UPS Information";
+"HW_Mes_UPS_Disconnect" = "The communication with the UPS has been disconnected. Please check and confirm.";
+"HW_Mes_UPS_Reconnect" = "The communication with the UPS has been reconnected.";
+"HW_Mes_UPS_BatteryLevel" = "The AO.space server has entered the UPS battery power supply state, and the current UPS battery level is %ld%%.";
+"HW_Mes_UPS_restored" = "The power supply of the UPS has been restored, and the current UPS battery level is %ld%%%.";
+"HW_Mes_Temperature" = "Abnormal Temperature";
+"HW_Mes_Temperature_CPU" = "The CPU temperature is too high. Please check the ventilation status of the AO.space server or check the fan status.";
+"HW_Mes_Temperature_DISK" = "The disk temperature is too high. Please check the ventilation status of the AO.space server or check the fan status.";
+"HW_Mes_FAN" = "Abnormal Fan";
+"HW_Mes_FANDetail" = "The fan speed is 0, please check the hardware status.";
+"HW_Mes_DiskFailure" = "Disk Failure";
+"HW_Mes_DiskFailureDetail" = "%@, %@ SMART test is abnormal. AO.space recommends that you back up your data.";
+"uninstall_applet_v2" ="Uninstall";
+
+"applet_v2_open" ="Open";
+
+"application_guideclose" ="Do not prompt after closing";
+
+"application_guide" ="Welcome";
+"ES_Yesterday" = "Yesterday";
+
+"space_account" ="AO.space account";
+"home_benefits" ="Exclusive Benefits";
+
+
+"es_scan" = "Scan";
+"es_device" = "Device";
+"es_no_email_app" = "You have not set up an email account.";
+"Mail sending canceled" = "Mail sending canceled";
+"Mail saved successfully" = "Mail saved successfully";
+"Mail sent successfully" = "Mail sent successfully";
+"Failed to send email" = "Failed to send email";
+"Mail not sent" = "Mail not sent";
+"es_docker_search_box_hint" = "Hardware device verification needs to be connected to the device through a local area network. Please use your mobile phone to scan the QR code on the computer browser, and make sure that the mobile phone and computer are on the same network.";
+"es_docker_search_box_connect_box" = "Connecting device…";
+"es_docker_searching_box_hint" = "Please make sure the device is powered on\n\nPlease connect your phone to the same network as the device.";
+"es_docker_searching_box_hint_1" = "Please connect your phone and device to the same network";
+"es_docker_searching_box_not_found_hint" = "Unable to connect to the device, please ensure that the phone and the device are on the same network,\nAfter confirming that there is no error, click ”Rescan”";
+"es_auth_reset_password_hint" = "* Please open the Ao Space App bound to the mobile phone before performing this operation";
+"es_check_net_is_working" = "Please check whether the network of the device is normal.";
+"es_check_net_offline_hint" = "* Offline access to downloaded or cached data";
+"es_scan_qrcode_on_pc" = "Please scan the QR code displayed on your computer browser";
+"es_device_is_power_on" = "Whether the device is powered on";
+"es_iphone_device_are_same_net" = "Whether the mobile phone and the device are in the same local area network";
+"es_app_download_address" = "Only when the server and client versions are consistent can the binding be successful. Please download and use Aospace (open source version) and try again. \nDownload address: https://ao.space/download";
+"es_app_download_address_1" = "The binding can only be successful if the version of the server and the client are the same, please download and use Ao Space (Community Edition) and try again. \nDownload address: https://ao.space/download";
+"es_cannot_bind" = "Unable to bind";
+"es_input_platform_address" = "Please enter the space platform address";
+"es_address" = "Address";
+"es_input_platform_address_detail" = "Instructions: Please fill in your space platform address, installation and deployment guide: https://ao.space/open/documentation/104002, if you use the official channel of Ao Space, please enter: https://ao.space";
+"es_only_support_https" = "Only supports https protocol";
+"es_input_platform_address_please" = "Please enter the platform address";
+"es_platform_address_non-compliance" = "The platform address is not in compliance";
+"es_internet_domian" = "Internet access domain name";
+"es_box_open_source" = "AO.space(Open Source)";
+"es_platform_address_unavailable" = "The space platform is unavailable, please install it correctly and try again";
+
+"application_stop" ="Forced stop";
+"application_restart" ="Restart";
+
+"application_stoptip" ="Are you sure you want to force stop the service? All unsaved data will be lost";
+"application_stopprompt" ="Stopping service";
+"application_stopped" ="Stopped";
+"application_view" ="To view statistics, first start the service";
+"application_start" ="Start service";
+
+"application_settings" ="Application settings";
+
+
+"application_servicename" = "Service name";
+"application_Createtime" = "Creation time";
+"application_starttime"   = "Start time";
+"application_guideclose"   = "Do not prompt after closing";
+"application_operationhour" = "Running time";
+"application_cpuusage"   = "CPU usage";
+"application_memoryusage"  = "Memory usage (MB)";
+"application_disk"   = "Disk read/write";
+"application_network"  = "Network I/O";
+"application_parameter"  = "Service parameter";     
+
+"developer_webLink"  = "Web Link";
+
+"developer_port" = "Port";
+"application_spaceinfo"= "AO.space avatar, nickname, domain name";
+   
+
+"application_stopped" = "Stopped";
+"application_running"  = "Running";
+"application_service"  = "Service";
+"application_permissions"  = "Allow %@ access";
+"application_starting"  = "Starting service";
+"application_nosetting"  = "No setting items";
+"set_applet"="Setting";
+
+"versionp"="Version %@";
+
+"home_benefits" ="Exclusive Benefits";
+
+"binding_confirmcreating" = "Confirm creating your personal digital space?";
+"binding_create" = "Create";
+"es_switch" = "Switch";
+"es_version_not_match" = "The versions do not match, the client and server versions must be the same";
+
+"account_serverkey" = "AO.space Server credential";
+"account_boundphonekey" = "Bound phone credential";
+"account_securepasswordkey" = "Secure password credentials";
+
+"common_on" = "ON";
+"common_off" = "OFF";
+"network_local" = "LAN";
+"network_internet" = "Internet";
+
+"me_member_phone" = "Bound Phone";
+"binding_clicktip" = "Tip: Click toggle space, swipe left to clear the local space information";
+"trial_album" = "Album";
+
+"account_DID" = "DID";
+"account_master" = "Master credentials";
+"account_secondary" = "Secondary credentials";
+
+"account_server" = "AO.space Server";
+"account_publickey" = "Public key hash";
+"account_storage" = "Storage location";
+"account_information" = "Credential information";
+"account_lastupdate" = "Last updated";
+
+"es_open_internet_hint" = "Go to the [Space Access Channel] page, open the Internet channel and use it";
+"es_auth_confirm_by_binder" = "You are performing security password related operations on the terminal %@, Please confirm whether it is you?";
+"es_confirm_myself_operation" = "Confirm Operate Myself";
+"es_not_myself_operation" = "Not Operate Myself";
+"es_automatic_login_hint" = "Automatic login within 15 days";
+"es_affiliate_eulix_space" = "\'s AO space";
+
+"common_on" = "ON";
+"common_off" = "OFF";
+"network_local" = "LAN";
+"network_internet" = "Internet";
+
+"binding_suretoclear" = "Sure to clear the AO.space of %@ ?";
+"binding_afterclearing" = "After clearing, the next use needs to re-bind the space or scan the code authorization login.";
+"binding_cleardefinitively" = "Clear definitively";
+
+"binding_selectdevice" = "Select the device to bind to:";

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Licenses</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/AFNetworking</string>
+			<key>Title</key>
+			<string>AFNetworking (3.2.1)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/Bugly</string>
+			<key>Title</key>
+			<string>Bugly (2.5.91)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/CocoaLumberjack</string>
+			<key>Title</key>
+			<string>CocoaLumberjack (3.7.4)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/FileMD5Hash</string>
+			<key>Title</key>
+			<string>FileMD5Hash (2.0.0)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/FLAnimatedImage</string>
+			<key>Title</key>
+			<string>FLAnimatedImage (1.0.16)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/GCDWebServer</string>
+			<key>Title</key>
+			<string>GCDWebServer (3.5.4)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/GKPhotoBrowser</string>
+			<key>Title</key>
+			<string>GKPhotoBrowser (2.4.1)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/IQKeyboardManager</string>
+			<key>Title</key>
+			<string>IQKeyboardManager (6.5.10)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/ISO8601</string>
+			<key>Title</key>
+			<string>ISO8601 (0.6.0)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/JSONModel</string>
+			<key>Title</key>
+			<string>JSONModel (1.8.0)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/KKPinCodeTextField</string>
+			<key>Title</key>
+			<string>KKPinCodeTextField (1.0.0)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/lottie-ios</string>
+			<key>Title</key>
+			<string>lottie-ios (2.5.3)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/Masonry</string>
+			<key>Title</key>
+			<string>Masonry (1.1.0)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/MJExtension</string>
+			<key>Title</key>
+			<string>MJExtension (3.0.17)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/OpenSSL-Universal</string>
+			<key>Title</key>
+			<string>OpenSSL-Universal (1.1.1500)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/Reachability</string>
+			<key>Title</key>
+			<string>Reachability (3.2)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/SAMKeychain</string>
+			<key>Title</key>
+			<string>SAMKeychain (1.5.3)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/SDCycleScrollView</string>
+			<key>Title</key>
+			<string>SDCycleScrollView (1.82)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/SDWebImage</string>
+			<key>Title</key>
+			<string>SDWebImage (5.12.5)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/Sentry</string>
+			<key>Title</key>
+			<string>Sentry (7.16.1)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/SocketRocket</string>
+			<key>Title</key>
+			<string>SocketRocket (0.6.0)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/SQLiteRepairKit</string>
+			<key>Title</key>
+			<string>SQLiteRepairKit (1.2.2)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/SSZipArchive</string>
+			<key>Title</key>
+			<string>SSZipArchive (2.2.3)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/SVProgressHUD</string>
+			<key>Title</key>
+			<string>SVProgressHUD (2.2.5)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/UMCommon</string>
+			<key>Title</key>
+			<string>UMCommon (7.3.7)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/UMDevice</string>
+			<key>Title</key>
+			<string>UMDevice (2.2.1)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/UMPush</string>
+			<key>Title</key>
+			<string>UMPush (4.0.2)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/UMShare</string>
+			<key>Title</key>
+			<string>UMShare (6.10.5)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/WCDB</string>
+			<key>Title</key>
+			<string>WCDB (1.0.7.5)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/WCDBOptimizedSQLCipher</string>
+			<key>Title</key>
+			<string>WCDBOptimizedSQLCipher (1.2.1)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/WebRTC-lib</string>
+			<key>Title</key>
+			<string>WebRTC-lib (103.0.0)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/WechatOpenSDK</string>
+			<key>Title</key>
+			<string>WechatOpenSDK (1.8.7.1)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/YCBase</string>
+			<key>Title</key>
+			<string>YCBase (0.1.14)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/YCEasyTool</string>
+			<key>Title</key>
+			<string>YCEasyTool (0.2.33)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/YYCache</string>
+			<key>Title</key>
+			<string>YYCache (1.0.4)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>licenses/YYModel</string>
+			<key>Title</key>
+			<string>YYModel (1.0.4)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+	</array>
+</dict>
+</plist>

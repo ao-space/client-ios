@@ -1,0 +1,484 @@
+{
+  "version": "0.2.5",
+  "services": {
+    "eulixspace-file-service": {
+      "list_folders": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/file/list"
+      },
+      "delete_file": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/file/delete"
+      },
+      "upload_file": {
+        "type": "upload",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/file/upload"
+      },
+      "download_file": {
+        "type": "download",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/file/download"
+      },
+      "modify_file": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/file/rename"
+      },
+      "move_file": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/file/move"
+      },
+      "copy_file": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/file/copy"
+      },
+        "file_info": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/file/info"
+      },
+      "create_folder": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/folder/create"
+      },
+      "folder_info": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/folder/info"
+      },
+      "list_recycled": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/recycled/list"
+      },
+      "restore_recycled": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/recycled/restore"
+      },
+      "clear_recycled": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/recycled/clear"
+      },
+      "search_files": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/file/search"
+      },
+      "get_syncfolder": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/sync/folder"
+      },
+        "create_syncfolder": {
+        "type": "call",
+            "method": "POST",
+            "protocol": "HTTP",
+            "url": "http://eulixspace-fileapi:2001/space/v1/api/sync/create"
+        },
+      "get_changedfiles": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/sync/synced"
+      },
+      "backup_start": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/backup/start"
+      },
+      "backup_info": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/backup/info"
+      },
+      "backup_stop": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/backup/stop"
+      },
+      "backup_id": {
+         "type": "call",
+         "method": "GET",
+         "protocol": "HTTP",
+         "url": "http://eulixspace-fileapi:2001/space/v1/api/backup/lastid"
+      },
+      "restore_start": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/restore/start"
+      },
+      "restore_info": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/restore/info"
+      },
+      "restore_stop": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/restore/stop"
+      },
+      "restore_id": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/restore/id"
+      },
+      "backup_mount": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/backup/mount"
+      },
+      "restore_source": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/restore/source"
+      },
+      "restore_user": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/restore/user"
+      },
+      "get_headimage": {
+        "type": "download",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/restore/head"
+      },
+      "multipart_create": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/multipart/create"
+      },
+      "multipart_delete": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/multipart/delete"
+      },
+      "multipart_list": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/multipart/list"
+      },
+      "multipart_upload": {
+        "type": "upload",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/multipart/upload",
+        "ext-protocol": "onepart"
+      },
+      "multipart_complete": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/multipart/complete"
+      },
+      "share_genlink":{
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/share/link"
+      },
+      "share_history":{
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/share/history"
+      },
+      "share_detail":{
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/share/detail"
+      },
+      "share_again":{
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/share/again"
+      },
+      "share_cancel":{
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/share/cancel"
+      },
+      "share_ownfilelist":{
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/share/own/filelist"
+      }
+    },
+    "eulixspace-filepreview-service": {
+      "download_compressed": {
+        "type": "download",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/file/compressed"
+      },
+      "download_thumbnails": {
+        "type": "download",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/file/thumb"
+      },
+      "download_preview": {
+        "type": "download",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://eulixspace-fileapi:2001/space/v1/api/file/preview"
+      }
+    },
+    "eulixspace-mailbox-service": {
+      "send_message": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://localhost:8089/v1/api/mailbox/send_message"
+      }
+    },
+    "eulixspace-account-service": {
+
+      "storageinfo_show": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/device/storage/info"
+      },
+      "image_show": {
+        "type": "download",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/personal/image"
+      },
+      "image_update": {
+        "type": "upload",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/personal/image/update"
+      },
+      "personalinfo_show": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/personal/info"
+      },
+      "personalinfo_update": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/personal/info/update"
+      },
+      "invite_member": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/admin/invite"
+      },
+      "delete_member": {
+        "type": "call",
+        "method": "DELETE",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/member/delete"
+      },
+      "member_list": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/member/list"
+      },
+      "member_used_storage": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/member/used/storage"
+      },
+      "member_name_update": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/member/name/update"
+      },
+      "personal_info_update": {
+        "type": "call",
+        "method": "PUT",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/personal/info"
+      },
+      "terminal_info_show": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/terminal/info"
+      },
+      "terminal_info_all_show": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/terminal/all/info"
+      },
+      "terminal_info_delete": {
+        "type": "call",
+        "method": "DELETE",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/terminal/info/delete"
+      },
+      "terminal_logout": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/terminal/logout"
+      },
+      "terminal_info_delete_ios": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/terminal/info/delete"
+      },
+      "notification_get_all": {
+          "type": "call",
+          "method": "POST",
+          "protocol": "HTTP",
+          "url": "http://localhost:8080/space/v1/api/notification/all"
+        },
+        "notification_delete_all": {
+          "type": "call",
+          "method": "POST",
+          "protocol": "HTTP",
+          "url": "http://localhost:8080/space/v1/api/notification/all/delete"
+        },
+      "notification_get": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/notification"
+      },
+      "notification_delete": {
+        "type": "call",
+        "method": "DELETE",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/notification"
+      },
+      "update_domain": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/personal/domain/update"
+      }
+    },
+    "eulixspace-gateway-service": {
+        
+    },
+    "eulixspace-agent-service": {
+      "localips": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://172.17.0.1:5680/agent/v1/api/device/localips"
+      },
+      "netconfig": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://172.17.0.1:5680/agent/v1/api/device/netconfig"
+      },
+      "netconfigsetting": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://172.17.0.1:5680/agent/v1/api/device/netconfig"
+      },
+      "get_upgrade_config": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://172.17.0.1:5680/agent/v1/api/upgrade/config"
+      },
+      "set_upgrade_config": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://172.17.0.1:5680/agent/v1/api/upgrade/config"
+      },
+      "upgrade_start_down": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://172.17.0.1:5681/upgrade/v1/api/start-down"
+      },
+      "upgrade_start_upgrade": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://172.17.0.1:5681/upgrade/v1/api/start-upgrade"
+      },
+      "upgrade_status": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://172.17.0.1:5681/upgrade/v1/api/status"
+      }
+    },
+    "eulixspace-applet-service": {
+      "installed_applet_info": {
+        "type": "call",
+        "method": "GET",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/applet/installed/info"
+      },
+      "install_applet": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/applet/install"
+      },
+      "uninstall_applet": {
+        "type": "call",
+        "method": "POST",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/applet/uninstall"
+      },
+      "update_applet": {
+        "type": "call",
+        "method": "PUT",
+        "protocol": "HTTP",
+        "url": "http://localhost:8080/space/v1/api/applet/update"
+      },
+    }
+  }
+}

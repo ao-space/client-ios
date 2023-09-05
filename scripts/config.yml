@@ -1,0 +1,89 @@
+# Copyright (c) 2022 Institute of Software, Chinese Academy of Sciences (ISCAS)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#  服务列表配置
+service_list:
+  - name: platform
+    url: https://dev-services.eulix.xyz/platform/q/openapi
+  - name: gateway
+    url: https://res.space.eulix.xyz/clients/ios/swagger/gateway.json
+  - name: account
+    url: https://res.space.eulix.xyz/clients/ios/swagger/account.json
+  - name: file
+    url: https://res.space.eulix.xyz/clients/ios/swagger/file.json
+  - name: system
+    url: https://res.space.eulix.xyz/clients/ios/swagger/system.json
+  - name: upgrade
+    url: https://res.space.eulix.xyz/clients/ios/swagger/upgrade.json
+# swagger_cli 版本号
+swagger_cli_version: 2.4.21
+# swagger_cli 下载地址
+swagger_repo: https://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli
+# 以下 api 不是给 客户端用的, 不需要生成
+deny_api:
+  - /space/v1/api/gateway/auth/token/verify
+  - /space/v1/api/admin/passwd/get
+  - /space/v1/api/member/accept
+  - /agent/v1/api/paring
+  - /agent/info
+  - /agent/logs
+  - /agent/status
+  - /platform/v1/api/registry/reset
+  - /platform/status
+  - /platform/config/supersonic
+  - /platform/hello-resteasy
+  - /platform/resteasy-jackson/quarks
+  - /platform/v1/api/push/message
+  - /platform/v1/api/registry/reset/force
+  - /platform/v1/api/questionnaire/{questionnaire_id}
+  - /platform/v1/api/boxinfo
+  - /platform/v1/api/boxinfo/list
+# 以下 api 不是给 客户端用的, 不需要生成, 前缀匹配, 精简配置数量
+deny_api_prefix:
+  - /platform/v1/api/registry
+  - /platform/v1/api/package
+  - /platform/v1/api/network/
+# 以下 model 不是给 客户端用的, 不需要生成
+deny_model:
+  - InputStream
+  - Quark
+  - RegistryInfo
+  - RegistryResetInfo
+  - RegistryResetResult
+  - RegistryResult
+  - TunnelServer
+# 删除 go 语言的 xx. 前缀
+trim_go_prefix:
+  - proto.
+  - dto.
+  - device.
+  - boxinfo.
+  - model.
+  - status.
+  - pair.
+  - upgrade.
+  - call.
+  - admin.
+# 删除  Request-Id (iOS 本地自动插入)  & userId(网关自动插入)
+trim_header_param:
+  - Request-Id
+  - userId
+# swagger_cli 生成 objc 代码时的自定义配置
+objc_config:
+  classPrefix: ES
+  podName: ESClient
+  authorName: Tao Ye
+  podVersion: 0.4.2
+  authorEmail: taoye@iscas.ac.cn
+  gitRepoURL: git@code.eulix.xyz:bp/client/ios/esclient.git

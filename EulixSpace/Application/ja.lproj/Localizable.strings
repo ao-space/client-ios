@@ -1,0 +1,471 @@
+/*
+  Localizable.strings
+  EulixSpace
+
+  Created by Ye Tao on 2021/7/12.
+  Copyright © 2021 eulix.xyz. All rights reserved.
+*/
+
+//Common
+"back" = "Back";
+"cancel" = "Cancel";
+"select_all" = "Select All";
+"unselect_all" = "Select None";
+"delete" = "Delete";
+"ok" = "Confirm";
+"confirm_the_deletion" = "Confirm Delete";
+"join" = "Join";
+"next" = "Next";
+"got_it" = "I know";
+"turn_on_now" = "Open Now";
+"view_now" = "View Now";
+"coming_soon" = "Coming Soon";
+"wait" = "Please Wait";
+"unkown_error" = "Unknown Error";
+"retry_later" = "Please try again later";
+"done" = "Completed";
+
+"common_app_name"="AO.space";
+"common_ok"="Confirm";
+"common_cancel"="Cancel";
+"common_back"="Back";
+"common_select_all"="SelectAll";
+"me_pro_file_photo"="SelectNone";
+"common_delete"="Delete";
+"common_confirm_deletion"="ConfirmDelete";
+"common_more"="More";
+"common_button_done"="Done";
+"common_join"="Join";
+"common_next"="Next";
+"common_setting"="Settings";
+"common_share"="Shared";
+"common_got_it"="Iknow";
+"common_turn_on"="OpenNow";
+"common_view_now"="ViewNow";
+"common_coming_soon"="ComingSoon";
+"common_button_wait"="PleaseWait";
+"common_loading..."="Tryingtoload";
+"common_unkown_error"="UnknownError";
+"common_retry_later"="Pleasetryagainlater";
+"common_scan_qrcode"="ScanQRcode";
+"common_open"="ON";
+"common_close"="OFF";
+"common_get_bluetooth"="ObtainingBluetoothPermission";
+"common_get_bluetooth_prompt"="DevicebindingfunctionrequiresBluetoothpermissiontobeenabled,\nOpennow?";
+"common_get_album"="ObtainingAlbumPermission";
+"common_get_album_prompt"="Albumsynchronizationfunctionrequiresopeningalbumpermission,\nOpennow?";
+"common_setting_hint"="Pleasegotosetopenpermission!";
+"common_open_failed"="Permissiondenied,openingfailed!";
+"common_exit_app"="PressagaintoexittheAO.space";
+"home_main"="Home";
+"home_file"="Docs";
+"home_photo"="Photos";
+"home_mine"="mine";
+"home_all"="All";
+"home_video"="Videos";
+"home_document"="Documents";
+"home_dos"="Docs";
+"home_other"="Other";
+"home_synPhotoAlbum"="AlbumSynchronization";
+"home_synAddressBook"="ContactsSynchronization";
+"home_help"="Help";
+"home_faq"="FAQ(Frequently Asked Questions)";
+"home_connect_device"="Howtoconnectthedevice";
+"home_disconnect_device"="Howtodisconnectthedevice";
+"home_invite_member"="Howtoinvitefamilymembers";
+"home_trial_feedback"="TrialFeedback";
+"home_feedback_experience"="Feedbackuserexperience";
+"home_feedback"="Feedback";
+"home_feedback_prompt"="Product function,user experience,suggestions,etc";
+"home_bottom"="Tothebottom";
+"file_bottom_down"="Save";
+"file_bottom_details"="Details";
+"file_bottom_rename"="Rename";
+"file_bottom_copy"="Copy";
+"file_bottom_move"="Move";
+"file_origin_image"="ViewOriginal";
+"file_downloading"="Completed%@%%";
+"file_preview_unsupport"="Previewisnotsupported";
+"file_upload"="Upload";
+"file_upload_or_new"="UploadorNew";
+"file_upload_photo"="Photos";
+"file_upload_video"="Videos";
+"file_upload_document"="Documents";
+"file_upload_myspace"="Uploadto“%@”";
+"file_new_file"="Folder";
+"file_name_placeholder"="Pleaseenterafoldername";
+"file_upload_place"="UploadLocation:";
+"file_camera"="Camera";
+"file_album"="Selectfromalbum";
+"file_upload_progress"="Upload(%@)";
+"file_image_select"="%@PhotosSelected";
+"file_video_select"="%@VideosSelected";
+"file_photos"="Photos（%@）";
+"file_none_photos"="Youdon'thaveanyphotosyet";
+"file_sort_order"="SortOrder";
+"file_sort_name"="Sortbyname";
+"file_sort_time"="Sortbymodifiedtime";
+"file_sort_type"="Sortbyfiletype";
+"file_list_show"="ListDisplay";
+"file_icon_show"="IconDisplay";
+"file_delete"="Areyousuretodeletethefile?";
+"file_delete_prompt"="Thedeletedfileswillbeputintotherecyclebin,andyoucanrecoverthemfromtherecyclebinifnecessary";
+"file_none_name"="Filenamecannotbeempty!";
+"file_name_rule"="OnlyChineseandEnglish,numbersandunderscoresaresupported";
+"file_name_length"="Thefilenameistoolongandcannotexceed10characters";
+"file_no_data"="NoDocument";
+"file_search_all"="Searchallfiles";
+"file_search_prompt"="Searchcontentcannotbeempty!";
+"me_info"="PersonalDetails";
+"me_profile_photo"="ProfilePhoto";
+"me_nickname"="Nickname";
+"me_nickname_placeholder"="Pleaseenteryournickname,whichis1-24characterslong";
+"me_nickname_prompt"="SupportChinese,English,numbers,underscoresandotherspecialsymbols";
+"me_nickname_invalid"="Modificationfailed.Thenicknameisillegal";
+"me_personalized_signature"="PersonalizedSignature";
+"me_sign_placeholder"="Pleaseenteryourpersonalsignature,whichis1-120characterslong";
+"me_domain_name"="DomainName";
+"me_device_manager"="DeviceManagement";
+"me_system_update"="SystemUpdate";
+"me_member"="MemberofFamily";
+"me_current_peoples"="CurrentNumber";
+"me_member_invite"="Invite";
+"me_current_member"="Currentmembers:%@/%@";
+"me_member_info"="MemberInformation";
+"me_member_id"="MemberID";
+"me_member_space"="UsedSpace";
+"me_member_phone"="BoundPhone";
+"me_share_weixin"="WeChat";
+"me_share_link"="CopyLink";
+"me_more_function"="MoreServices";
+"me_recycle_bin"="RecycleBin";
+"me_clear_cache"="ClearCache";
+"me_trial_feedback"="TrialFeedback";
+"me_faq"="Help&Feedback";
+"me_login_terminal"="LoginTerminal";
+"me_current_terminal"="CurrentTerminal";
+"me_binding_terminal"="BindingTerminal";
+
+//Box
+"box_bind" = "绑定设备";
+"box_list" = "设备列表";
+"box_in_use" = "使用中";
+"box_login_more" = "登录更多空间";
+"box_online" = "在线";
+"box_offline" = "离线";
+"box_offline_prompt" = "设备离线，请将设备连接网线后重试";
+"box_auth" = "授权使用设备";
+"box_click_to_use" = "点击使用";
+"box_click_to_login" = "点击登录";
+"box_login_ongoing" = "登录中";
+"box_empty_list" = "没有绑定的设备\n点击下方“绑定设备”或“登录更多空间”\n来开启傲空间的使用吧";
+
+///连接盒子
+"box_scan_qrcode" = "扫描二维码";
+"box_scan_prompt_power_on" = "请确保设备已接通电源";
+"box_scan_prompt_bluetooth_on" = "请开启手机蓝牙设置";
+"box_scan_prompt_scan_qrcode" = "点击下方的“扫描二维码“";
+"box_scan_prompt_bind_confirm" = "发现设备后点击“下一步“";
+"box_scan_prompt_scaning" = "努力搜索中…";
+"box_bluetooth_name_format" = "eulixspace-%@";
+"box_mdns_name_format" = "btidhash=%@";
+
+"box_scan_no_box" = "未识别出有效二维码";
+"box_scan_no_box_prompt" = "没有发现想要的设备，请确保已连接电源和网线，\n确认无误后，点击“重新扫描”";
+"box_scan_member_exist_prompt" = "您已是该设备上的成员\n请勿重复绑定";
+"box_scan_again" = "重新扫描";
+"box_bind_confirm" = "确认绑定";
+"box_bind_ongoing" = "正在绑定";
+"box_bind_success" = "设备绑定成功";
+"box_bind_setup_space_info" = "设置空间信息";
+"box_bind_fail" = "设备绑定失败";
+"box_bind_fail_prompt" = "该设备已被管理员绑定，请勿重复操作";
+"box_bind_register_device" = "注册设备";
+"box_already_binded_prompt" = "* 设备已绑定其他手机，若要绑定当前手机，则原手机将自动解绑，解绑后原手机无法再访问空间。";
+
+"box_bind_ble_failed" = "蓝牙连接失败";
+"box_bind_ble_failed_prompt" = "蓝牙连接失败，您可以重试蓝牙连接，或改为使用有线连接绑定。";
+"box_bind_retry_ble" = "蓝牙重试";
+"box_bind_try_wired_connection" = "使用有线绑定";
+"box_bind_wired_connection_prompt" = "请确保设备已接通电源，并用网线连接到路由";
+"box_bind_not_found" = "未发现设备";
+
+"box_unbind" = "解绑设备";
+"box_unbind_success" = "解绑成功";
+"box_unbind_fail" = "解绑失败";
+"box_unbind_fail_prompt" = "解绑失败，请稍后重试";
+"box_unbind_password_error_prompt" = "密码错误，还剩%@次机会";
+
+//设置网络
+"box_network_prompt_connecting" = "努力连接中…";
+"box_network_input_wifi_password_placeholder" = "请输入密码";
+"box_network_input_wifi_password" = "输入“%@”的密码";
+"box_network_wrong_wifi_password" = "密码错误，连接失败";
+"box_network_correct_wifi_password" = "已连接";
+"box_network_available_wifi" = "可用WLAN列表";
+"box_network_no_network" = "设备未联网";
+"box_network_local_network" = "本地连接";
+"box_network_prompt_no_network" = "设备未联网，请选择设备要连接的网络";
+"box_network_setup" = "网络设置";
+"box_network_connected" = "已连接网络";
+"box_network_connecting" = "设备正在连接“%@”，请稍后…";
+"box_network_ip_address" = "IP地址";
+"box_network_no_wifi" = "无可用WLAN连接";
+"box_network_no_wifi_prompt" = "若要更换无线网络，您需要先手动 重启傲空间设备，是否确定重启？";
+
+"box_bind_result" = "绑定结果";
+"box_bind_start_to_use" = "Get Started";
+"box_bind_unbind" = "解绑设备";
+
+//蓝牙
+
+"bluetooth_get_permission" = "蓝牙权限获取";
+"bluetooth_get_permission_prompt" = "设备绑定功能需开启蓝牙权限，\n是否立即开启？";
+
+//安全密码
+"security_password_setup" = "设置安全密码";
+"security_password" = "安全密码";
+"security_password_confirm" = "密码确认";
+"security_password_placeholder" = "请输入安全密码";
+"security_password_confirm_placeholder" = "请再次输入安全密码";
+"security_password_prompt" = "温馨提示：安全密码为6位数字，只能由管理员设置和修改，请慎重保管此密码。";
+"security_password_not_match" = "两次输入内容不一致";
+"security_password_error_and_retry_later_prompt" = "安全密码错误，请1分钟后重试";
+
+"security_password_input" = "请输入设备的安全密码";
+"security_password_input_prompt" = "6位数字安全密码";
+"security_password_prompt_title" = "设备安全密码";
+"security_password_prompt_detail" = "\n1.安全密码为6位数字，只能由管理员设置和修改，请慎重保管此密码。\n\n2.应用场景：\n（1）解绑设备，管理员需要正确输入安全密码，才能完成解绑操作。\n（2）需要输入安全密码验证管理员身份的其他情形。";
+
+//Space
+"space_loading" = "努力加载中…";
+"space_initialization" = "空间初始化";
+"space_initialization_ongoing" = "正在空间初始化…";
+"space_initialization_prompt" = "正在初始化空间，请稍候…";
+"space_specific_identifier" = "空间专属标识";
+"space_country" = "所属国家";
+"space_return_box_list" = "返回设备列表";
+"space_language" = "选择语言";
+"space_enter" = "进入空间";
+
+//Main主页
+"main_intoPhotoBtn" = "Photos";
+"main_intoVideoBtn" = "Videos";
+"main_intoMusicBtn" = "音频";
+"main_other" = "Other";
+"main_intofileBtn" = "Documents";
+"main_intelligenceViewTitle" = "最近";
+"main_synchronizationAlbumBtn" = "Album Synchronization";
+"main_synchronizationAddressBookBtn" = "通讯录同步";
+"main_meShareBtn" = "Shared";
+"main_recycleBinBtn" = "Recycle Bin";
+"main_no_operation_record" = "暂无操作记录";
+"main_Help" = "Help";
+"main_trial_feedback" = "Trial Feedback";
+"main_feedback" = "Feedback";
+"main_faq" = "FAQ(Frequently Asked Questions)";
+"main_feedback_user_experience" = "Feedback user experience";
+
+/// 文件首页
+"file_bottom_down" = "Save";
+"file_bottom_share" = "Shared";
+"file_bottom_details" = "Details";
+"file_bottom_delect" = "Delete";
+"file_bottom_more" = "More";
+
+///文件预览
+"file_origin_image" = "查看原图%@";
+"file_origin_image_downloading" = "已完成%@%%";
+"file_preview_unsupport_file" = "暂不支持预览该文件";
+
+///相册上传
+"album_upload_no_count" = "上传";
+"album_upload_with_count" = "上传(%@)";
+"album_image_select_count" = "已选择%@张图片";
+"album_video_select_count" = "已选择%@张视频";
+
+//传输列表
+"phone_storage_info_title" = "手机存储容量";
+"phone_storage_info" = "%@ / %@";
+"box_storage_info_title" = "空间存储容量";
+"box_storage_info" = "%@ / %@";
+
+"transfer_list" = "传输列表";
+"added_to_transfer_list" = "已添加到传输列表";
+"transfer_no_task" = "当前没有传输任务";
+
+"transfer_download_list" = "下载列表";
+"transfer_download_ongoing" = "正在下载（%@）";
+"transfer_download_complete" = "下载完成（%@）";
+"transfer_download_pause" = "下载暂停";
+"transfer_download_failed" = "下载失败";
+"transfer_download_via_wwan_title" = "使用流量下载？";
+"transfer_download_via_wwan_message" = "当前非Wi-Fi网络环境，继续下载将 产生数据流量";
+
+"transfer_pause_all" = "全部暂停";
+"transfer_resume_all" = "全部继续";
+
+"transfer_clear_history" = "清空记录";
+"transfer_clear_confirm_title" = "确定删除";
+"transfer_download_clear_confirm_message" = "只删除下载记录，已下载的文件\n不受影响";
+
+"transfer_upload_list" = "上传列表";
+"transfer_upload_ongoing" = "正在上传（%@）";
+"transfer_upload_complete" = "上传完成（%@）";
+"transfer_upload_pause" = "上传暂停";
+//"transfer_upload_failed" = "上传失败";
+"transfer_upload_failed" = "上传暂停";
+"transfer_upload_target" = "上传至：我的空间%@";
+"transfer_upload_clear_confirm_message" = "只清空上传记录，已上传的文件\n不受影响";
+
+"transfer_sync" = "Album Synchronization";
+"transfer_sync_complete" = "%@ 个文件同步已完成";
+"transfer_sync_title" = "同步中（剩余%@个)";
+"transfer_sync_last_time" = "最近同步：%@";
+
+"me_setting_and_service" = "More Services";
+"me_member" = "Member of Family";
+"me_member_count" = "Current Number";
+"me_more_function" = "More Services";
+"me_trial_feedback" = "Trial Feedback";
+"me_faq" = "Help&Feedback";
+"me_device_manager" = "Device Management";
+"me_album_sync" = "Album Synchronization";
+"me_album_sync_off" = "Unopened";
+"me_web" = "Visit Webpage";
+"me_web_copy" = "已复制到剪切板，请使用浏览器打开";
+"me_clear_cache" = "Clear Cache";
+"me_recycle_bin" = "Recycle Bin";
+"me_about" = "About";
+"me_backup_and_restore" = "备份与恢复";
+"me_about_us" = "关于我们";
+"me_confirm_the_deletion_title" = "确定删除所有缓存（%@）？";
+"me_login_terminal" = "Login Terminal";
+
+"me_already_cleared_cache" = "已清除";
+
+"me_personal_info" = "个人信息";
+"me_personal_avatar" = "头像";
+"me_personal_nickname" = "昵称";
+"me_personal_sign" = "个性签名";
+"me_personal_domin" = "域名";
+"me_personal_no_sign" = "无";
+"me_personal_switch_account" = "切换账号";
+"me_camera" = "拍照";
+"me_album" = "从相册中选择";
+
+"me_nickname_placeholder" = "请输入您的昵称，长度为1-24位字符";
+"me_nickname_prompt" = "支持中文、英文、数字及下划线等部分特殊符号";
+"me_nickname_invalid_prompt" = "修改失败，昵称不合法";
+"me_sign_placeholder" = "请输入您的个性签名，长度为1-120位字符";
+
+
+"me_version_update" = "检查更新";
+"me_upgrade" = "更新";
+"me_upgrade_right_now" = "立即更新";
+"me_found_new_version" = "检查更新";
+"me_latest_version" = "最新版本：V%@";
+"me_version_desc" = "更新内容：\n%@";
+"me_uncompatible_title" = "程序不兼容";
+"me_uncompatible_admin_prompt" = "傲APP的版本与傲来设备的版本\n存在兼容性问题，是否立即修复？";
+"me_uncompatible_member_prompt" = "傲APP的版本与傲来设备的版本\n存在兼容性问题，请联系管理员修复";
+"me_repair_now" = "立即修复";
+
+//相册同步
+"sync_prompt" = "开启相册自动同步需授权手机相册权限，否则无法同步；默认仅在WiFi环境下备份，电量低于15%自动停止相册同步，打开后会消耗您的手机流量备份。";
+"sync_photo" = "自动同步照片";
+"sync_video" = "自动同步视频";
+"sync_background" = "后台自动同步";
+"sync_via_wwan" = "手机流量同步";
+"sync_directory_name_foramt" = "%@的相册";
+"sync_turn_on_album_sync" = "开启相册同步";
+"sync_turn_on_album_sync_prompt" = "您还没有开启相册同步功能， 是否立即开启？";
+"turn_on_now" = "立即开启";
+"sync_not_enough_space_prompt" = "空间不足，上传失败，请清理空间后再重试~";
+
+"autoupload_background_title"     = "限制";
+"autoupload_background_msg"       = "由于 iOS 限制，除非启用了 GPS 服务，否则无法执行后台处理。 一旦移动网络发生变化，系统会在短时间内唤醒，检查新的照片并上传到云端。";
+
+"error" = "错误";
+"err_permission_photo_library" = "请在设置中允许\"相册\"权限";
+"err_permission_location_manager" = "请从设置允许位置 - 始终";
+"open_settings" = "打开设置";
+
+/// v0.3.0 新加
+"current_family_members" = "当前家庭成员";
+"login_title" = "登录";
+"family_member" = "成员信息";
+"family_information_name" = "昵称";
+"family_information_name_id" = "成员ID";
+"family_information_space" = "已使用空间";
+"family_information_ipone" = "已绑定手机";
+"family_information_share_vx" = "微信";
+"family_information_share_line" = "复制链接";
+
+"cloud_image_title_format" = "图片（%zd张）";
+"cloud_image_select_title_format" = "已选择%zd张图片";
+"cloud_no_image" = "您还没有任何图片哦";
+
+/// v0.4.0 新加
+"me_backup" = "备份与恢复";
+"me_data_backup" = "数据备份";
+"me_data_recover" = "数据恢复";
+"me_backup_check" = "备份检查";
+"me_data_backuping" = "正在备份";
+"me_data_sucess" = "数据成功";
+"me_data_error" = "数据失败";
+"box_bind_unbind_prompt" = "是否确定解绑已绑定的手机?";
+
+"local_networking_auto_switch" = "已自动切换至局域网访问";
+"current_networking" = "当前网络";
+"current_networking_local" = "局域网";
+"current_networking_internet" = "互联网";
+
+"feedback" = "意见反馈";
+"feedback_desc" = "详细描述";
+"feedback_desc_pladeholder" = "欢迎提出您在使用过程中遇到的问题和宝贵意见，感谢您对傲空间产品的支持！";
+"feedback_upload_image_format" = "上传图片（%@/4）";
+"feedback_upload_image_prompt" = "建议图片格式：jpeg/bmp/png/gif，大小不超过5M";
+"feedback_email" = "联系邮箱";
+"feedback_email_pladeholder" = "请输入您的邮箱";
+"feedback_phone_number" = "联系方式";
+"feedback_phone_number_pladeholder" = "请输入您的手机号（便于我们联系您）";
+"feedback_submit" = "提交反馈";
+"feedback_submitted" = "已提交";
+"feedback_submitted_prompt" = "感谢您的关注与支持，我们会认真处理您的反馈信息，尽快修复和完善相关功能！";
+
+"feedback_check_no_desc" = "详细描述不能为空，请描述您的问题";
+"feedback_check_no_email_and_phone_number" = "电话和联系邮箱请至少填写一个";
+"feedback_check_email_format_error" = "联系邮箱格式错误，请填写正确的邮箱";
+"feedback_check_phone_number_format_error" = "电话格式错误，请填写正确的电话";
+"feedback_check_failed_to_upload_image" = "图片上传失败，请重新上传";
+
+"photo_power_setting" = "请在Iphone的“设置-隐私-照片”选项中，允许傲空间访问您的照片";
+
+
+"error_client_not_connected_to_Internet" = "手机网络异常\n请检查后重试";
+"error_box_not_connected_to_Internet" = "设备无法访问\n请检查设备网络连接\n是否正常";
+
+/// 文件首页
+"file_share_weixin" = "微信";
+"file_share_qq" = "QQ";
+"file_share_copylink" = "复制连接";
+"file_share_other" = "其他分享";
+
+"file_to_share_auto_code" = "分享链接自动填充提取码";
+"file_to_share_date" = "有效期";
+"file_to_share_people_num" = "分享人数";
+"me_message_setting" = "Message Settings";
+"me_space" = "My Space";
+"add_pointout" = "Your files will be transferred from the mobile phone to the private network disk device in encrypted form, and will not exist in any ECs. Please rest assured. The file upload path is shown below and can be changed manually";
+
+"cloud_image_title_format" = "Photos（%zd）";
+"cloud_image_select_title_format" = "已选择%zd张图片";
+"cloud_no_image" = "您还没有任何图片哦";
+"me_more_function" = "More Services";
+"file_search_scope" = "Search Scope";
+"common_user_agree" = "User agreement & privacy policy";
+"common_agree" = "Agree";
+"common_disagree" = "Disagree & Quit";
+
+"common_agree_pointout" = "for understand your rights and obligations. Clicking agree means that you have fully read and accepted the contents of the above agreement. We will use and protect your personal information in strict accordance with the provisions of the terms and provide you with better services";

@@ -1,0 +1,209 @@
+# frozen_string_literal: true
+
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  # desc 'Create a new oclint report'
+  # lane :lint do
+  #   sh '../oclint.sh'
+  # end
+
+  desc 'Upgrade api client'
+  lane :api do
+    sh 'cd .. && ./scripts/upload_swagger.sh'
+    sh 'cd ../scripts/ && ruby swagger_to_objc.rb && cd ESClient/ && git add . && git commit -m \'Upgrade\' && git push'
+  end
+
+  desc 'Create a new SonarQube report'
+  lane :lint do
+    sh '../scripts/sonar.sh'
+  end
+
+  desc 'Format all code in EulixSpace dir'
+  lane :cfa do
+    sh 'cd ../EulixSpace && pwd && find . | grep -E ".*\\.[hm]{1,2}$" | xargs clang-format -i '
+  end
+
+  desc 'Sync images and localizable strings'
+  lane :sync do
+    sh 'cd .. && ./scripts/sync_images.sh'
+    sh 'cd .. && ./scripts/sync_localizable.sh'
+    sh 'cp ../../../box/services/eulixspace-gateway/src/main/resources/gateway/routes.json ../EulixSpace/Resource/eulix.bundle/routers.json'
+  end
+
+  desc 'Run test cases'
+  lane :test do
+#    run_tests(
+#      scheme: 'EulixSpace',
+#      devices: ['iPhone 12'],
+#      prelaunch_simulator: false,
+#      force_quit_simulator: true
+#   )
+  end
+
+  desc 'Change version'
+  lane :version do
+    scheme = 'EulixSpace'
+
+    version = get_info_plist_value(
+      path: "#{scheme}/Application/Info.plist",
+      key: 'CFBundleShortVersionString'
+    )
+    version = `cat "../EulixSpace/Configuration/Version"`.sub("\n", '')
+    increment_version_number(
+      version_number: version,
+      xcodeproj: "#{scheme}.xcodeproj"
+    )
+    build = ENV['CI_PIPELINE_ID'] || ENV['CI_BUILD_ID'] || (ENV['BUILD_NUMBER'] || '1')
+    increment_build_number(
+      build_number: build,
+      xcodeproj: "#{scheme}.xcodeproj"
+    )
+  end
+
+  desc 'Submit a new Debug Build for Tester(development)'
+  lane :debug_build do
+    scheme = 'EulixSpace'
+    configuration = 'Debug'
+    output_path = './build'
+    version = `cat "../#{scheme}/Configuration/Version"`.sub("\n", '')
+    archive_path = "#{output_path}/#{version}.xcarchive"
+    ipa_path = 'EulixSpace.ipa'
+    json_path = "#{output_path}/compile_commands.json"
+    display_name = get_info_plist_value(
+      path: "./EulixSpace/Application/Info.plist",
+      key: "CFBundleDisplayName"
+    )
+    update_info_plist(
+      plist_path: "./EulixSpace/Application/Info.plist",
+      display_name: "#{display_name}-测试"
+    )
+    gym(
+      scheme: scheme,
+      configuration: configuration,
+      output_directory: output_path,
+      export_method: 'development',
+      export_options: {
+        iCloudContainerEnvironment: 'Development'
+      },
+      archive_path: archive_path,
+      clean: true,
+      output_name: ipa_path,
+      xcpretty_report_json: json_path,
+      export_xcargs: '-allowProvisioningUpdates'
+    )
+    update_info_plist(
+      plist_path: "./EulixSpace/Application/Info.plist",
+      display_name: display_name
+    )
+  end
+
+  desc 'Submit a new Dev Build for Tester(Ad-hoc)'
+  lane :dev_build do
+    scheme = 'EulixSpace'
+    configuration = 'Dev'
+    output_path = './build'
+    version = `cat "../#{scheme}/Configuration/Version"`.sub("\n", '')
+    archive_path = "#{output_path}/#{version}.xcarchive"
+    ipa_path = 'EulixSpace.ipa'
+    json_path = "#{output_path}/compile_commands.json"
+    gym(
+      scheme: scheme,
+      configuration: configuration,
+      output_directory: output_path,
+      export_method: 'ad-hoc',
+      export_options: {
+        iCloudContainerEnvironment: 'Production'
+      },
+      archive_path: archive_path,
+      clean: true,
+      output_name: ipa_path,
+      xcpretty_report_json: json_path,
+      export_xcargs: '-allowProvisioningUpdates'
+    )
+  end
+
+  desc 'Submit a new Platform Build for Tester(Ad-hoc)'
+  lane :platform_build do
+    scheme = 'EulixSpace'
+    configuration = 'Platform'
+    output_path = './build'
+    version = `cat "../EulixSpace/Configuration/Version"`.sub("\n", '')
+    archive_path = "#{output_path}/#{version}.xcarchive"
+    ipa_path = 'EulixSpace.ipa'
+    json_path = "#{output_path}/compile_commands.json"
+    gym(
+      scheme: scheme,
+      configuration: configuration,
+      output_directory: output_path,
+      export_method: 'ad-hoc',
+      export_options: {
+        iCloudContainerEnvironment: 'Production'
+      },
+      archive_path: archive_path,
+      clean: true,
+      output_name: ipa_path,
+      xcpretty_report_json: json_path,
+      export_xcargs: '-allowProvisioningUpdates'
+    )
+  end
+
+  desc 'Submit a new App Store Build and upload to App Store Connect (app-store)'
+  lane :channel_appStore do
+    output_limit = 100000
+    scheme = 'EulixSpace'
+    configuration = 'AppStore'
+    output_path = './build/AppStore'
+    version = `cat "../EulixSpace/Configuration/Version"`.sub("\n", '')
+    archive_path = "#{output_path}/#{version}.xcarchive"
+    ipa_path = 'EulixSpace.ipa'
+    json_path = "#{output_path}/compile_commands.json"
+    gym(
+      scheme: scheme,
+      configuration: configuration,
+      output_directory: output_path,
+      export_method: 'app-store',
+      export_options: {
+        iCloudContainerEnvironment: 'Production'
+      },
+      archive_path: archive_path,
+      clean: true,
+      output_name: ipa_path,
+      xcpretty_report_json: json_path,
+      export_xcargs: '-allowProvisioningUpdates'
+    )
+    # Deliver to TestFlight
+    # ENV['DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS'] = '-t DAV'
+    authKey = "A2948TFJG4"
+    api_key = app_store_connect_api_key(
+        key_id: authKey,
+        issuer_id: "889c8806-1a8a-4151-827f-42f05bfceea3",
+        key_filepath: "~/AuthKey_#{authKey}.p8",
+        duration: 1200, # optional
+        in_house: false, # optional but may be required if using match/sigh
+      )
+    pilot(
+      api_key: api_key,
+      distribute_external: false,
+      #changelog: '问题修复及性能提升，改进用户体验',
+      groups: ['傲空间试用'],
+      skip_waiting_for_build_processing: true,
+      ipa: "#{output_path}/#{ipa_path}"
+    )
+  end
+end

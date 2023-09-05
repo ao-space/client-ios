@@ -1,0 +1,1 @@
+../../../YCEasyTool/YCEasyTool/Classes/UI/Segment/YCSegmentedControl.h

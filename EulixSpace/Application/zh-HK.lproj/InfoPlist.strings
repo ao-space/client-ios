@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  EulixSpace
+
+  Created by Ye Tao on 2021/7/12.
+  Copyright © 2021 eulix.xyz. All rights reserved.
+*/
+CFBundleDisplayName = "傲空间";
+NSCameraUsageDescription= "用于绑定设备、网络设置、扫一扫授权登录、拍照上传头像功能。";
+NSPhotoLibraryUsageDescription= "用于照片上传/下载、相册同步、上传头像、意见反馈功能。";
+mobile_phone_Scenario = "场景一：手机绑定傲空间硬件设备，需要使用相机，扫码设备上的二维码，获取硬件设备的标识；场景二：通过手机给断网的傲空间硬件设备进行网络配置，需要使用相机，扫码设备上的二维码，获取硬件设备的标识；场景三：用户通过扫一扫调用相机，扫描Web端的二维码，完成Web端的授权登录；场景四：用户更换头像，调用相机进行拍照后上传";
+NSBluetoothAlwaysUsageDescription= "场景一：手机绑定傲空间硬件设备，需要使用蓝牙与手机配对，通过蓝牙，将配网、密码等信息发送给设备；场景二：通过手机给断网的傲空间硬件设备进行网络配置，需要使用蓝牙与手机配对，通过蓝牙，将配网的信息发送给设备";
+
+NSBluetoothPeripheralUsageDescription= "场景一：手机绑定傲空间硬件设备，需要使用蓝牙与手机配对，通过蓝牙，将配网、密码等信息发送给设备；场景二：通过手机给断网的傲空间硬件设备进行网络配置，需要使用蓝牙与手机配对，通过蓝牙，将配网的信息发送给设备";
+
+NSLocalNetworkUsageDescription = "局域网访问权限，场景一：用户手机与傲空间设备处于同一个wifi网络时，手机将通过局域网直连方式访问傲空间";

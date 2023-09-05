@@ -1,0 +1,128 @@
+<!--
+  ~ Copyright (c) 2022 Institute of Software, Chinese Academy of Sciences (ISCAS)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>傲空间-Debug</title>
+</head>
+
+<body>
+  <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      color: #bb3333;
+    }
+
+    h2 {
+      text-align: center;
+      color: DodgerBlue;
+    }
+
+    .button {
+      background-color: #bb3333;
+      border: none;
+      padding: 16px 30px;
+      color: white;
+      width: 50%;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 60px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+
+  <script>
+    if (navigator.userAgent.indexOf("iPhone") !== -1 || navigator.userAgent.indexOf("AppleWebKit") !== -1) {
+      //iOS
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<h1>Debug包, 代码不稳定, 非请勿安装</h1>");
+	  document.write("<h1 id=\"branch\"></h1>");
+      document.write("<h2 id=\"date\"></h2>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<a href=\"itms-services://?action=download-manifest&url=https://res.space.eulix.xyz/clients/ios/debug/manifest.plist\"><img src=\"app_logo.png\" alt=\"aoBoxLogo\" style=\"width:40%;\"></a>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>"); 
+      document.write("<a href=\"itms-services://?action=download-manifest&url=https://res.space.eulix.xyz/clients/ios/debug/manifest.plist\"><img src=\"qrcode.png\" alt=\"qrcode\" style=\"width:30%;\"></a>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<a href=\"itms-services://?action=download-manifest&url=https://res.space.eulix.xyz/clients/ios/debug/manifest.plist\" class=\"button\">下载Debug包</div>");
+    } else {
+      //NOT on iOS
+      console.log(navigator.userAgent);
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<h1>请在iPhone上用Safari打开</h1>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+    }
+    
+    function openApp() {
+      window.open("itms-services://?action=download-manifest&url=https://res.space.eulix.xyz/clients/ios/debug/manifest.plist");
+    }
+    
+    
+    function branchListener () {
+      console.log(this.responseText);
+      document.getElementById('branch').innerText = '当前分支:' + this.responseText
+    }
+    function dateListener () {
+      console.log(this.responseText);
+      document.getElementById('date').innerText = '打包时间:' + this.responseText
+    }
+    {
+        var oReq = new XMLHttpRequest();
+        oReq.addEventListener("load", branchListener);
+        var time = new Date().getTime()
+        oReq.open("GET", "branch.txt?timestamp="+time);
+        oReq.send();
+    }
+    {
+        var oReq = new XMLHttpRequest();
+        oReq.addEventListener("load", dateListener);
+        var time = new Date().getTime()
+        oReq.open("GET", "date.txt?timestamp="+time);
+        oReq.send();
+    }
+    
+  </script>
+
+
+</body></html>

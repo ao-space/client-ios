@@ -1,0 +1,1 @@
+../../../YCBase/YCBase/Classes/YCTableViewController.h

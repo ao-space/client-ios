@@ -1,0 +1,34 @@
+max-priority-1: 9999
+max-priority-2: 9999
+max-priority-3: 9999
+rule-configurations:
+  - key: CYCLOMATIC_COMPLEXITY
+    value: 15
+  - key: LONG_LINE
+    value: 300
+  - key: LONG_VARIABLE_NAME
+    value: 40
+  - key: LONG_METHOD
+    value: 150
+  - key: TOO_MANY_METHODS
+    value: 40
+  - key: NCSS_METHOD
+    value: 100
+disable-rules:
+  - BrokenOddnessCheck
+  - VerifyProhibitedCall
+  - VerifyProtectedMethod
+  - SubclassMustImplement
+  - BaseClassDestructorShouldBeVirtualOrProtected
+  - DestructorOfVirtualClass
+  - ParameterReassignment
+  - AvoidDefaultArgumentsOnVirtualMethods
+  - AvoidPrivateStaticMembers
+  - BitwiseOperatorInConditional
+  - AssignIvarOutsideAccessors
+  - UnusedMethodParameter
+  - PreferEarlyExit
+  - EmptyDoWhileStatement
+  - UselessParentheses
+report-type: pmd
+output: ../sonar-reports/oclint.xml

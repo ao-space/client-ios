@@ -1,0 +1,1 @@
+../../../YCEasyTool/YCEasyTool/Classes/PollingEntity/YCPollingEntity.h
