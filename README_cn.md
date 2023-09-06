@@ -63,6 +63,8 @@
 
 无需部署，快速安装体验
 
+[TestFlight](https://testflight.apple.com/join/fsL70XY5)
+
 ## 贡献指南
 
 我们非常欢迎对本项目进行贡献。以下是一些指导原则和建议，希望能够帮助您参与到项目中来。
