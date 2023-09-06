@@ -63,6 +63,16 @@
 
 无需部署，快速安装体验
 
+[TestFlight](https://testflight.apple.com/join/fsL70XY5)
+
+### 通过公共链接邀请安装 Beta 版 App 教程
+
+1. 在用于测试的 iOS 或 iPadOS 设备上安装 [TestFlight](https://apps.apple.com/us/app/testflight/id899247664)。
+2. 在设备上轻点公共链接：[https://testflight.apple.com/join/fsL70XY5](https://testflight.apple.com/join/fsL70XY5)。
+3. 如果你是第一次测试该 App，轻点“接受”。
+4. 轻点“安装”，将 App 安装到设备上。
+5. 如果你不是第一次测试该 App，轻点“更新”或“打开”。
+
 ## 贡献指南
 
 我们非常欢迎对本项目进行贡献。以下是一些指导原则和建议，希望能够帮助您参与到项目中来。
