@@ -64,6 +64,14 @@ No need to deploy, install and experience immediately
 
 [TestFlight](https://testflight.apple.com/join/fsL70XY5)
 
+### Invitation to Install Beta App Tutorial via Public Link
+
+1. Install [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) on the iOS or iPadOS device used for testing.
+2. Tap the public link on the device: [https://testflight.apple.com/join/fsL70XY5](https://testflight.apple.com/join/fsL70XY5).
+3. If you are testing the app for the first time, tap "Accept".
+4. Tap "Install" to install the app on the device.
+5. If you are not testing the app for the first time, tap "Update" or "Open".
+
 ## Contact us
 
 - Email: <developer@ao.space>
