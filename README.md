@@ -62,6 +62,8 @@ Open the project file EulixSpace.xcworkspace with Xcode and run the project. The
 
 No need to deploy, install and experience immediately
 
+[TestFlight](https://testflight.apple.com/join/fsL70XY5)
+
 ## Contact us
 
 - Email: <developer@ao.space>
