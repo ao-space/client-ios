@@ -29,7 +29,7 @@
 
 ![架构图](./docs/architecture.png)  
 
-傲空间 iOS 客户端基于 Objective-C 语言开发，主要采用 MVC、MVVM 架构。开源的功能主要有绑定设备、文件上传下载、传输列表管理等功能。采用 DID（Decentralized Identifier）去中心化技术标识身份。
+AO.space iOS 客户端基于 Objective-C 语言开发，主要采用 MVC、MVVM 架构。开源的功能主要有绑定设备、文件上传下载、传输列表管理等功能。采用 DID（Decentralized Identifier）去中心化技术标识身份。
 
 在视图层，基于 UIKit 中视图基类自定义开发了一些功能组件类和 category 分类，以便于业务方的开发，源码目录分别为：`/EulixSpace/ESPlatform/UI` 与 `/EulixSpace/ESPlatform/Category`。  
 
@@ -53,7 +53,7 @@
 
 ### 安装依赖库  
 
-傲空间源码中使用了一些第三方开源库代码，在运行项目工程前需要先安装依赖的库。具体方式为：打开 Mac 上终端应用程序，进入源码文件所在目录（Podfile 文件所在目录），执行 `Pod install` 命令，安装项目所依赖的第三方开源库。  
+源码中使用了一些第三方开源库代码，在运行项目工程前需要先安装依赖的库。具体方式为：打开 Mac 上终端应用程序，进入源码文件所在目录（Podfile 文件所在目录），执行 `Pod install` 命令，安装项目所依赖的第三方开源库。  
 
 ### 运行  
 
