@@ -392,6 +392,7 @@ typedef void (^ESCompletionHandler)(void);
          visible:(BOOL)visible
         callback:(void (^)(NSURL *output, NSError *error))callback {
     NSString *fileId = file.uuid;
+    ESDLog(@"[Transfer][Download] enqueue uuid:%@ name:%@ visible:%d", fileId, file.name, visible);
     ESTransferTask *task = [self taskExist:fileId];
     task.downloadingSemaphore = self.downloadingSemaphore;
     ///本地已经存在该文件, 可能是之前下载过的, 就不继续下载了,
@@ -546,6 +547,7 @@ typedef void (^ESCompletionHandler)(void);
 -(void)downloadBySlice:(ESTransferTask *)task {
     [task updateDownloadTaskState:ESTransferStateRunning];
     [task addTaskObserver:self];
+    ESDLog(@"[Transfer][Download] start uuid:%@ name:%@", task.file.uuid, task.name);
     
     ESRealCallRequest *request = [ESRealCallRequest new];
     request.apiName = @"download_file";
@@ -566,6 +568,10 @@ typedef void (^ESCompletionHandler)(void);
 
 - (void)processDownloadResult:(ESTransferTask *)task result:(NSURL *)url error:(NSError *)error {
     if (error || url == nil || url.path.length == 0) {
+        ESDLog(@"[Transfer][Download] failed uuid:%@ name:%@ err:%@",
+               task.file.uuid,
+               task.name,
+               error.localizedDescription);
         [task updateDownloadTaskState:ESTransferStateFailed];
         [self updateDownloadQueue:task];
         [task callDownloadResult:url error:error];
@@ -586,9 +592,16 @@ typedef void (^ESCompletionHandler)(void);
         }
         [task updateDownloadTaskState:ESTransferStateCompleted];
         [self updateDownloadQueue:task];
+        ESDLog(@"[Transfer][Download] completed uuid:%@ name:%@ path:%@",
+               task.file.uuid,
+               task.name,
+               url.path);
         
         [task callDownloadResult:url error:error];
     } else {
+        ESDLog(@"[Transfer][Download] failed missing file after download uuid:%@ name:%@",
+               task.file.uuid,
+               task.name);
         [task updateDownloadTaskState:ESTransferStateFailed];
         [task callDownloadResult:url error:error];
     }
@@ -715,8 +728,10 @@ typedef void (^ESCompletionHandler)(void);
 #pragma mark - Upload
 - (void)upload:(ESUploadMetadata *)metadata
       callback:(void (^)(ESRspUploadRspBody *result, NSError *error))callback {
+    ESDLog(@"[Transfer][Upload] enqueue fileName:%@ folderId:%@", metadata.fileName, metadata.folderId);
     for (ESTransferTask *task in self.uploadingQueue) {
         if([task.metadata.fileName isEqualToString:metadata.fileName]){
+            ESDLog(@"[Transfer][Upload] skip duplicate fileName:%@", metadata.fileName);
             return;
         }
     }
@@ -907,6 +922,10 @@ typedef void (^ESCompletionHandler)(void);
 - (void)processUploadResult:(ESTransferTask *)task result:(ESRspUploadRspBody *)result error:(NSError *)error {
     BOOL isAutoSyncTask = [self isAutoSyncTask:task];
     if (!result || error != nil) {
+        ESDLog(@"[Transfer][Upload] failed file:%@ err:%@ code:%@",
+               task.name,
+               error.localizedDescription,
+               result.code);
         if (isAutoSyncTask) {
             [task updateUploadTaskState:ESTransferStateFailed];
             [self.autoSyncUploadingQueue removeObject:task];
@@ -923,6 +942,7 @@ typedef void (^ESCompletionHandler)(void);
     }
     
     [task updateUploadTaskState:ESTransferStateCompleted];
+    ESDLog(@"[Transfer][Upload] completed file:%@ uuid:%@", task.name, result.results.uuid);
     //移除待上传文件
     [task.filePath.fullCachePath clearCachePath];
     

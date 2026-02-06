@@ -33,6 +33,30 @@ NSInteger const ESRequestID_InVailed = -1;
 static NSInteger const TVSPBRequestDefaultRetryCount = 3;
 static NSString * const TVSPBRequestDefaultRetryCountKey = @"pb_retry_count";
 
+static NSString *ESNetworkRequestApiDesc(NSDictionary *apiParams) {
+    if (![apiParams isKindOfClass:[NSDictionary class]]) {
+        return @"unknown";
+    }
+    NSString *serviceName = apiParams[ESNetworkServiceNameKey];
+    NSString *apiName = apiParams[ESNetworkApiNameKey];
+    if (serviceName.length == 0 && apiName.length == 0) {
+        return @"unknown";
+    }
+    return [NSString stringWithFormat:@"%@/%@",
+            serviceName.length > 0 ? serviceName : @"-",
+            apiName.length > 0 ? apiName : @"-"];
+}
+
+static NSString *ESNetworkRequestKeysDesc(NSDictionary *dict) {
+    if (![dict isKindOfClass:[NSDictionary class]] || dict.count == 0) {
+        return @"[]";
+    }
+    NSArray *keys = [dict.allKeys sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        return [[obj1 description] compare:[obj2 description]];
+    }];
+    return [NSString stringWithFormat:@"%@", keys];
+}
+
 @interface ESNetworkRequestManager() <NSURLSessionDelegate>
 
 @property (nonatomic, strong)NSMutableArray<ESNetworkRequestServiceTask *> *requestList;
@@ -129,6 +153,12 @@ static NSString * const TVSPBRequestDefaultRetryCountKey = @"pb_retry_count";
                  queryParams:queryParams
                       header:headerParams
                         body:bodyParams];
+    ESDLog(@"[Network] enqueue raw request id:%ld method:%@ path:%@ queryKeys:%@ bodyKeys:%@",
+           (long)requestTask.requestId,
+           method,
+           path,
+           ESNetworkRequestKeysDesc(queryParams),
+           ESNetworkRequestKeysDesc(bodyParams));
     return requestTask.requestId;
 }
 
@@ -153,6 +183,13 @@ static NSString * const TVSPBRequestDefaultRetryCountKey = @"pb_retry_count";
                  queryParams:queryParams
                       header:headerParams
                         body:bodyParams];
+    ESDLog(@"[Network] enqueue raw request id:%ld method:%@ base:%@ path:%@ queryKeys:%@ bodyKeys:%@",
+           (long)requestTask.requestId,
+           method,
+           baseUrl,
+           path,
+           ESNetworkRequestKeysDesc(queryParams),
+           ESNetworkRequestKeysDesc(bodyParams));
     return requestTask.requestId;
 }
 
@@ -192,6 +229,11 @@ static NSString * const TVSPBRequestDefaultRetryCountKey = @"pb_retry_count";
                      queryParams:queryParams
                           header:headerParams
                             body:bodyParams];
+    ESDLog(@"[Network] enqueue call request id:%ld api:%@ queryKeys:%@ bodyKeys:%@",
+           (long)requestTask.requestId,
+           ESNetworkRequestApiDesc(apiParams),
+           ESNetworkRequestKeysDesc(queryParams),
+           ESNetworkRequestKeysDesc(bodyParams));
     return requestTask.requestId;
 }
 
@@ -213,6 +255,12 @@ static NSString * const TVSPBRequestDefaultRetryCountKey = @"pb_retry_count";
                           header:headerParams
                             body:bodyParams
                         filePath:filePath];
+    ESDLog(@"[Network] enqueue upload(file) id:%ld api:%@ file:%@ queryKeys:%@ bodyKeys:%@",
+           (long)requestTask.requestId,
+           ESNetworkRequestApiDesc(apiParams),
+           filePath.lastPathComponent,
+           ESNetworkRequestKeysDesc(queryParams),
+           ESNetworkRequestKeysDesc(bodyParams));
     return requestTask.requestId;
 }
 
@@ -234,6 +282,12 @@ static NSString * const TVSPBRequestDefaultRetryCountKey = @"pb_retry_count";
                           header:headerParams
                             body:bodyParams
                         data:data];
+    ESDLog(@"[Network] enqueue upload(data) id:%ld api:%@ dataLength:%lu queryKeys:%@ bodyKeys:%@",
+           (long)requestTask.requestId,
+           ESNetworkRequestApiDesc(apiParams),
+           (unsigned long)data.length,
+           ESNetworkRequestKeysDesc(queryParams),
+           ESNetworkRequestKeysDesc(bodyParams));
     return requestTask.requestId;
 }
 
@@ -252,6 +306,11 @@ static NSString * const TVSPBRequestDefaultRetryCountKey = @"pb_retry_count";
                               header:headerParams
                                 body:bodyParams
                               method:method];
+    ESDLog(@"[Network] enqueue download id:%ld method:%@ queryKeys:%@ bodyKeys:%@",
+           (long)requestTask.requestId,
+           method,
+           ESNetworkRequestKeysDesc(queryParams),
+           ESNetworkRequestKeysDesc(bodyParams));
     
     return requestTask.requestId;
 }
@@ -276,6 +335,12 @@ static NSString * const TVSPBRequestDefaultRetryCountKey = @"pb_retry_count";
                                 body:bodyParams
                               targetPath:targetPath
     ];
+    ESDLog(@"[Network] enqueue call download id:%ld api:%@ target:%@ queryKeys:%@ bodyKeys:%@",
+           (long)requestTask.requestId,
+           ESNetworkRequestApiDesc(apiParams),
+           targetPath.lastPathComponent,
+           ESNetworkRequestKeysDesc(queryParams),
+           ESNetworkRequestKeysDesc(bodyParams));
     
     return requestTask.requestId;
 }
@@ -286,6 +351,7 @@ static NSString * const TVSPBRequestDefaultRetryCountKey = @"pb_retry_count";
         if (task) {
             [task cancel];
             [[ESNetworkRequestManager sharedInstance] removeRequest:task];
+            ESDLog(@"[Network] cancel request id:%ld", (long)requestId);
         }
     });
 }

@@ -132,6 +132,10 @@
     
     id<ESTitleDetailSwitchListItemProtocol> cellModel = self.listModule.listData[1];
     NSString * platformUrl = cellModel.platformAddress;
+    ESDLog(@"[Bind][SpaceCreate] nextStep internetOn:%d platformUrl:%@ hasViewModel:%d",
+           self.isInternetOn,
+           platformUrl,
+           self.viewModel != nil);
     if (cellModel.isOn && ![self isValidPlatformUrl:platformUrl]) {
         return;
     }
@@ -156,6 +160,9 @@
         };
         
         [self.view showLoading:YES];
+        ESDLog(@"[Bind][SpaceCreate] sendSpaceCreate clientUuid:%@ spaceName:%@",
+               ESBoxManager.clientUUID,
+               self.viewModel.spaceName);
         [self.viewModel sendSpaceCreate:req];
         return;
     }
@@ -163,6 +170,7 @@
     if (self.boxItem != nil) {
         weakfy(self)
         [self.view showLoading:YES];
+        ESDLog(@"[Bind][Channel] update internet service config internetOn:%d", self.isInternetOn);
         [ESNetworkRequestManager sendCallRequestWithServiceName:@"eulixspace-agent-service"
                                                         apiName:@"internet_service_config"
                                                     queryParams:@{}
@@ -172,6 +180,7 @@
                                                                 }
                                                       modelName:nil
                                                    successBlock:^(NSInteger requestId, id  _Nullable response) {
+            ESDLog(@"[Bind][Channel] internet_service_config success requestId:%ld", (long)requestId);
             strongfy(self)
             ESBoxManager.activeBox.enableInternetAccess = self.isInternetOn;
             ESInternetServiceConfigModel *config = [ESInternetServiceConfigModel yy_modelWithDictionary:response];
@@ -191,6 +200,10 @@
             [ESToast toastSuccess:NSLocalizedString(@"security_authensetsuccess", @"设置成功")];
             [self updateActionBtStatus];
         } failBlock:^(NSInteger requestId, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            ESDLog(@"[Bind][Channel] internet_service_config failed requestId:%ld code:%@ msg:%@",
+                   (long)requestId,
+                   [error codeString],
+                   error.localizedDescription);
             [self.view showLoading:NO];
             [self updateActionBtStatus];
 
@@ -209,6 +222,7 @@
 
 - (void)onBindCommand:(ESBCCommandType)command resp:(NSDictionary *)response {
     if (command == ESBCCommandTypeBindSpaceCreateReq) {
+        ESDLog(@"[Bind][SpaceCreate] response code:%@ requestId:%@", response[@"code"], response[@"requestId"]);
         [self.view showLoading:NO];
         if ([response[@"code"] isEqualToString:@"AG-200"]) {
             [ESToast toastSuccess:NSLocalizedString(@"security_authensetsuccess", @"设置成功")];

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -612,10 +612,7 @@
 		9336793F2924BE4A002A40C6 /* ESAppStoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9336793E2924BE4A002A40C6 /* ESAppStoreCell.m */; };
 		93367943292602A1002A40C6 /* ESAppStoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93367942292602A1002A40C6 /* ESAppStoreModel.m */; };
 		933B7FC8285ABFD800C304E5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933B7FC7285ABFD800C304E5 /* Security.framework */; };
-		933B7FC9285AC01900C304E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93059B32282CD6F700EA61BD /* SystemConfiguration.framework */; };
 		933B7FCB285AC02200C304E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933B7FCA285AC02200C304E5 /* CoreGraphics.framework */; };
-		933B7FCC285AC02E00C304E5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 93059B36282CD71A00EA61BD /* libsqlite3.tbd */; };
-		933B7FCE285AC03600C304E5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93059B34282CD70000EA61BD /* CoreTelephony.framework */; };
 		933B7FCF285AC05E00C304E5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 93059B38282CD71F00EA61BD /* libz.tbd */; };
 		933C488B26AA55A500E20770 /* ESFileTotalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 933C488A26AA55A500E20770 /* ESFileTotalVC.m */; };
 		933C488E26AA55F500E20770 /* ESFilePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 933C488D26AA55F500E20770 /* ESFilePhotoVC.m */; };
@@ -3064,10 +3061,6 @@
 				93059B3B282CD89D00EA61BD /* UserNotifications.framework in Frameworks */,
 				93059B35282CD70000EA61BD /* CoreTelephony.framework in Frameworks */,
 				3433C29626A56FF400E3B093 /* CloudKit.framework in Frameworks */,
-				933B7FCC285AC02E00C304E5 /* libsqlite3.tbd in Frameworks */,
-				933B7FC9285AC01900C304E5 /* SystemConfiguration.framework in Frameworks */,
-				933B7FCE285AC03600C304E5 /* CoreTelephony.framework in Frameworks */,
-				933B7FCF285AC05E00C304E5 /* libz.tbd in Frameworks */,
 				93B21C4526D7960000B5D8D4 /* Social.framework in Frameworks */,
 				933B7FCB285AC02200C304E5 /* CoreGraphics.framework in Frameworks */,
 				9E0FC74CBAD38CEABC77A67C /* libPods-EulixSpace.a in Frameworks */,
@@ -6654,8 +6647,9 @@
 		341EC48D2665E66E008F5DA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = ES;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1600;
 				ORGANIZATIONNAME = eulix.xyz;
 				TargetAttributes = {
 					341EC4942665E66E008F5DA8 = {
@@ -7099,7 +7093,6 @@
 				2C84C9BD2A6524D0003383BC /* ESShareAgainReq.m in Sources */,
 				2CEB23F7288F8D8400418923 /* NSError+ESTool.m in Sources */,
 				2C84C9872A6524D0003383BC /* ESRevokeClientResult.m in Sources */,
-				2CEB23F7288F8D8400418923 /* NSError+ESTool.m in Sources */,
 				9354588B2872CF270034017E /* ESShareListCell.m in Sources */,
 				2C84CA1D2A6524D0003383BC /* ESRestoreTransId.m in Sources */,
 				936A7D972A4D129E0060863C /* ESRedirectManage.m in Sources */,
@@ -7776,7 +7769,6 @@
 				F0317D1C28E19CE3001357AB /* ESBaseActionSheetVC.m in Sources */,
 				2C84C9752A6524D0003383BC /* ESResponseBaseUserEntity.m in Sources */,
 				2CD7D3F328C5FC9B00E0879C /* ESSecurityPasswordModifyCell.m in Sources */,
-				2CD7D3F328C5FC9B00E0879C /* ESSecurityPasswordModifyCell.m in Sources */,
 				34D54D2826D7711D004173B3 /* UIImage+ESTool.m in Sources */,
 				345C9CE226F5C31A0007B5F8 /* UIImageView+ESThumb.m in Sources */,
 				F0895FC02869FE3100A1D105 /* ESContactAuthorizationStatusCommand.m in Sources */,
@@ -7886,6 +7878,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEV=1";
@@ -7990,6 +7983,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -8050,6 +8044,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "APPSTORE=1";
@@ -8079,7 +8074,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = CYL6T9HFC7;
 				ENABLE_BITCODE = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = EulixSpace/Application/EulixSpace_Prefix.pch;
 				INFOPLIST_FILE = EulixSpace/Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -8203,6 +8197,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "PLATFORM=1";

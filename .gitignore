@@ -1,0 +1,9 @@
+# Xcode user-specific data
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# CocoaPods user-specific data
+Pods/*.xcodeproj/xcuserdata/
+
+# Local build artifacts
+build/

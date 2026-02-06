@@ -54,6 +54,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)hasCertData;
 - (void)reqCertIfNot;
 
+/// Exposed for unit tests: normalize cert payload from multi-style API responses.
++ (NSString * _Nullable)extractLanCertFromResponse:(id _Nullable)response;
+
 @end
 
 NS_ASSUME_NONNULL_END

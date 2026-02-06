@@ -42,4 +42,13 @@ typedef void (^ESGatewayManageOnToken)(ESTokenItem *token, NSError *error);
 
 - (void)refreshToken:(ESBoxItem *)activeBox callback:(ESGatewayManageOnToken)callback;
 
+/// Exposed for unit tests: decide whether lanHost can override current box baseUrl.
++ (BOOL)shouldUseLanHost:(NSString *)lanHost
+            reachableBox:(ESBoxItem *)reachableBox
+               activeBox:(ESBoxItem *)activeBox;
+
+/// Exposed for unit tests: reject stale requests that do not belong to the current active box.
++ (BOOL)isActiveBoxRequest:(ESBoxItem *)requestBox
+                 activeBox:(ESBoxItem *)activeBox;
+
 @end
