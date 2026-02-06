@@ -102,6 +102,26 @@ static NSString *const kESBoxManagerBoxListKey = @"_kESBoxManagerBoxListKey";
 
 @implementation ESBoxManager
 
+- (void)syncActiveBoxWithBoxList {
+    if (self.boxList.count == 0) {
+        self.activeBox = nil;
+        return;
+    }
+    if (!self.activeBox) {
+        self.activeBox = self.boxList.firstObject;
+        return;
+    }
+    __block ESBoxItem *matched = nil;
+    [self.boxList enumerateObjectsUsingBlock:^(ESBoxItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj isEqual:self.activeBox]) {
+            matched = obj;
+            *stop = YES;
+        }
+    }];
+    // onParing appends to tail; when cached box is stale, prefer most recently added box.
+    self.activeBox = matched ?: self.boxList.lastObject;
+}
+
 + (instancetype)manager {
     static dispatch_once_t once = 0;
     static id instance = nil;
@@ -135,11 +155,12 @@ static NSString *const kESBoxManagerBoxListKey = @"_kESBoxManagerBoxListKey";
             }
             [self saveBoxList];
         }
+        [self syncActiveBoxWithBoxList];
         ///授权的盒子, token 失效了, 直接删除
         if (self.activeBox.boxType == ESBoxTypeAuth && !self.activeBox.authToken.valid) {
             [self.boxList removeObject:self.activeBox];
             [self saveBoxList];
-            self.activeBox = self.boxList.firstObject;
+            self.activeBox = self.boxList.lastObject;
         }
         ///激活当前盒子
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -978,4 +999,3 @@ static NSString *const kESBoxManagerBoxListKey = @"_kESBoxManagerBoxListKey";
 }
 
 @end
-

@@ -106,6 +106,31 @@ typedef void (^ESLanTaskCompletionHandler)(NSURLResponse *response, id responseO
     self.session = session;
 }
 
++ (NSString * _Nullable)extractLanCertFromResponse:(id _Nullable)response {
+    if ([response isKindOfClass:[NSString class]]) {
+        return (NSString *)response;
+    }
+    if (![response isKindOfClass:[NSDictionary class]]) {
+        return nil;
+    }
+    NSDictionary *dict = (NSDictionary *)response;
+    NSString *cert = dict[@"cert"];
+    if (cert.length > 0) {
+        return cert;
+    }
+    id nested = dict[@"results"];
+    if ([nested isKindOfClass:[NSDictionary class]]) {
+        NSString *nestedCert = nested[@"cert"];
+        if (nestedCert.length > 0) {
+            return nestedCert;
+        }
+    } else if ([nested isKindOfClass:[NSString class]]) {
+        return (NSString *)nested;
+    }
+    return nil;
+}
+
+
 - (BOOL)hasCertData {
     return self.certData != nil && self.certData.length > 0;
 }
@@ -123,9 +148,9 @@ typedef void (^ESLanTaskCompletionHandler)(NSURLResponse *response, id responseO
     self.isReqingCert = YES;
     [ESNetworkRequestManager sendCallRequestWithServiceName:eulixspace_agent_service apiName:get_lan_cert queryParams:nil header:nil body:nil modelName:nil successBlock:^(NSInteger requestId, id  _Nullable response) {
         self.isReqingCert = NO;
-        NSString * certStr = response[@"cert"];
+        NSString * certStr = [ESLanTransferManager extractLanCertFromResponse:response];
         if (!certStr) {
-            ESDLog(@"[上传下载] 自签名证书请求-内容为nil");
+            ESDLog(@"[上传下载] 自签名证书请求-内容为nil, response:%@", response);
             return;
         }
         

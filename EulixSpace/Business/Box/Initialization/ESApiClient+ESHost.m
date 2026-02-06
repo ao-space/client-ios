@@ -30,29 +30,63 @@
 
 @implementation ESApiClient (ESHost)
 
+static BOOL ESHostIsLoopbackURL(NSURL *url) {
+    NSString *host = url.host.lowercaseString;
+    return [host isEqualToString:@"localhost"] || [host isEqualToString:@"127.0.0.1"];
+}
+
+static BOOL ESHostIsUsableHTTPURL(NSString *value) {
+    if (value.length == 0) {
+        return NO;
+    }
+    NSURL *url = [NSURL URLWithString:value];
+    if (url == nil || url.scheme.length == 0 || url.host.length == 0) {
+        return NO;
+    }
+    NSString *scheme = url.scheme.lowercaseString;
+    return [scheme isEqualToString:@"http"] || [scheme isEqualToString:@"https"];
+}
+
 + (void)load {
     [self es_swizzleSEL:@selector(es_baseURL) withSEL:@selector(baseURL)];
 }
 
 - (NSURL *)es_baseURL {
+    ESBoxItem *activeBox = ESBoxManager.activeBox;
+    NSString *activeLocalHost = @"";
+    if (activeBox != nil &&
+        activeBox.enableInternetAccess == NO &&
+        ESHostIsUsableHTTPURL(activeBox.localHost)) {
+        activeLocalHost = activeBox.localHost;
+    }
+
     if (self.boxItem != nil &&
         self.boxItem.enableInternetAccess == NO &&
-        self.boxItem.localHost.length > 0) {
+        ESHostIsUsableHTTPURL(self.boxItem.localHost)) {
+        // If this client is accidentally bound to a stale box, force active LAN host.
+        if (activeLocalHost.length > 0 &&
+            activeBox != nil &&
+            self.boxItem.boxUUID.length > 0 &&
+            ![self.boxItem.boxUUID isEqualToString:activeBox.boxUUID]) {
+            ESDLog(@"es_baseURL activeBox(stale-box override) url  %@", activeLocalHost);
+            return [NSURL URLWithString:activeLocalHost];
+        }
         NSString *userDomain = self.boxItem.localHost;
         ESDLog(@"es_baseURL boxItem url  %@", userDomain);
         return [NSURL URLWithString:userDomain];
     }
-    
-    if (ESBoxManager.activeBox != nil &&
-        ESBoxManager.activeBox.enableInternetAccess == NO &&
-        (self.es_baseURL.absoluteString.length <= 0 || ([self.es_baseURL.absoluteString hasSuffix:ESSafeString(ESBoxManager.activeBox.prettyDomain)]))&&
-        ESBoxManager.activeBox.localHost.length > 0) {
-        NSString *userDomain = ESBoxManager.activeBox.localHost;
+
+    NSURL *rawBaseURL = self.es_baseURL;
+    NSString *rawBaseURLString = ESSafeString(rawBaseURL.absoluteString);
+    if (activeLocalHost.length > 0 &&
+        (rawBaseURLString.length <= 0 ||
+         ESHostIsLoopbackURL(rawBaseURL) ||
+         [rawBaseURLString hasSuffix:ESSafeString(activeBox.prettyDomain)])) {
+        NSString *userDomain = activeLocalHost;
         ESDLog(@"es_baseURL activeBox url  %@", userDomain);
         return [NSURL URLWithString:userDomain];
     }
-    ESDLog(@"es_baseURL url  %@", self.es_baseURL);
-    return self.es_baseURL;
+    return rawBaseURL;
 }
 
 static void *gApiClientBindBox = &gApiClientBindBox;

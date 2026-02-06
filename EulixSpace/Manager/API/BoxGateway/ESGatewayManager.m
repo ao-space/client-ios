@@ -64,6 +64,31 @@
     dispatch_semaphore_t _lock;
 }
 
++ (BOOL)shouldUseLanHost:(NSString *)lanHost
+            reachableBox:(ESBoxItem *)reachableBox
+               activeBox:(ESBoxItem *)activeBox {
+    if (lanHost.length == 0 || !reachableBox || !activeBox) {
+        return NO;
+    }
+    if (reachableBox.boxUUID.length > 0 && activeBox.boxUUID.length > 0) {
+        return [reachableBox.boxUUID isEqualToString:activeBox.boxUUID];
+    }
+    return [reachableBox isEqual:activeBox];
+}
+
++ (BOOL)isActiveBoxRequest:(ESBoxItem *)requestBox
+                 activeBox:(ESBoxItem *)activeBox {
+    // If there is no active box yet, do not block request startup.
+    if (!requestBox || !activeBox) {
+        return YES;
+    }
+    if (requestBox.boxUUID.length > 0 && activeBox.boxUUID.length > 0) {
+        return requestBox.boxType == activeBox.boxType &&
+               [requestBox.boxUUID isEqualToString:activeBox.boxUUID];
+    }
+    return [requestBox isEqual:activeBox];
+}
+
 + (instancetype)manager {
     static dispatch_once_t once = 0;
     static id instance = nil;
@@ -107,6 +132,17 @@
     activeBox = activeBox ?: ESBoxManager.activeBox;
     dispatch_async(self.queue, ^{
         Lock();
+        if (![ESGatewayManager isActiveBoxRequest:activeBox activeBox:ESBoxManager.activeBox]) {
+            ESDLog(@"[ESGatewayManager] skip stale box token request request:%@ active:%@",
+                   ESSafeString(activeBox.boxUUID),
+                   ESSafeString(ESBoxManager.activeBox.boxUUID));
+            NSError *staleError = [NSError errorWithDomain:NSURLErrorDomain
+                                                      code:NSURLErrorCancelled
+                                                  userInfo:@{NSLocalizedDescriptionKey : @"stale box token request cancelled"}];
+            [self callback:callback token:nil error:staleError];
+            Unlock();
+            return;
+        }
         ///授权的盒子
         if (activeBox.auth) {
             if (activeBox.authToken.valid) {
@@ -139,15 +175,16 @@
             ESDLog(@"[activeBox.localHost] lanHost:%@", baseUrl);
         }
         
-        NSString * lanHost = [[ESLocalNetworking shared] getLanHost];
-        if ([ESLocalNetworking shared].reachableBox && lanHost.length > 0) {
+        ESBoxItem *reachableBox = [ESLocalNetworking shared].reachableBox;
+        NSString *lanHost = [[ESLocalNetworking shared] getLanHost];
+        if ([ESGatewayManager shouldUseLanHost:lanHost reachableBox:reachableBox activeBox:activeBox]) {
             baseUrl = lanHost;
             ESDLog(@"[ESLocalNetworking] lanHost:%@", baseUrl);
-
-//            if (![ESBoxManager.activeBox.localHost isEqualToString:lanHost]) {
-//                ESBoxManager.activeBox.localHost = lanHost;
-//                [ESBoxManager.manager saveBox:ESBoxManager.activeBox];
-//            }
+        } else if (reachableBox && lanHost.length > 0) {
+            ESDLog(@"[ESLocalNetworking] skip lanHost override due to box mismatch, reachable:%@ active:%@ host:%@",
+                   ESSafeString(reachableBox.boxUUID),
+                   ESSafeString(activeBox.boxUUID),
+                   lanHost);
         }
         
         if (activeBox.boxType == ESBoxTypeMember) {
@@ -263,15 +300,27 @@
                   ESCallRequest *callRequest = [ESCallRequest new];
                   callRequest.accessToken = token.accessToken;
 
-                  ESDLog(@"plain call input :\n%@", request.json);
+                  ESDLog(@"[GatewayCall][input] service:%@ api:%@ requestId:%@ payloadLen:%lu",
+                         request.serviceName,
+                         request.apiName,
+                         request.requestId,
+                         (unsigned long)request.json.length);
                   callRequest.body = [request.json aes_cbc_encryptWithKey:token.secretKey iv:token.secretIV];
                   [api spaceV1ApiGatewayCallPostWithBody:callRequest
                                        completionHandler:^(ESRealCallResult *output, NSError *error) {
                                            NSString *plainBody = [output.body aes_cbc_decryptWithKey:token.secretKey iv:token.secretIV];
                                            if (error) {
-                                               ESDLog(@"plain call error:\n%@", error.localizedDescription);
+                                               ESDLog(@"[GatewayCall][error] service:%@ api:%@ requestId:%@ error:%@",
+                                                      request.serviceName,
+                                                      request.apiName,
+                                                      request.requestId,
+                                                      error.localizedDescription);
                                            } else {
-                                               ESDLog(@"plain call output:\n%@", plainBody);
+                                               ESDLog(@"[GatewayCall][output] service:%@ api:%@ requestId:%@ payloadLen:%lu",
+                                                      request.serviceName,
+                                                      request.apiName,
+                                                      request.requestId,
+                                                      (unsigned long)plainBody.length);
                                            }
                                            if (callback) {
                                                callback([plainBody toJson] ?: plainBody, error);

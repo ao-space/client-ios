@@ -177,6 +177,7 @@ static const CGFloat kESBoxBindSearchTimeout = 40;
     [self reset];
     self.btid = uniqueId;
     self.serviceUUID = [self.btid uuidFrombtid];
+    ESDLog(@"[Bind][Local] start search btid:%@ mode:%ld", self.btid, (long)self.parentModule.mode);
     ///eulixspace-%@
     NSString *localName = [NSString stringWithFormat:TEXT_BOX_BLUETOOTH_NAME_FORMAT, self.btid];
 
@@ -196,6 +197,7 @@ static const CGFloat kESBoxBindSearchTimeout = 40;
 - (void)setupServiceBrowserWithScanNetServiceInfo {
     _serviceBrowser = [ESNetServiceBrowser new];
     self.mdnsItem = self.scanNetServiceInfo;
+    ESDLog(@"[Bind][Local] use fixed address %@:%d", self.mdnsItem.ipv4, self.mdnsItem.port);
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@:%d", self.mdnsItem.ipv4, self.mdnsItem.port]];
     ESApiClient *client = [[ESApiClient alloc] initWithBaseURL:url];
     client.timeoutInterval = self.boxStatus.infoResult.initialEstimateTimeSec;;
@@ -213,8 +215,12 @@ static const CGFloat kESBoxBindSearchTimeout = 40;
     req.signedBtid = [pair sign:self.btid];
   
     ESPairApi *api = [[ESPairApi alloc] initWithApiClient:self.apiClient];
+    ESDLog(@"[Bind][Local] pubKeyExchange request btid:%@", self.btid);
     [api pubKeyExchangeWithPubKeyExchangeReq:req
                            completionHandler:^(ESRspPubKeyExchangeRsp *output, NSError *error) {
+                            ESDLog(@"[Bind][Local] pubKeyExchange response code:%@ err:%@",
+                                   output.code,
+                                   error.localizedDescription);
                             if ((error != nil || output.results.boxPubKey == nil) &&
                                 self.parentModule.mode == ESBoxBindModeWiredConnectionWithIp ) {
                                 // 设备无法连接
@@ -233,8 +239,12 @@ static const CGFloat kESBoxBindSearchTimeout = 40;
     req.encBtid = encBtid;
    
     ESPairApi *api = [[ESPairApi alloc] initWithApiClient:self.apiClient];
+    ESDLog(@"[Bind][Local] aesKeyExchange request btid:%@", self.btid);
     [api keyExchangeWithKeyExchangeReq:req
                      completionHandler:^(ESRspKeyExchangeRsp *output, NSError *error) {
+                         ESDLog(@"[Bind][Local] aesKeyExchange response code:%@ err:%@",
+                                output.code,
+                                error.localizedDescription);
                          [self onAESKeyExchange:output];
                      }];
 }
@@ -246,8 +256,10 @@ static const CGFloat kESBoxBindSearchTimeout = 40;
     }
   
     [self stopTimer];
+    ESDLog(@"[Bind][Local] loadBoxStatus from %@", self.apiClient.baseURL.absoluteString);
     
     [ESNetworkRequestManager sendRequest:self.apiClient.baseURL.absoluteString path:@"/agent/v1/api/pair/init" method:@"GET" queryParams:nil header:nil body:nil modelName:nil successBlock:^(NSInteger requestId, NSString * response) {
+        ESDLog(@"[Bind][Local] pair/init success requestId:%ld", (long)requestId);
         
         NSString * encodeJson = [self decrypt:response];
         ESBindInitResultModel * tmpModel = [ESBindInitResultModel yy_modelWithJSON:encodeJson];
@@ -261,6 +273,10 @@ static const CGFloat kESBoxBindSearchTimeout = 40;
         [self onInit:respModel];
         
     } failBlock:^(NSInteger requestId, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        ESDLog(@"[Bind][Local] pair/init failed requestId:%ld code:%@ msg:%@",
+               (long)requestId,
+               [error codeString],
+               error.localizedDescription);
         ESBindInitResp * respModel = [[ESBindInitResp alloc] init];
         respModel.code = error.userInfo[@"code"];
         respModel.message = error.userInfo[@"message"];

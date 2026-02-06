@@ -28,6 +28,7 @@
 @implementation ESDeviceInfoServiceModule
 
 + (void)getDeviceInfoWithCompletion:(ESDeviceInfoServiceCompletionBlock)completionBlock {
+    ESDLog(@"[DeviceInfo] request device_version");
     [ESNetworkRequestManager sendCallRequest:@{
                                                 @"serviceName" : @"eulixspace-agent-service",
                                                 @"apiName" : @"device_version"
@@ -37,11 +38,16 @@
                                         body:@{}
                                    modelName:@"ESDeviceInfoResultModel"
                                 successBlock:^(NSInteger requestId, id  _Nullable response) {
+                                    ESDLog(@"[DeviceInfo] success requestId:%ld", (long)requestId);
                                     if (completionBlock) {
                                         completionBlock(response, nil);
                                     }
                                    }
                                    failBlock:^(NSInteger requestId, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+                                    ESDLog(@"[DeviceInfo] failed requestId:%ld code:%@ msg:%@",
+                                           (long)requestId,
+                                           error.userInfo[@"code"],
+                                           error.localizedDescription);
                                     if (completionBlock) {
                                         completionBlock(nil, error);
                                     }
