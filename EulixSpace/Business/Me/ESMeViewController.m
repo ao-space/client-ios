@@ -74,18 +74,7 @@
 #import "ESDIDDocManager.h"
 
 typedef NS_ENUM(NSUInteger, ESSettingCellType) {
-    ESSettingCellTypeDevice,
-    ESSettingCellTypeMember, //家庭
-    
-    ESSettingCellTypeRecycleBin,        //回收站
-    ESSettingCellTypeMeShare,        //我的分享
-    ESSettingCellTypeCache,            //清除缓存
-    ESSettingCellTypeTrialFeedback,    //试用反馈
     ESSettingCellTypeFAQ,              //帮助与反馈
-    ESSettingCellTypeLogin,              //登陆终端
-
-    ESSettingCellTypeWeb,   //访问网页端
-    ESSettingCellTypeNews,   //消息设置
     ESSettingCellTypeAbout, //关于
     ESSettingCellTypeSetting, //设置
     ESSettingCellTypeContactEmail, // Contact Email
@@ -396,15 +385,6 @@ typedef NS_ENUM(NSUInteger, ESSettingCellType) {
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)clearCache {
-    [ESCacheCleanTools clearAllCache];
-    [ESToast toastSuccess:TEXT_ME_ALREADY_CLEARED_CACHE];
-    self.cacheSize = @"0.00B";
-    [ESCacheCleanTools cacheSizeWithCompletion:^(NSString *size) {
-        self.cacheSize = size;
-    }];
-}
-
 - (void)about {
     ESAboutViewController *next = [ESAboutViewController new];
     [self.navigationController pushViewController:next animated:YES];
@@ -412,77 +392,10 @@ typedef NS_ENUM(NSUInteger, ESSettingCellType) {
 
 - (void)onSetting:(ESFormItem *)item action:(ESFormViewAction)action {
     switch (item.row) {
-        //
-        case ESSettingCellTypeDevice:
-            [self deviceManager];
-            break;
-        case ESSettingCellTypeRecycleBin: {
-            ESRecycleBinVC *vc = [[ESRecycleBinVC alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-        } break;
-            
-        case ESSettingCellTypeLogin: {
-            ESLoginTerminalVC *vc = [[ESLoginTerminalVC alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-        } break;
-            
-        case ESSettingCellTypeCache: {
-            //清除缓存    mine.click.clearCache
-            NSString *title = [NSString stringWithFormat:TEXT_ME_CONFIRM_THE_DELETION_TITLE, self.cacheSize];
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
-                                                                           message:title
-                                                                    preferredStyle:UIAlertControllerStyleActionSheet];
-            UIAlertAction *confirm = [UIAlertAction actionWithTitle:TEXT_CONFIRM_THE_DELETION
-                                                              style:UIAlertActionStyleDestructive
-                                                            handler:^(UIAlertAction *_Nonnull action) {
-                                                                [self clearCache];
-                                                            }];
-            UIAlertAction *cancel = [UIAlertAction actionWithTitle:TEXT_CANCEL
-                                                             style:UIAlertActionStyleCancel
-                                                           handler:^(UIAlertAction *_Nonnull action){
-
-                                                           }];
-
-            [alert addAction:confirm];
-            [alert addAction:cancel];
-            [self presentViewController:alert animated:YES completion:nil];
-
-        } break;
         case ESSettingCellTypeContactEmail: {
             [self sendMail];
             break;
         }
-           
-        case ESSettingCellTypeTrialFeedback: {
-            __weak typeof(self) weakSelf = self;
-            ESDeviceInfoModel *deviceInfo = [[ESCache defaultCache] objectForKey:ESBoxManager.activeBox.boxUUID];
-            if(deviceInfo.systemInfo.spaceVersion){
-                NSInteger isWebFeedback = [ESCommonToolManager compareVersion:FeedbackVersionH5 withVersion:deviceInfo.systemInfo.spaceVersion];
-                if(isWebFeedback == 1){
-                    ESFeedbackViewController *vc = [ESFeedbackViewController new];
-                    [self.navigationController pushViewController:vc animated:YES];
-                }else{
-                
-                    [[ESCommonToolManager manager] toWebFeedbackWithImage:nil];
-                }
-            }else{
-                [ESDeviceInfoServiceModule getDeviceInfoWithCompletion:^(ESDeviceInfoResultModel * _Nullable deviceInfoResult, NSError * _Nullable error) {
-                    __strong typeof(weakSelf) self = weakSelf;
-                    if (!error && deviceInfoResult) {
-                        NSInteger isWebFeedback = [ESCommonToolManager compareVersion:FeedbackVersionH5 withVersion:deviceInfoResult.spaceVersion];
-                        if(isWebFeedback == 1){
-                            ESFeedbackViewController *vc = [ESFeedbackViewController new];
-                            [self.navigationController pushViewController:vc animated:YES];
-                        }else{
-                            [[ESCommonToolManager manager] toWebFeedbackWithImage:nil];
-                        }
-                    }else{
-                        [ESToast toastWarning:NSLocalizedString(@"service failed, retry later", @"服务异常，请稍后重试")];
-                    }
-                }];
-            }
-        }
-        break;
         case ESSettingCellTypeFAQ: {
             //查看帮助内容    mine.click.viewHelp
             ///帮助与反馈
@@ -511,19 +424,6 @@ typedef NS_ENUM(NSUInteger, ESSettingCellType) {
                         }];
             [self.navigationController pushViewController:next animated:YES];
         } break;
-            
-        case ESSettingCellTypeWeb: {
-            if (action == ESFormViewActionArrow) {
-                //复制web端链接    mine.click.copyLink
-                UIPasteboard.generalPasteboard.string = item.content;
-                [ESToast toastInfo:TEXT_ME_WEB_COPY];
-            }
-        } break;
-        case ESSettingCellTypeNews: {
-            ESPushNewsSettingVC *pushVC = [ESPushNewsSettingVC new];
-            [self.navigationController pushViewController:pushVC animated:YES];
-        } break;
-            
         case ESSettingCellTypeAbout:
             [self about];
             break;
